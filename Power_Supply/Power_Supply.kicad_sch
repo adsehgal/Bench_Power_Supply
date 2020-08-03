@@ -2314,7 +2314,7 @@
   (symbol (lib_id "power:+5V") (at 177.8 130.81 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "4d9958f2-beb5-4ed4-8a98-4e96ac27dafe")
-    (property "Reference" "#PWR?" (id 0) (at 177.8 134.62 0)
+    (property "Reference" "#PWR0138" (id 0) (at 177.8 134.62 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (id 1) (at 177.8 127 0))
@@ -2629,7 +2629,7 @@
   (symbol (lib_id "power:GND") (at 172.72 133.35 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "62210738-7293-4785-87bd-dc34d7328707")
-    (property "Reference" "#PWR?" (id 0) (at 172.72 139.7 0)
+    (property "Reference" "#PWR0139" (id 0) (at 172.72 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 172.72 137.16 0))
@@ -3533,7 +3533,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x07") (at 187.96 140.97 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "4a5aceff-e57e-435c-ba37-61c44454879c")
-    (property "Reference" "J?" (id 0) (at 190.5 139.7 0)
+    (property "Reference" "J5" (id 0) (at 190.5 139.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_01x07" (id 1) (at 190.5 142.24 0)
@@ -3772,10 +3772,10 @@
       (reference "#PWR0137") (unit 1)
     )
     (path "/4d9958f2-beb5-4ed4-8a98-4e96ac27dafe"
-      (reference "#PWR?") (unit 1)
+      (reference "#PWR0138") (unit 1)
     )
     (path "/62210738-7293-4785-87bd-dc34d7328707"
-      (reference "#PWR?") (unit 1)
+      (reference "#PWR0139") (unit 1)
     )
     (path "/a216915c-7324-469c-8737-2c3edfb6ea67"
       (reference "C1") (unit 1)
@@ -3862,7 +3862,7 @@
       (reference "J4") (unit 1)
     )
     (path "/4a5aceff-e57e-435c-ba37-61c44454879c"
-      (reference "J?") (unit 1)
+      (reference "J5") (unit 1)
     )
     (path "/93bb1d96-5265-4922-b320-5a7c229c525d"
       (reference "L1") (unit 1)
