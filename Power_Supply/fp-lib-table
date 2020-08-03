@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "relay_ALQ305")(type "KiCad")(uri "${KIPRJMOD}/relay_ALQ305.pretty")(options "")(descr ""))
+  (lib (name "Binding_Post")(type "KiCad")(uri "${KIPRJMOD}/Binding_Post.pretty")(options "")(descr ""))
 )
