@@ -2694,7 +2694,7 @@
   (symbol (lib_id "power:GND") (at 132.08 162.56 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "255a29b3-3ad0-4a90-bdf9-643315723593")
-    (property "Reference" "#PWR?" (id 0) (at 132.08 168.91 0)
+    (property "Reference" "#PWR0141" (id 0) (at 132.08 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 132.08 166.37 0))
@@ -3233,7 +3233,7 @@
   (symbol (lib_id "Device:CP_Small") (at 132.08 160.02 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "311ae82b-454a-4b31-a9dc-b6314a74ab0d")
-    (property "Reference" "C?" (id 0) (at 127 160.02 0))
+    (property "Reference" "C7" (id 0) (at 127 160.02 0))
     (property "Value" "10uF" (id 1) (at 128.27 162.56 0))
     (property "Footprint" "Capacitor_SMD:C_Elec_5x5.4" (id 2) (at 132.08 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3246,7 +3246,7 @@
   (symbol (lib_id "Device:CP_Small") (at 214.63 120.65 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "80312307-f61e-439d-8183-53fd4206ff5b")
-    (property "Reference" "C?" (id 0) (at 209.55 120.65 0))
+    (property "Reference" "C12" (id 0) (at 209.55 120.65 0))
     (property "Value" "10uF" (id 1) (at 210.82 123.19 0))
     (property "Footprint" "Capacitor_SMD:C_Elec_5x5.4" (id 2) (at 214.63 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3989,7 +3989,7 @@
       (reference "#PWR0140") (unit 1)
     )
     (path "/255a29b3-3ad0-4a90-bdf9-643315723593"
-      (reference "#PWR?") (unit 1)
+      (reference "#PWR0141") (unit 1)
     )
     (path "/a216915c-7324-469c-8737-2c3edfb6ea67"
       (reference "C1") (unit 1)
@@ -4009,6 +4009,9 @@
     (path "/b9ec2c9b-1b5d-4428-9cec-8877d6be143c"
       (reference "C6") (unit 1)
     )
+    (path "/311ae82b-454a-4b31-a9dc-b6314a74ab0d"
+      (reference "C7") (unit 1)
+    )
     (path "/232dade7-711c-48f9-ad1c-1fae503ac0aa"
       (reference "C8") (unit 1)
     )
@@ -4020,6 +4023,9 @@
     )
     (path "/2307a65e-6d91-416e-9340-3e158cba74cc"
       (reference "C11") (unit 1)
+    )
+    (path "/80312307-f61e-439d-8183-53fd4206ff5b"
+      (reference "C12") (unit 1)
     )
     (path "/e9f98593-5eac-4a3a-82ed-b73c53af7d03"
       (reference "C13") (unit 1)
@@ -4047,12 +4053,6 @@
     )
     (path "/274d3aef-742f-4cb5-b61d-f83e3eb46af1"
       (reference "C21") (unit 1)
-    )
-    (path "/311ae82b-454a-4b31-a9dc-b6314a74ab0d"
-      (reference "C?") (unit 1)
-    )
-    (path "/80312307-f61e-439d-8183-53fd4206ff5b"
-      (reference "C?") (unit 1)
     )
     (path "/b02026a8-7dc6-42d3-9812-c38db0931d18"
       (reference "D1") (unit 1)
