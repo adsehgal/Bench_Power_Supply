@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "TPS54531DDAR")(type "KiCad")(uri "${KIPRJMOD}/TPS54531DDAR.kicad_sym")(options "")(descr ""))
+  (lib (name "BAT1000")(type "KiCad")(uri "${KIPRJMOD}/BAT1000.kicad_sym")(options "")(descr ""))
+  (lib (name "Relay_ALQ305")(type "KiCad")(uri "${KIPRJMOD}/Relay_ALQ305.kicad_sym")(options "")(descr ""))
+)
