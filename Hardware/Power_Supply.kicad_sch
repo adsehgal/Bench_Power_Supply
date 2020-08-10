@@ -1,4 +1,4 @@
-(kicad_sch (version 20200714) (host eeschema "(5.99.0-2441-g41b7c7c43)")
+(kicad_sch (version 20200714) (host eeschema "(5.99.0-2619-gb519867d9)")
 
   (page 1 1)
 
@@ -29,7 +29,12 @@
       )
       (symbol "INA138_0_1"
         (polyline
-          (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+          (pts
+            (xy -5.08 5.08)
+            (xy 5.08 0)
+            (xy -5.08 -5.08)
+            (xy -5.08 5.08)
+          )
           (stroke (width 0.254)) (fill (type background))
         )
       )
@@ -83,7 +88,12 @@
       )
       (symbol "LM358_1_1"
         (polyline
-          (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+          (pts
+            (xy -5.08 5.08)
+            (xy 5.08 0)
+            (xy -5.08 -5.08)
+            (xy -5.08 5.08)
+          )
           (stroke (width 0.254)) (fill (type background))
         )
         (pin output line (at 7.62 0 180) (length 2.54)
@@ -101,7 +111,12 @@
       )
       (symbol "LM358_2_1"
         (polyline
-          (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08))
+          (pts
+            (xy -5.08 5.08)
+            (xy 5.08 0)
+            (xy -5.08 -5.08)
+            (xy -5.08 5.08)
+          )
           (stroke (width 0.254)) (fill (type background))
         )
         (pin input line (at -7.62 2.54 0) (length 2.54)
@@ -143,16 +158,29 @@
       )
       (symbol "BAT1000_0_1"
         (polyline
-          (pts (xy 1.27 -2.54) (xy -1.27 -2.54))
+          (pts
+            (xy 1.27 -2.54)
+            (xy -1.27 -2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 1.27 -1.27) (xy 1.27 -3.81) (xy -1.27 -2.54) (xy 1.27 -1.27))
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 -3.81)
+            (xy -1.27 -2.54)
+            (xy 1.27 -1.27)
+          )
           (stroke (width 0.254)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.905 -1.905) (xy -1.905 -1.27) (xy -1.27 -1.27) (xy -1.27 -3.81)
-               (xy -0.635 -3.81) (xy -0.635 -3.175)
+          (pts
+            (xy -1.905 -1.905)
+            (xy -1.905 -1.27)
+            (xy -1.27 -1.27)
+            (xy -1.27 -3.81)
+            (xy -0.635 -3.81)
+            (xy -0.635 -3.175)
           )
           (stroke (width 0.254)) (fill (type none))
         )
@@ -197,19 +225,31 @@
           (stroke (width 0.254)) (fill (type background))
         )
         (polyline
-          (pts (xy -0.5334 -2.2098) (xy 0.3302 -3.048))
+          (pts
+            (xy -0.5334 -2.2098)
+            (xy 0.3302 -3.048)
+          )
           (stroke (width 0.1524)) (fill (type none))
         )
         (polyline
-          (pts (xy -0.5334 0.3302) (xy 0.3302 -0.508))
+          (pts
+            (xy -0.5334 0.3302)
+            (xy 0.3302 -0.508)
+          )
           (stroke (width 0.1524)) (fill (type none))
         )
         (polyline
-          (pts (xy -0.3556 -2.032) (xy 0.508 -2.8702))
+          (pts
+            (xy -0.3556 -2.032)
+            (xy 0.508 -2.8702)
+          )
           (stroke (width 0.1524)) (fill (type none))
         )
         (polyline
-          (pts (xy -0.3556 0.508) (xy 0.508 -0.3302))
+          (pts
+            (xy -0.3556 0.508)
+            (xy 0.508 -0.3302)
+          )
           (stroke (width 0.1524)) (fill (type none))
         )
         (pin passive line (at -5.08 0 0) (length 3.81)
@@ -413,11 +453,17 @@
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.27 1.524) (xy -0.762 1.524))
+          (pts
+            (xy -1.27 1.524)
+            (xy -0.762 1.524)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.016 1.27) (xy -1.016 1.778))
+          (pts
+            (xy -1.016 1.27)
+            (xy -1.016 1.778)
+          )
           (stroke (width 0)) (fill (type none))
         )
       )
@@ -456,11 +502,17 @@
       )
       (symbol "C_Small_0_1"
         (polyline
-          (pts (xy -1.524 -0.508) (xy 1.524 -0.508))
+          (pts
+            (xy -1.524 -0.508)
+            (xy 1.524 -0.508)
+          )
           (stroke (width 0.3302)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.524 0.508) (xy 1.524 0.508))
+          (pts
+            (xy -1.524 0.508)
+            (xy 1.524 0.508)
+          )
           (stroke (width 0.3048)) (fill (type none))
         )
       )
@@ -502,19 +554,35 @@
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.27 -0.762) (xy -1.27 0.762))
+          (pts
+            (xy -1.27 -0.762)
+            (xy -1.27 0.762)
+          )
           (stroke (width 0.381)) (fill (type none))
         )
         (polyline
-          (pts (xy 1.27 -0.762) (xy 1.27 0.762))
+          (pts
+            (xy 1.27 -0.762)
+            (xy 1.27 0.762)
+          )
           (stroke (width 0.381)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27))
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 -1.905)
+            (xy 1.27 -1.905)
+            (xy 1.27 -1.27)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27))
+          (pts
+            (xy -1.27 1.27)
+            (xy -1.27 1.905)
+            (xy 1.27 1.905)
+            (xy 1.27 1.27)
+          )
           (stroke (width 0)) (fill (type none))
         )
       )
@@ -561,26 +629,45 @@
       )
       (symbol "LED_Small_0_1"
         (polyline
-          (pts (xy -0.762 -1.016) (xy -0.762 1.016))
+          (pts
+            (xy -0.762 -1.016)
+            (xy -0.762 1.016)
+          )
           (stroke (width 0.254)) (fill (type none))
         )
         (polyline
-          (pts (xy 1.016 0) (xy -0.762 0))
-          (stroke (width 0)) (fill (type none))
-        )
-        (polyline
-          (pts (xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016))
-          (stroke (width 0.254)) (fill (type none))
-        )
-        (polyline
-          (pts (xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27)
-               (xy -0.508 1.016)
+          (pts
+            (xy 1.016 0)
+            (xy -0.762 0)
           )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778)
-               (xy 0 1.524)
+          (pts
+            (xy 0.762 -1.016)
+            (xy -0.762 0)
+            (xy 0.762 1.016)
+            (xy 0.762 -1.016)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0.762)
+            (xy -0.508 1.27)
+            (xy -0.254 1.27)
+            (xy -0.508 1.27)
+            (xy -0.508 1.016)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.508 1.27)
+            (xy 0 1.778)
+            (xy 0.254 1.778)
+            (xy 0 1.778)
+            (xy 0 1.524)
           )
           (stroke (width 0)) (fill (type none))
         )
@@ -667,14 +754,22 @@
       )
       (symbol "R_Small_US_1_1"
         (polyline
-          (pts (xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143)
-               (xy 0 -1.524)
+          (pts
+            (xy 0 0)
+            (xy 1.016 -0.381)
+            (xy 0 -0.762)
+            (xy -1.016 -1.143)
+            (xy 0 -1.524)
           )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381)
-               (xy 0 0)
+          (pts
+            (xy 0 1.524)
+            (xy 1.016 1.143)
+            (xy 0 0.762)
+            (xy -1.016 0.381)
+            (xy 0 0)
           )
           (stroke (width 0)) (fill (type none))
         )
@@ -908,11 +1003,19 @@
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 5.08 2.54) (xy 2.286 2.54))
+          (pts
+            (xy 5.08 2.54)
+            (xy 2.286 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 2.286 1.778) (xy 2.286 3.302) (xy 1.016 2.54) (xy 2.286 1.778))
+          (pts
+            (xy 2.286 1.778)
+            (xy 2.286 3.302)
+            (xy 1.016 2.54)
+            (xy 2.286 1.778)
+          )
           (stroke (width 0)) (fill (type outline))
         )
         (pin power_in line (at -2.54 10.16 270) (length 2.54)
@@ -942,12 +1045,19 @@
       )
       (symbol "MCP4023-xxxxCH_0_1"
         (polyline
-          (pts (xy 0 0) (xy 0 -1.016))
+          (pts
+            (xy 0 0)
+            (xy 0 -1.016)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 5.08 5.08) (xy 2.54 5.08) (xy 2.54 6.35) (xy 0 6.35)
-               (xy 0 5.08)
+          (pts
+            (xy 5.08 5.08)
+            (xy 2.54 5.08)
+            (xy 2.54 6.35)
+            (xy 0 6.35)
+            (xy 0 5.08)
           )
           (stroke (width 0)) (fill (type none))
         )
@@ -1018,11 +1128,17 @@
         (circle (center -2.032 0) (radius 0.508) (stroke (width 0)) (fill (type none)))
         (circle (center 2.032 0) (radius 0.508) (stroke (width 0)) (fill (type none)))
         (polyline
-          (pts (xy 0 1.27) (xy 0 3.048))
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 2.54 1.27) (xy -2.54 1.27))
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (pin passive line (at -5.08 0 0) (length 2.54)
@@ -1113,15 +1229,24 @@
       )
       (symbol "+5V_0_1"
         (polyline
-          (pts (xy -0.762 1.27) (xy 0 2.54))
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 0) (xy 0 2.54))
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 2.54) (xy 0.762 1.27))
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
           (stroke (width 0)) (fill (type none))
         )
       )
@@ -1153,15 +1278,24 @@
       )
       (symbol "+VSW_0_1"
         (polyline
-          (pts (xy -0.762 1.27) (xy 0 2.54))
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 0) (xy 0 2.54))
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 2.54) (xy 0.762 1.27))
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
           (stroke (width 0)) (fill (type none))
         )
       )
@@ -1193,8 +1327,13 @@
       )
       (symbol "GND_0_1"
         (polyline
-          (pts (xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54)
-               (xy -1.27 -1.27) (xy 0 -1.27)
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
           )
           (stroke (width 0)) (fill (type none))
         )
@@ -1227,15 +1366,24 @@
       )
       (symbol "VDC_0_1"
         (polyline
-          (pts (xy -0.762 1.27) (xy 0 2.54))
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 0) (xy 0 2.54))
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
           (stroke (width 0)) (fill (type none))
         )
         (polyline
-          (pts (xy 0 2.54) (xy 0.762 1.27))
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
           (stroke (width 0)) (fill (type none))
         )
       )
@@ -1248,61 +1396,61 @@
     )
   )
 
-  (junction (at 22.86 58.42) (diameter 0) (color 0 0 0 0))
-  (junction (at 22.86 67.31) (diameter 0) (color 0 0 0 0))
-  (junction (at 31.75 31.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 31.75 58.42) (diameter 0) (color 0 0 0 0))
-  (junction (at 31.75 67.31) (diameter 0) (color 0 0 0 0))
-  (junction (at 33.02 77.47) (diameter 0) (color 0 0 0 0))
-  (junction (at 40.64 58.42) (diameter 0) (color 0 0 0 0))
-  (junction (at 44.45 40.64) (diameter 0) (color 0 0 0 0))
-  (junction (at 53.34 97.79) (diameter 0) (color 0 0 0 0))
-  (junction (at 53.34 102.87) (diameter 0) (color 0 0 0 0))
-  (junction (at 57.15 31.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 71.12 55.88) (diameter 0) (color 0 0 0 0))
-  (junction (at 76.2 127) (diameter 0) (color 0 0 0 0))
-  (junction (at 76.2 132.08) (diameter 0) (color 0 0 0 0))
-  (junction (at 77.47 166.37) (diameter 0) (color 0 0 0 0))
-  (junction (at 81.28 60.96) (diameter 0) (color 0 0 0 0))
-  (junction (at 81.28 74.93) (diameter 0) (color 0 0 0 0))
-  (junction (at 81.28 127) (diameter 0) (color 0 0 0 0))
-  (junction (at 81.28 132.08) (diameter 0) (color 0 0 0 0))
-  (junction (at 83.82 140.97) (diameter 0) (color 0 0 0 0))
-  (junction (at 83.82 158.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 83.82 170.18) (diameter 0) (color 0 0 0 0))
-  (junction (at 87.63 140.97) (diameter 0) (color 0 0 0 0))
-  (junction (at 90.17 140.97) (diameter 0) (color 0 0 0 0))
-  (junction (at 90.17 158.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 90.17 173.99) (diameter 0) (color 0 0 0 0))
-  (junction (at 96.52 55.88) (diameter 0) (color 0 0 0 0))
-  (junction (at 96.52 63.5) (diameter 0) (color 0 0 0 0))
-  (junction (at 97.79 158.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 97.79 177.8) (diameter 0) (color 0 0 0 0))
-  (junction (at 105.41 55.88) (diameter 0) (color 0 0 0 0))
-  (junction (at 105.41 63.5) (diameter 0) (color 0 0 0 0))
-  (junction (at 107.95 21.59) (diameter 0) (color 0 0 0 0))
-  (junction (at 109.22 55.88) (diameter 0) (color 0 0 0 0))
-  (junction (at 116.84 170.18) (diameter 0) (color 0 0 0 0))
-  (junction (at 116.84 173.99) (diameter 0) (color 0 0 0 0))
-  (junction (at 116.84 177.8) (diameter 0) (color 0 0 0 0))
-  (junction (at 120.65 55.88) (diameter 0) (color 0 0 0 0))
-  (junction (at 132.08 123.19) (diameter 0) (color 0 0 0 0))
-  (junction (at 132.08 128.27) (diameter 0) (color 0 0 0 0))
-  (junction (at 132.08 142.875) (diameter 0) (color 0 0 0 0))
-  (junction (at 142.24 114.3) (diameter 0) (color 0 0 0 0))
-  (junction (at 142.24 134.62) (diameter 0) (color 0 0 0 0))
-  (junction (at 152.4 63.5) (diameter 0) (color 0 0 0 0))
-  (junction (at 152.4 125.73) (diameter 0) (color 0 0 0 0))
-  (junction (at 154.94 63.5) (diameter 0) (color 0 0 0 0))
-  (junction (at 170.18 109.22) (diameter 0) (color 0 0 0 0))
-  (junction (at 179.07 55.88) (diameter 0) (color 0 0 0 0))
-  (junction (at 184.15 92.71) (diameter 0) (color 0 0 0 0))
-  (junction (at 184.15 104.14) (diameter 0) (color 0 0 0 0))
-  (junction (at 219.71 119.38) (diameter 0) (color 0 0 0 0))
-  (junction (at 219.71 121.92) (diameter 0) (color 0 0 0 0))
-  (junction (at 252.73 158.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 255.27 158.75) (diameter 0) (color 0 0 0 0))
-  (junction (at 257.81 158.75) (diameter 0) (color 0 0 0 0))
+  (junction (at 22.86 58.42) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 22.86 67.31) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 31.75 31.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 31.75 58.42) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 31.75 67.31) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 33.02 77.47) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 40.64 58.42) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 44.45 40.64) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 53.34 97.79) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 53.34 102.87) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 57.15 31.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 71.12 55.88) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 76.2 127) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 76.2 132.08) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 77.47 166.37) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 81.28 60.96) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 81.28 74.93) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 81.28 127) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 81.28 132.08) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 83.82 140.97) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 83.82 158.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 83.82 170.18) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 87.63 140.97) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 90.17 140.97) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 90.17 158.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 90.17 173.99) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 96.52 55.88) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 96.52 63.5) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 97.79 158.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 97.79 177.8) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 105.41 55.88) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 105.41 63.5) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 107.95 21.59) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 109.22 55.88) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 116.84 170.18) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 116.84 173.99) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 116.84 177.8) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 120.65 55.88) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 132.08 123.19) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 132.08 128.27) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 132.08 142.875) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 142.24 114.3) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 142.24 134.62) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 152.4 63.5) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 152.4 125.73) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 154.94 63.5) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 170.18 109.22) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 179.07 55.88) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 184.15 92.71) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 184.15 104.14) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 219.71 119.38) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 219.71 121.92) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 252.73 158.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 255.27 158.75) (diameter 1.016) (color 0 0 0 0))
+  (junction (at 257.81 158.75) (diameter 1.016) (color 0 0 0 0))
 
   (wire (pts (xy 16.51 58.42) (xy 22.86 58.42))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -3623,7 +3771,7 @@
     (uuid "5f58b393-30a2-4875-bcfb-fe9c26446352")
     (property "Reference" "U3" (id 0) (at 59.69 48.26 0))
     (property "Value" "TPS54531DDAR" (id 1) (at 59.69 50.8 0))
-    (property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.514x3.2mm_ThermalVias" (id 2) (at 67.31 68.58 0)
+    (property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.514x3.2mm" (id 2) (at 67.31 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 67.31 68.58 0)

@@ -1,5 +1,5 @@
 <!-- ![](https://github.com/adsehgal/adsehgal/blob/master/LOGO.png) -->
-![](LOGO.png)
+![](LOGO_V1.1.png)
 # *Bench Power Supply PCB*
 
 This repo contains project files for a bench top power supply I designed for my home lab.
@@ -12,7 +12,7 @@ This repo contains project files for a bench top power supply I designed for my 
 * Clear **annunciators**
 * Uses an external AC-DC converter
 * At least a **2A max** load
-* Cover most logic levels - 1.8V, 2.5V, 3.3V, 5.0V
+* Cover most logic levels
 * *~ Possibly have preset buttons ~*
 ## Built With
 
