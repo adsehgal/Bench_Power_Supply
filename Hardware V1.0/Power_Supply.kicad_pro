@@ -402,8 +402,12 @@
   },
   "sheets": [
     [
-      "f89310c3-3bf4-4fd1-8727-a2a3e35dc2fb",
+      "06eeccfe-5f24-43de-8d6d-8a3116ef40a8",
       ""
+    ],
+    [
+      "e903210a-38d1-4b2f-862d-8bdd019aca75",
+      "USB&MCU"
     ]
   ],
   "text_variables": {}
