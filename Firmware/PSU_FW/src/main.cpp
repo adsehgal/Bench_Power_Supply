@@ -1,18 +1,46 @@
 //library includes
 #include <Arduino.h>
+#include <stdint.h>
+#include "MCP4023.h"
+#include "buttons.h"
+#include "analog.h"
 
-//pin definitions
-#define I_PIN A0
-#define V_PIN A1
-#define UP_BTN 
-#define DW_BTN 4
-#define V_I_BTN 3
-#define O_EN_BTN 
+
+#define OUT_LED A2
+#define CL_LED A3
+
+#define nREG_EN 5
+
+bool V_I_SEL = false; //false = I; true = V
+
 
 void setup() {
-  // put your setup code here, to run once:
+
+  pinMode(OUT_LED, OUTPUT);
+  pinMode(CL_LED, OUTPUT);
+  pinMode(nREG_EN, OUTPUT);
+
+  digitalWrite(nREG_EN, HIGH); //start the PSU with enable off
+  initDiv();
+  initBtns();
+  initAnalog();
+  
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  uint8_t btnPress = whichBtn();
+  double voltage;
+  double current;
+  if (btnPress && up){
+    rDivIncrement();
+  }
+  if (btnPress && dw){
+    rDivDecrement();
+  }
+  if (btnPress && oen){
+    digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
+  }
+  if (btnPress && vi){
+    V_I_SEL = !V_I_SEL; //toggle V/I select
+  }
 }
