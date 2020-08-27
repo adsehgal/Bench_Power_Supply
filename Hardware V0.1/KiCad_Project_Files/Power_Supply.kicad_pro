@@ -381,7 +381,7 @@
       "idf": "",
       "netlist": "Power_Supply.net",
       "specctra_dsn": "",
-      "step": "Power_Supply.step",
+      "step": "../../PCB.stp",
       "vmrl": ""
     },
     "page_layout_descr_file": ""
