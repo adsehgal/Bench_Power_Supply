@@ -8,14 +8,13 @@
 #include "Adafruit_GFX.h"
 #include "Wire.h"
 #include "Adafruit_SSD1306.h"
-#include <pins_arduino.h>
+
 
 
 
 
 #define OUT_LED A2
 #define CL_LED A3
-// #define vin A7
 
 #define nREG_EN 5
 
@@ -49,6 +48,51 @@ void displayPrintString(char* text, uint16_t coordinateX, uint16_t coordinateY){
 	display.setTextColor(WHITE);
 	display.setCursor(coordinateX,coordinateY);
 	display.println(text);
+	display.display();
+}
+
+void displayVoltageCurrent(double Vin, double V, double I){
+  display.clearDisplay();
+  display.setTextSize(1);
+	display.setTextColor(WHITE);
+	display.setCursor(2,12);
+
+	display.print("Vin= ");
+  if(Vin>1000){
+    display.print(Vin/1000,2);
+    display.println("V");
+  }
+  else
+  {
+    display.print(Vin,2);
+    display.println("mV");
+  }
+
+  display.setCursor(2,24);
+  display.print("Vout= ");
+  if(V>1000){
+    display.print(V/1000,2);
+    display.println("V");
+  }
+  else
+  {
+    display.print(V,2);
+    display.println("mV");
+  }
+  
+  display.setCursor(2,36);
+  display.print("Iout= ");
+  if(I>1000){
+    display.print(I/1000,2);
+    display.println("A");
+  }
+  else
+  {
+    display.print(I,2);
+    display.println("mA");
+  }
+  
+  
 	display.display();
 }
 

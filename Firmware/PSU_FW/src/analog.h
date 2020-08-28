@@ -1,8 +1,10 @@
 #include <Arduino.h>
 #include <stdint.h>
+#include <pins_arduino.h>
 
 #define I_PIN A0
-#define V_PIN A1
+#define V_OUT_PIN A1
+#define V_IN_PIN A7
 
 const uint16_t SENSE_GAIN = 500;
 const uint8_t R_SENSE = 10;//mOhms
@@ -13,4 +15,5 @@ const uint8_t RESISTOR_BOT = 10;    //KOhm
 
 void initAnalog();
 double readCurrent();
-double readVoltage();
+double readVoltageOut();
+double readVoltageIn();
