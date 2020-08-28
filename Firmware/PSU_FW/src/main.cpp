@@ -8,19 +8,22 @@
 #include "Adafruit_GFX.h"
 #include "Wire.h"
 #include "Adafruit_SSD1306.h"
+#include <pins_arduino.h>
 
-#define OLED_RESET 9
-Adafruit_SSD1306 display(128, 64, &Wire, OLED_RESET);
+
 
 
 #define OUT_LED A2
 #define CL_LED A3
+// #define vin A7
 
 #define nREG_EN 5
 
 #define OLED_ADD 0x3C //or 0x3D
 const uint16_t OLED_W = 128;
-const uint16_t OLED_H = 32;
+const uint16_t OLED_H = 64;
+#define OLED_RESET 9
+Adafruit_SSD1306 display(OLED_W, OLED_H, &Wire, OLED_RESET);
 
 bool V_I_SEL = false; //false = I; true = V
 
@@ -35,10 +38,18 @@ void displayCLReached(){
   display.drawBitmap(0, 0, CL_REACHED_W, OLED_W, OLED_H, WHITE);
   display.display();
   delay(300);
-  display.clearDisplay(); //for Clearing the display
-  display.drawBitmap(0, 0, CL_REACHED_B, OLED_W, OLED_H, WHITE);
-  display.display();
+  display.invertDisplay(true);
   delay(300);
+  display.invertDisplay(false);
+}
+
+void displayPrintString(char* text, uint16_t coordinateX, uint16_t coordinateY){
+  display.clearDisplay();
+  display.setTextSize(1);
+	display.setTextColor(WHITE);
+	display.setCursor(coordinateX,coordinateY);
+	display.println(text);
+	display.display();
 }
 
 void setup() {
