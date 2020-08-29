@@ -24,6 +24,9 @@ const uint16_t OLED_H = 64;
 #define OLED_RESET 9
 Adafruit_SSD1306 display(OLED_W, OLED_H, &Wire, OLED_RESET);
 
+unsigned long lastSampledTime = 0;
+unsigned int currentLimit = 0;
+
 bool V_I_SEL = false; //false = I; true = V
 
 void displayLogo(){
@@ -96,6 +99,18 @@ void displayVoltageCurrent(double Vin, double V, double I){
 	display.display();
 }
 
+//returns true when requested time(ms) has passed
+bool checkTime(unsigned long time) 
+{
+    unsigned long timeNow = millis();
+    if ((timeNow - lastSampledTime) >= time)
+    {
+        lastSampledTime = timeNow;
+        return true;
+    }
+    return false;
+}
+
 void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADD); //or 0x3C
   pinMode(OUT_LED, OUTPUT);
@@ -103,6 +118,8 @@ void setup() {
   pinMode(nREG_EN, OUTPUT);
 
   digitalWrite(nREG_EN, HIGH); //start the PSU with enable off
+  digitalWrite(OUT_LED, HIGH);
+  digitalWrite(CL_LED, HIGH);
   initDiv();
   initBtns();
   initAnalog();
@@ -112,18 +129,42 @@ void setup() {
 
 void loop() {
   uint8_t btnPress = whichBtn();
-  // double voltage;
-  // double current;
+  double voltageIn = readVoltageIn();
+  double voltageOut = readVoltageOut();
+  double current = readCurrent();
+  displayVoltageCurrent(voltageIn, voltageOut, current);
   if (btnPress && up){
-    rDivIncrement();
+    if(V_I_SEL)
+      rDivIncrement();
+    else
+      currentLimit += 10; //inc by 10mA
   }
   if (btnPress && dw){
-    rDivDecrement();
+    if(V_I_SEL)
+      rDivDecrement();
+    else
+      currentLimit -= 10; //dec by 10mA
   }
   if (btnPress && oen){
-    digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
+    if (checkTime(2000))  //check for 2 seconds
+    {
+      disableWiperLock();
+      displayPrintString("Wiper Lock Disabled",2,12);
+      delay(500);
+    }
+    else{
+      digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
+      digitalWrite(OUT_LED, digitalRead(nREG_EN)); //toggle output enable LED
+    }
   }
-  if (btnPress && vi){
+  if (btnPress && vi){  
     V_I_SEL = !V_I_SEL; //toggle V/I select
+  }
+  if (current >= currentLimit){
+    digitalWrite(CL_LED, LOW);
+    digitalWrite(nREG_EN, HIGH);  //disable regulator
+  }else{
+    digitalWrite(CL_LED, HIGH); //keep LED enabled
+    digitalWrite(nREG_EN, LOW);  //keep regulator enabled
   }
 }
