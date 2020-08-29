@@ -22,7 +22,6 @@ This repo contains project files for a bench top power supply I designed for my 
 
 ### *Notes:*
 - The PCB uses a 5/5mil DRC constraint
-- This is a single side load board, meaning there are no parts on the back
 - The top of the PCB acts as the product face plate
 - Non-standard footprint 3-D models have been provided in the STEP file format
 

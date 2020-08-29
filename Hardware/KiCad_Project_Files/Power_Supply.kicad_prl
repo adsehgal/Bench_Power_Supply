@@ -13,7 +13,7 @@
       "otherItems": false,
       "pads": false,
       "text": true,
-      "tracks": false,
+      "tracks": true,
       "vias": true,
       "zones": false
     },
@@ -54,7 +54,7 @@
       34,
       35
     ],
-    "visible_layers": "4ffdf_7ffffffe"
+    "visible_layers": "4ffff_ffffffff"
   },
   "meta": {
     "filename": "Power_Supply.kicad_prl",
