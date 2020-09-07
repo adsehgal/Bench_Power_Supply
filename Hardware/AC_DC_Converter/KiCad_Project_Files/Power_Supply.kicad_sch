@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "ADSEHGAL")
+    (date "2020-09-06")
+    (rev "0.1")
+  )
+
   (lib_symbols
     (symbol "Connector:Screw_Terminal_01x02" (pin_names hide)
       (property "Reference" "J" (id 0) (at 0 2.54 0)
