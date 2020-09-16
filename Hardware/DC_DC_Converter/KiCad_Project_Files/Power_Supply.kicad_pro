@@ -133,6 +133,7 @@
           "drill": 0.7
         }
       ],
+      "zones_allow_external_fillets": false,
       "zones_use_no_outline": false
     },
     "layer_presets": []
@@ -332,6 +333,8 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
         "via_diameter": 0.6,
         "via_drill": 0.35,
@@ -348,6 +351,8 @@
         "microvia_drill": 0.1,
         "name": "10mil",
         "nets": [],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.254,
         "via_diameter": 0.7,
         "via_drill": 0.45,
@@ -364,6 +369,8 @@
         "microvia_drill": 0.1,
         "name": "15mil",
         "nets": [],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.381,
         "via_diameter": 0.7,
         "via_drill": 0.45,
