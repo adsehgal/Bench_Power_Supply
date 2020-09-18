@@ -48,10 +48,13 @@
         }
       ],
       "drc_exclusions": [
+        "courtyards_overlap|23701396|34119312|76d232bd-a80b-4b81-abf2-12808b749086|7dce41ab-e785-4aa3-895d-c21627f8067b",
         "courtyards_overlap|23701396|34119313|76d232bd-a80b-4b81-abf2-12808b749086|7dce41ab-e785-4aa3-895d-c21627f8067b",
+        "courtyards_overlap|43701396|34119312|76d232bd-a80b-4b81-abf2-12808b749086|93f9e3eb-e6e5-4683-89f8-e3e56c001d35",
         "courtyards_overlap|43701396|34119313|76d232bd-a80b-4b81-abf2-12808b749086|93f9e3eb-e6e5-4683-89f8-e3e56c001d35",
         "courtyards_overlap|78950000|34850000|40a80e08-8703-4aa9-9ee4-b3d110fe74a5|dea3833f-4b53-419c-b271-41eae4319f98",
-        "malformed_courtyard|32000000|23000000|76d232bd-a80b-4b81-abf2-12808b749086|00000000-0000-0000-0000-000000000000"
+        "malformed_courtyard|32000000|23000000|76d232bd-a80b-4b81-abf2-12808b749086|00000000-0000-0000-0000-000000000000",
+        "unresolved_variable|32000000|19500000|f83725c8-5bb0-47b4-a898-77aa30c2a146|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 0
@@ -310,7 +313,8 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "similar_labels": "error",
-      "unresolved_variable": "error"
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
     }
   },
   "libraries": {
@@ -380,7 +384,9 @@
     "meta": {
       "version": 0
     },
-    "net_colors": null
+    "net_colors": {
+      "+VSW": "rgb(0, 0, 255)"
+    }
   },
   "pcbnew": {
     "last_paths": {
@@ -419,7 +425,7 @@
   },
   "sheets": [
     [
-      "826ce74d-99ab-46db-b77a-8256e49efbe9",
+      "11d9b20f-3881-48a5-8dd6-18f0d6c484f1",
       ""
     ]
   ],
