@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "TAS40-12-W")(type "KiCad")(uri "${KIPRJMOD}/TAS40-12-W.pretty")(options "")(descr ""))
+  (lib (name "IEC_Conn")(type "KiCad")(uri "${KIPRJMOD}/IEC_Conn.pretty")(options "")(descr ""))
+  (lib (name "BPT_Switch")(type "KiCad")(uri "${KIPRJMOD}/BPT_Switch.pretty")(options "")(descr ""))
+)
