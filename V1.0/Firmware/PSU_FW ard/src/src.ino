@@ -23,7 +23,7 @@
 #define OLED_ADD 0x3D //or 0x3D
 const uint16_t OLED_W = 128;
 const uint16_t OLED_H = 64;
-#define OLED_RESET 10
+#define OLED_RESET 9
 Adafruit_SSD1306 display(OLED_W, OLED_H, &Wire, OLED_RESET);
 
 unsigned long lastSampledTime = 0;
@@ -47,14 +47,14 @@ void displayCLReached(){
   display.invertDisplay(false);
 }
 
-void displayPrintString(string text, uint16_t coordinateX, uint16_t coordinateY){
-  display.clearDisplay();
-  display.setTextSize(1);
-	display.setTextColor(WHITE);
-	display.setCursor(coordinateX,coordinateY);
-	display.println(text);
-	display.display();
-}
+// void displayPrintString(string text, uint16_t coordinateX, uint16_t coordinateY){
+//   display.clearDisplay();
+//   display.setTextSize(1);
+// 	display.setTextColor(WHITE);
+// 	display.setCursor(coordinateX,coordinateY);
+// 	display.println(text);
+// 	display.display();
+// }
 
 void displayVoltageCurrent(double Vin, double V, double I){
   display.clearDisplay();
