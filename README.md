@@ -1,10 +1,13 @@
 <!-- ![](https://github.com/adsehgal/adsehgal/blob/master/LOGO.png) -->
+
 ![](LOGO_V1.1.png)
+
 # *Bench Power Supply PCB*
 
 This repo contains project files for a bench top power supply I designed for my home lab.
 
 ## *Requirements:*
+
 * **Small** for crammed work spaces
 * **Adjustable** and designed to **store values** on each power cycle
 * **2 layer** board
@@ -14,6 +17,7 @@ This repo contains project files for a bench top power supply I designed for my 
 * At least a **2A max** load
 * Cover most logic levels
 * *~ Possibly have preset buttons ~*
+  
 ## Built With
 
 * [KiCad](https://kicad-pcb.org/) - Schematic capture and layout
@@ -21,9 +25,18 @@ This repo contains project files for a bench top power supply I designed for my 
 * [Fusion 360](https://www.autodesk.com/education/edu-software/overview) - Used to design 3-D models for packages
 
 ### *Notes:*
-- The PCB uses a 5/5mil DRC constraint
-- The top of the PCB acts as the product face plate
-- Non-standard footprint 3-D models have been provided in the STEP file format
+
+* The PCB uses a 5/5mil DRC constraint
+* The top of the PCB acts as the product face plate
+* Non-standard footprint 3-D models have been provided in the STEP file format
+
+## To Do
+- [ ] Connect OLED reset line to a GPIO</br>
+- [ ] Add reset pull up to MCU
+- [ ] ORed interrupt for buttons
+- [ ] Add config flash storage
+- [ ] Bigger display?
+- [ ] Reduce inductor footprint
 
 ## Authors
 

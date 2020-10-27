@@ -47,7 +47,7 @@ void displayCLReached(){
   display.invertDisplay(false);
 }
 
-void displayPrintString(string text, uint16_t coordinateX, uint16_t coordinateY){
+void displayPrintString(String text, uint16_t coordinateX, uint16_t coordinateY){
   display.clearDisplay();
   display.setTextSize(1);
 	display.setTextColor(WHITE);
@@ -115,6 +115,9 @@ bool checkTime(unsigned long time)
 
 void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADD); //or 0x3C
+
+  Serial.begin(115200);
+
   pinMode(OUT_LED, OUTPUT);
   pinMode(CL_LED, OUTPUT);
   pinMode(nREG_EN, OUTPUT);
@@ -126,7 +129,7 @@ void setup() {
   initBtns();
   initAnalog();
   displayLogo();
-  delay(500);
+  delay(2000);
 }
 
 void loop() {
@@ -136,25 +139,35 @@ void loop() {
   double current = readCurrent();
   displayVoltageCurrent(voltageIn, voltageOut, current);
   if (btnPress && up){
-    if(V_I_SEL)
+    if(V_I_SEL){
       rDivIncrement();
-    else
+    Serial.println("up vi sel\n");
+    }
+    else{
       currentLimit += 10; //inc by 10mA
+    Serial.println("up else\n");
+    }
   }
   if (btnPress && dw){
-    if(V_I_SEL)
+    if(V_I_SEL){
       rDivDecrement();
-    else
-      currentLimit -= 10; //dec by 10mA
+      Serial.println("dw vi sel\n");
+    }
+    else{
+      currentLimit -= 10; //dec by 10mAx
+      Serial.println("dw else\n");
+    }
   }
   if (btnPress && oen){
     if (checkTime(2000))  //check for 2 seconds
     {
+      Serial.println("oen wiperlock\n");
       disableWiperLock();
-      //displayPrintString("Wiper Lock Disabled",2,12);
+      displayPrintString("Wiper Lock Disabled",2,12);
       delay(500);
     }
     else{
+      Serial.println("oe else\n");
       digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
       digitalWrite(OUT_LED, digitalRead(nREG_EN)); //toggle output enable LED
     }
@@ -163,9 +176,11 @@ void loop() {
     V_I_SEL = !V_I_SEL; //toggle V/I select
   }
   if (current >= currentLimit){
+    Serial.println("vi cl\n");
     digitalWrite(CL_LED, LOW);
     digitalWrite(nREG_EN, HIGH);  //disable regulator
   }else{
+    Serial.println("vi else\n");
     digitalWrite(CL_LED, HIGH); //keep LED enabled
     digitalWrite(nREG_EN, LOW);  //keep regulator enabled
   }
