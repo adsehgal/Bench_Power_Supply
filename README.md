@@ -37,6 +37,7 @@ This repo contains project files for a bench top power supply I designed for my 
 - [ ] Add config flash storage
 - [ ] Bigger display?
 - [ ] Reduce inductor footprint
+- [ ] Add debouncing either in hardware or firmware, ideally both
 
 ## Authors
 
