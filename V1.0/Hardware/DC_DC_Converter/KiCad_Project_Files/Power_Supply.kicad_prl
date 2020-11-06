@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 31,
     "active_layer_preset": "",
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -64,7 +64,7 @@
       36,
       37
     ],
-    "visible_layers": "4ffff_ffffffff"
+    "visible_layers": "4003c_ffffffff"
   },
   "meta": {
     "filename": "Power_Supply.kicad_prl",
