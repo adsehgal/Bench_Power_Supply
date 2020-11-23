@@ -40,7 +40,7 @@ PrefsRevisionGUID=
 [Document1]
 DocumentPath=MCU.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
+AnnotateStartValue=10
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
@@ -57,7 +57,7 @@ DocumentUniqueId=QDNHSDRD
 [Document2]
 DocumentPath=UI.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
+AnnotateStartValue=20
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
@@ -74,7 +74,7 @@ DocumentUniqueId=MIEPXJNO
 [Document3]
 DocumentPath=Power.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
+AnnotateStartValue=30
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
