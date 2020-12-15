@@ -11,10 +11,6 @@
 #include "Adafruit_SSD1306.h"
 #include "Adafruit_GrayOLED.h"
 
-
-
-
-
 #define OUT_LED A2
 #define CL_LED A3
 
@@ -31,13 +27,15 @@ unsigned int currentLimit = 0;
 
 bool V_I_SEL = false; //false = I; true = V
 
-void displayLogo(){
+void displayLogo()
+{
   display.clearDisplay();
   display.drawBitmap(0, 0, BOOTSCREEN, OLED_W, OLED_H, WHITE);
   display.display();
 }
 
-void displayCLReached(){
+void displayCLReached()
+{
   display.clearDisplay(); //for Clearing the display
   display.drawBitmap(0, 0, CL_REACHED_W, OLED_W, OLED_H, WHITE);
   display.display();
@@ -47,73 +45,78 @@ void displayCLReached(){
   display.invertDisplay(false);
 }
 
-void displayPrintString(String text, uint16_t coordinateX, uint16_t coordinateY){
+void displayPrintString(String text, uint16_t coordinateX, uint16_t coordinateY)
+{
   display.clearDisplay();
   display.setTextSize(1);
-	display.setTextColor(WHITE);
-	display.setCursor(coordinateX,coordinateY);
-	display.println(text);
-	display.display();
+  display.setTextColor(WHITE);
+  display.setCursor(coordinateX, coordinateY);
+  display.println(text);
+  display.display();
 }
 
-void displayVoltageCurrent(double Vin, double V, double I){
+void displayVoltageCurrent(double Vin, double V, double I)
+{
   display.clearDisplay();
   display.setTextSize(1);
-	display.setTextColor(WHITE);
-	display.setCursor(2,12);
+  display.setTextColor(WHITE);
+  display.setCursor(2, 12);
 
-	display.print("Vin= ");
-  if(Vin>1000){
-    display.print(Vin/1000,2);
+  display.print("Vin= ");
+  if (Vin > 1000)
+  {
+    display.print(Vin / 1000, 2);
     display.println("V");
   }
   else
   {
-    display.print(Vin,2);
+    display.print(Vin, 2);
     display.println("mV");
   }
 
-  display.setCursor(2,24);
+  display.setCursor(2, 24);
   display.print("Vout= ");
-  if(V>1000){
-    display.print(V/1000,2);
+  if (V > 1000)
+  {
+    display.print(V / 1000, 2);
     display.println("V");
   }
   else
   {
-    display.print(V,2);
+    display.print(V, 2);
     display.println("mV");
   }
-  
-  display.setCursor(2,36);
+
+  display.setCursor(2, 36);
   display.print("Iout= ");
-  if(I>1000){
-    display.print(I/1000,2);
+  if (I > 1000)
+  {
+    display.print(I / 1000, 2);
     display.println("A");
   }
   else
   {
-    display.print(I,2);
+    display.print(I, 2);
     display.println("mA");
   }
-  
-  
-	display.display();
+
+  display.display();
 }
 
 //returns true when requested time(ms) has passed
-bool checkTime(unsigned long time) 
+bool checkTime(unsigned long time)
 {
-    unsigned long timeNow = millis();
-    if ((timeNow - lastSampledTime) >= time)
-    {
-        lastSampledTime = timeNow;
-        return true;
-    }
-    return false;
+  unsigned long timeNow = millis();
+  if ((timeNow - lastSampledTime) >= time)
+  {
+    lastSampledTime = timeNow;
+    return true;
+  }
+  return false;
 }
 
-void setup() {
+void setup()
+{
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADD); //or 0x3C
 
   Serial.begin(115200);
@@ -132,56 +135,96 @@ void setup() {
   delay(2000);
 }
 
-void loop() {
+void loop()
+{
   uint8_t btnPress = whichBtn();
   double voltageIn = readVoltageIn();
   double voltageOut = readVoltageOut();
   double current = readCurrent();
   displayVoltageCurrent(voltageIn, voltageOut, current);
-  if (btnPress && up){
-    if(V_I_SEL){
-      rDivIncrement();
-    Serial.println("up vi sel\n");
-    }
-    else{
-      currentLimit += 10; //inc by 10mA
-    Serial.println("up else\n");
-    }
-  }
-  if (btnPress && dw){
-    if(V_I_SEL){
-      rDivDecrement();
-      Serial.println("dw vi sel\n");
-    }
-    else{
-      currentLimit -= 10; //dec by 10mAx
-      Serial.println("dw else\n");
-    }
-  }
-  if (btnPress && oen){
-    if (checkTime(2000))  //check for 2 seconds
-    {
-      Serial.println("oen wiperlock\n");
-      disableWiperLock();
-      displayPrintString("Wiper Lock Disabled",2,12);
-      delay(500);
-    }
-    else{
-      Serial.println("oe else\n");
-      digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
-      digitalWrite(OUT_LED, digitalRead(nREG_EN)); //toggle output enable LED
-    }
-  }
-  if (btnPress && vi){  
+  if (btnPress & VI)
+  {
     V_I_SEL = !V_I_SEL; //toggle V/I select
   }
-  if (current >= currentLimit){
-    Serial.println("vi cl\n");
-    digitalWrite(CL_LED, LOW);
-    digitalWrite(nREG_EN, HIGH);  //disable regulator
-  }else{
-    Serial.println("vi else\n");
-    digitalWrite(CL_LED, HIGH); //keep LED enabled
-    digitalWrite(nREG_EN, LOW);  //keep regulator enabled
+
+  if (btnPress & UP)
+  {
+    if (V_I_SEL)
+    {
+      rDivIncrement();
+      Serial.println("up VI sel\n");
+    }
+    else
+    {
+      currentLimit += 10; //inc by 10mA
+      Serial.println("up else\n");
+    }
   }
 }
+
+// void loop()
+// {
+//   uint8_t btnPress = whichBtn();
+//   double voltageIn = readVoltageIn();
+//   double voltageOut = readVoltageOut();
+//   double current = readCurrent();
+//   displayVoltageCurrent(voltageIn, voltageOut, current);
+//   if (btnPress & up)
+//   {
+//     if (V_I_SEL)
+//     {
+//       rDivIncrement();
+//       Serial.println("up VI sel\n");
+//     }
+//     else
+//     {
+//       currentLimit += 10; //inc by 10mA
+//       Serial.println("up else\n");
+//     }
+//   }
+//   if (btnPress & DW)
+//   {
+//     if (V_I_SEL)
+//     {
+//       rDivDecrement();
+//       Serial.println("DW VI sel\n");
+//     }
+//     else
+//     {
+//       currentLimit -= 10; //dec by 10mAx
+//       Serial.println("DW else\n");
+//     }
+//   }
+//   if (btnPress & OEN)
+//   {
+//     if (checkTime(2000)) //check for 2 seconds
+//     {
+//       Serial.println("OEN wiperlock\n");
+//       disableWiperLock();
+//       displayPrintString("Wiper Lock Disabled", 2, 12);
+//       delay(500);
+//     }
+//     else
+//     {
+//       Serial.println("oe else\n");
+//       digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
+//       digitalWrite(OUT_LED, digitalRead(nREG_EN));  //toggle output enable LED
+//     }
+//   }
+//   if (btnPress & VI)
+//   {
+//     V_I_SEL = !V_I_SEL; //toggle V/I select
+//   }
+//   if (current >= currentLimit)
+//   {
+//     Serial.println("VI cl\n");
+//     digitalWrite(CL_LED, LOW);
+//     digitalWrite(nREG_EN, HIGH); //disable regulator
+//   }
+//   else
+//   {
+//     Serial.println("VI else\n");
+//     digitalWrite(CL_LED, HIGH); //keep LED enabled
+//     digitalWrite(nREG_EN, LOW); //keep regulator enabled
+//   }
+// }

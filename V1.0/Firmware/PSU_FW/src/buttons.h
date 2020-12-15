@@ -6,11 +6,12 @@
 #define V_I_BTN 2
 #define O_EN_BTN 7
 
-enum Btns{
-    up = 0b0001,
-    dw = 0b0010,
-    vi = 0b0100,
-    oen = 0b1000,
+enum Btns
+{
+    UP = 0b0001,
+    DW = 0b0010,
+    VI = 0b0100,
+    OEN = 0b1000,
 };
 
 void initBtns();
