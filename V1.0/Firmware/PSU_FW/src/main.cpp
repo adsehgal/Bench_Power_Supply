@@ -93,7 +93,7 @@ void loop()
     }
     else
     {
-      currentLimit -= 10; //dec by 10mAx
+      currentLimit -= 10; //dec by 10mA
       Serial.println("DW else\n");
     }
   }
@@ -124,7 +124,7 @@ void loop()
     {
       Serial.println("oe else\n");
       digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
-      digitalWrite(OUT_LED, digitalRead(nREG_EN));  //toggle output enable LED
+      digitalWrite(OUT_LED, !digitalRead(OUT_LED)); //toggle output enable LED
     }
   }
 }
