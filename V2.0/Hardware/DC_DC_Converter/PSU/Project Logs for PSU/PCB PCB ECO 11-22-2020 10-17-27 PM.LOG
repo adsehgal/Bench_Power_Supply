@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=CH_RX Pin=J3-1
+Removed Pin From Net: NetName=PA2 Pin=J3-2
+Removed Pin From Net: NetName=CH_TX Pin=J3-3
+Removed Pin From Net: NetName=PA3 Pin=J3-4
+Added Pin To Net: NetName=PA2 Pin=J3-1
+Added Pin To Net: NetName=CH_RX Pin=J3-2
+Added Pin To Net: NetName=PA3 Pin=J3-3
+Added Pin To Net: NetName=CH_TX Pin=J3-4
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=UI
