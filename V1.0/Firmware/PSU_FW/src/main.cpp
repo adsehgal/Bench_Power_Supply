@@ -27,6 +27,108 @@ unsigned int currentLimit = 0;
 
 bool V_I_SEL = false; //false = I; true = V
 
+void displayLogo();
+
+void displayCLReached();
+
+void displayPrintString(String text, uint16_t coordinateX, uint16_t coordinateY);
+
+void displayVoltageCurrent(double Vin, double V, double I);
+
+//returns true when requested time(ms) has passed for specified button
+bool checkTime(unsigned long time, Btns btn);
+
+void setup()
+{
+  display.begin(SSD1306_SWITCHCAPVCC, OLED_ADD); //or 0x3C
+
+  Serial.begin(115200);
+
+  pinMode(OUT_LED, OUTPUT);
+  pinMode(CL_LED, OUTPUT);
+  pinMode(nREG_EN, OUTPUT);
+
+  digitalWrite(nREG_EN, HIGH); //start the PSU with enable off
+  digitalWrite(OUT_LED, HIGH);
+  digitalWrite(CL_LED, HIGH);
+  initDiv();
+  initBtns();
+  initAnalog();
+  displayLogo();
+  delay(2000);
+}
+
+void loop()
+{
+  uint8_t btnPress = whichBtn();
+  double voltageIn = readVoltageIn();
+  double voltageOut = readVoltageOut();
+  double current = readCurrent();
+  displayVoltageCurrent(voltageIn, voltageOut, current);
+  if (btnPress & VI)
+  {
+    V_I_SEL = !V_I_SEL; //toggle V/I select
+  }
+
+  if (btnPress & UP)
+  {
+    if (V_I_SEL)
+    {
+      rDivIncrement();
+      Serial.println("up VI sel\n");
+    }
+    else
+    {
+      currentLimit += 10; //inc by 10mA
+      Serial.println("up else\n");
+    }
+  }
+
+  if (btnPress & DW)
+  {
+    if (V_I_SEL)
+    {
+      rDivDecrement();
+      Serial.println("DW VI sel\n");
+    }
+    else
+    {
+      currentLimit -= 10; //dec by 10mAx
+      Serial.println("DW else\n");
+    }
+  }
+
+  if (current >= currentLimit)
+  {
+    // Serial.println("VI cl\n");
+    digitalWrite(CL_LED, LOW);
+    digitalWrite(nREG_EN, HIGH); //disable regulator
+  }
+  else
+  {
+    // Serial.println("VI else\n");
+    digitalWrite(CL_LED, HIGH); //keep LED enabled
+    digitalWrite(nREG_EN, LOW); //keep regulator enabled
+  }
+
+  if (btnPress & OEN)
+  {
+    if (checkTime(2000, OEN)) //check for 2 seconds
+    {
+      Serial.println("OEN wiperlock\n");
+      disableWiperLock();
+      displayPrintString("Wiper Lock Disabled", 2, 12);
+      delay(500);
+    }
+    else
+    {
+      Serial.println("oe else\n");
+      digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
+      digitalWrite(OUT_LED, digitalRead(nREG_EN));  //toggle output enable LED
+    }
+  }
+}
+
 void displayLogo()
 {
   display.clearDisplay();
@@ -103,128 +205,19 @@ void displayVoltageCurrent(double Vin, double V, double I)
   display.display();
 }
 
-//returns true when requested time(ms) has passed
-bool checkTime(unsigned long time)
+//returns true when requested time(ms) has passed for specified button
+bool checkTime(unsigned long time, Btns btn)
 {
-  unsigned long timeNow = millis();
-  if ((timeNow - lastSampledTime) >= time)
+  lastSampledTime = millis();
+  while (whichBtn() & btn)
   {
-    lastSampledTime = timeNow;
-    return true;
+    unsigned long timeNow = millis();
+    if ((timeNow - lastSampledTime) >= time)
+    {
+      lastSampledTime = timeNow;
+      return true;
+    }
   }
+  // lastSampledTime = timeNow;
   return false;
 }
-
-void setup()
-{
-  display.begin(SSD1306_SWITCHCAPVCC, OLED_ADD); //or 0x3C
-
-  Serial.begin(115200);
-
-  pinMode(OUT_LED, OUTPUT);
-  pinMode(CL_LED, OUTPUT);
-  pinMode(nREG_EN, OUTPUT);
-
-  digitalWrite(nREG_EN, HIGH); //start the PSU with enable off
-  digitalWrite(OUT_LED, HIGH);
-  digitalWrite(CL_LED, HIGH);
-  initDiv();
-  initBtns();
-  initAnalog();
-  displayLogo();
-  delay(2000);
-}
-
-void loop()
-{
-  uint8_t btnPress = whichBtn();
-  double voltageIn = readVoltageIn();
-  double voltageOut = readVoltageOut();
-  double current = readCurrent();
-  displayVoltageCurrent(voltageIn, voltageOut, current);
-  if (btnPress & VI)
-  {
-    V_I_SEL = !V_I_SEL; //toggle V/I select
-  }
-
-  if (btnPress & UP)
-  {
-    if (V_I_SEL)
-    {
-      rDivIncrement();
-      Serial.println("up VI sel\n");
-    }
-    else
-    {
-      currentLimit += 10; //inc by 10mA
-      Serial.println("up else\n");
-    }
-  }
-}
-
-// void loop()
-// {
-//   uint8_t btnPress = whichBtn();
-//   double voltageIn = readVoltageIn();
-//   double voltageOut = readVoltageOut();
-//   double current = readCurrent();
-//   displayVoltageCurrent(voltageIn, voltageOut, current);
-//   if (btnPress & up)
-//   {
-//     if (V_I_SEL)
-//     {
-//       rDivIncrement();
-//       Serial.println("up VI sel\n");
-//     }
-//     else
-//     {
-//       currentLimit += 10; //inc by 10mA
-//       Serial.println("up else\n");
-//     }
-//   }
-//   if (btnPress & DW)
-//   {
-//     if (V_I_SEL)
-//     {
-//       rDivDecrement();
-//       Serial.println("DW VI sel\n");
-//     }
-//     else
-//     {
-//       currentLimit -= 10; //dec by 10mAx
-//       Serial.println("DW else\n");
-//     }
-//   }
-//   if (btnPress & OEN)
-//   {
-//     if (checkTime(2000)) //check for 2 seconds
-//     {
-//       Serial.println("OEN wiperlock\n");
-//       disableWiperLock();
-//       displayPrintString("Wiper Lock Disabled", 2, 12);
-//       delay(500);
-//     }
-//     else
-//     {
-//       Serial.println("oe else\n");
-//       digitalWrite(nREG_EN, !digitalRead(nREG_EN)); //toggle output enable
-//       digitalWrite(OUT_LED, digitalRead(nREG_EN));  //toggle output enable LED
-//     }
-//   }
-//   if (btnPress & VI)
-//   {
-//     V_I_SEL = !V_I_SEL; //toggle V/I select
-//   }
-//   if (current >= currentLimit)
-//   {
-//     Serial.println("VI cl\n");
-//     digitalWrite(CL_LED, LOW);
-//     digitalWrite(nREG_EN, HIGH); //disable regulator
-//   }
-//   else
-//   {
-//     Serial.println("VI else\n");
-//     digitalWrite(CL_LED, HIGH); //keep LED enabled
-//     digitalWrite(nREG_EN, LOW); //keep regulator enabled
-//   }
-// }
