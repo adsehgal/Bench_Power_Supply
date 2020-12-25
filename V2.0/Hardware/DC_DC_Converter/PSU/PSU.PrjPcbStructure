@@ -1,1 +1,3 @@
-Record=TopLevelDocument|FileName=MCU.SchDoc
+Record=TopLevelDocument|FileName=MCU.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=MCU.SchDoc|FileName=Power.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=MCU.SchDoc|FileName=UI.SchDoc|SheetNumber= 
