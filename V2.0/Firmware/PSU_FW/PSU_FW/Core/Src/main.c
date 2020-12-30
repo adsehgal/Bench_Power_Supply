@@ -22,7 +22,13 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <stdio.h>
+#include <string.h>
+#include "ssd1306.h"
+#include "debug.h"
+#include "mcp4018.h"
+#include "gfx.h"
+//#include "ssd1306_tests.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -97,7 +103,16 @@ int main(void)
   MX_I2C1_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+  uint8_t i2cScanRet = i2cScan();
+  if (!i2cScanRet)
+  {
+    errorLEDs(i2cScanRet);
+  }
+  printMsg("no error");
+  ssd1306_Init();
+  showStartup();
 
+  //  ssd1306_TestAll();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -216,7 +231,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.ClockSpeed = 400000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
@@ -343,7 +358,12 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+void showStartup(void)
+{
+  ssd1306_FillBuffer((uint8_t *)&BOOTSCREEN, sizeof(BOOTSCREEN));
+  ssd1306_UpdateScreen();
+  HAL_Delay(2000);
+}
 /* USER CODE END 4 */
 
 /**

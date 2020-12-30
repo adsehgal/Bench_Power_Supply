@@ -1,0 +1,13 @@
+/*
+ * mcp4018.h
+ *
+ *  Created on: Dec 30, 2020
+ *      Author: adityasehgal
+ */
+
+#ifndef INC_MCP4018_H_
+#define INC_MCP4018_H_
+
+#define MCP4018_ADDR 0x2F
+
+#endif /* INC_MCP4018_H_ */

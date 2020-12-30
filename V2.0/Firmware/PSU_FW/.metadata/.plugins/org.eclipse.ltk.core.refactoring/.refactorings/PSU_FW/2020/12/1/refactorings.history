@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PSU_FW/Core/Inc/debug&apos; to &apos;debug.h&apos;" description="Rename resource &apos;debug&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/debug" name="debug.h" stamp="1609365166529" updateReferences="true"/>
+</session>

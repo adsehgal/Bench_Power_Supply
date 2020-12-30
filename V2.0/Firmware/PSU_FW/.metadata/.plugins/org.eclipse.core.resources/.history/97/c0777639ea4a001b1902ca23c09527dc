@@ -1,0 +1,6 @@
+#include "string.h"
+#include "stdio.h"
+#include "stdint.h"
+#include "stdarg.h"
+
+void printmsg(char *format,...);
