@@ -58,6 +58,31 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define REG_EN_Pin GPIO_PIN_1
+#define REG_EN_GPIO_Port GPIOC
+#define I_SENSE_Pin GPIO_PIN_3
+#define I_SENSE_GPIO_Port GPIOC
+#define VO_SENSE_Pin GPIO_PIN_0
+#define VO_SENSE_GPIO_Port GPIOA
+#define VI_SENSE_Pin GPIO_PIN_1
+#define VI_SENSE_GPIO_Port GPIOA
+#define OE_LED_Pin GPIO_PIN_15
+#define OE_LED_GPIO_Port GPIOA
+#define CC_LED_Pin GPIO_PIN_10
+#define CC_LED_GPIO_Port GPIOC
+#define nSW_INT_Pin GPIO_PIN_11
+#define nSW_INT_GPIO_Port GPIOC
+#define nSW_INT_EXTI_IRQn EXTI15_10_IRQn
+#define nSW_VI_Pin GPIO_PIN_12
+#define nSW_VI_GPIO_Port GPIOC
+#define nSW_DW_Pin GPIO_PIN_2
+#define nSW_DW_GPIO_Port GPIOD
+#define nSW_UP_Pin GPIO_PIN_4
+#define nSW_UP_GPIO_Port GPIOB
+#define nSW_OE_Pin GPIO_PIN_5
+#define nSW_OE_GPIO_Port GPIOB
+#define LCD_RST_Pin GPIO_PIN_8
+#define LCD_RST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
