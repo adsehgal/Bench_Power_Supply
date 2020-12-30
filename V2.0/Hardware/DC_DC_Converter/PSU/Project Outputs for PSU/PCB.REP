@@ -2,87 +2,54 @@
 FileName = PCB.GBR
 AutoAperture = True
 *************************************************************
-Generating : Mechanical 1
-      File : PCB.GM1
+Generating : Dielectric 3
+      File : PCB.3
 
-    Adding Layer      : Mechanical 1
+    Adding Layer      : Dielectric 3
 
 
 Used DCodes :
-    D106
-    D107
-    D108
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : PCB.GBS
+Generating : Dielectric 2
+      File : PCB.2
 
-    Adding Layer      : Bottom Solder
+    Adding Layer      : Dielectric 2
 
-    Adding Layer      : Bottom Layer
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 1
+      File : PCB.1
+
+    Adding Layer      : Dielectric 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : PCB.GML
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D39
-    D40
-    D43
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D105
-*************************************************************
-
-*************************************************************
-Generating : GND
-      File : PCB.GP2
-
-    Adding Layer      : GND
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
     D87
+    D88
     D89
-    D90
-    D94
-    D95
-    D96
-    D97
-    D98
-    D99
-    D100
-    D101
-    D102
-    D103
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : PCB.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D15
 *************************************************************
 
 *************************************************************
@@ -106,6 +73,26 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Bottom Courtyard
+      File : PCB.GM21
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : PCB.GM20
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
 Generating : Top Component Center
       File : PCB.GM16
 
@@ -113,7 +100,87 @@ Generating : Top Component Center
 
 
 Used DCodes :
-    D107
+    D114
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : PCB.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D114
+    D115
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : PCB.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D114
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : PCB.GM5
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : PCB.GM3
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : PCB.GM2
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : PCB.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D113
+    D114
+    D115
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : PCB.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D14
 *************************************************************
 
 *************************************************************
@@ -128,10 +195,102 @@ Generating : Bottom Paste
 
 
 Used DCodes :
-    D19
-    D20
+    D16
+    D17
     D23
-    D104
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : PCB.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D40
+    D41
+    D44
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D112
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : PCB.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : PCB.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D21
+    D22
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
 *************************************************************
 
 *************************************************************
@@ -168,83 +327,24 @@ Used DCodes :
     D35
     D36
     D37
+    D38
+    D39
 *************************************************************
 
 *************************************************************
-Generating : Top Assembly
-      File : PCB.GM5
+Generating : Top Overlay
+      File : PCB.GTO
 
-    Adding Layer      : Top Assembly
+    Adding Layer      : Top Overlay
 
 
 Used DCodes :
+    D10
+    D11
+    D12
+    D13
     D14
-*************************************************************
-
-*************************************************************
-Generating : Dielectric 3
-      File : PCB.3
-
-    Adding Layer      : Dielectric 3
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Top 3D Body
-      File : PCB.GM2
-
-    Adding Layer      : Top 3D Body
-
-
-Used DCodes :
-    D14
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : PCB.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
     D15
-    D19
-    D20
-    D23
-    D70
-    D71
-    D72
-    D74
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
-    D84
-    D85
-    D86
-    D104
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 15
-      File : PCB.GM15
-
-    Adding Layer      : Mechanical 15
-
-
-Used DCodes :
-    D107
-    D108
 *************************************************************
 
 *************************************************************
@@ -279,10 +379,8 @@ Used DCodes :
     D35
     D36
     D37
-    D75
-    D76
-    D77
-    D78
+    D38
+    D39
     D79
     D80
     D81
@@ -290,48 +388,10 @@ Used DCodes :
     D83
     D84
     D85
-*************************************************************
-
-*************************************************************
-Generating : Multi-Layer
-      File : PCB.GML
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D75
-    D76
-    D77
-    D78
-    D79
-    D80
-    D81
-    D82
-    D83
-    D84
-    D85
-*************************************************************
-
-*************************************************************
-Generating : Bottom Courtyard
-      File : PCB.GM21
-
-    Adding Layer      : Bottom Courtyard
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 13
-      File : PCB.GM13
-
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-    D107
+    D86
+    D87
+    D88
+    D89
 *************************************************************
 
 *************************************************************
@@ -344,12 +404,40 @@ Generating : Bottom Pad Master
 
 
 Used DCodes :
-    D19
-    D20
+    D16
+    D17
     D23
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D111
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : PCB.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D23
+    D74
     D75
     D76
-    D77
     D78
     D79
     D80
@@ -358,58 +446,39 @@ Used DCodes :
     D83
     D84
     D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D111
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : PCB.GP2
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D92
+    D94
+    D95
+    D99
+    D100
+    D101
+    D102
     D104
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : PCB.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Bottom Assembly
-      File : PCB.GM20
-
-    Adding Layer      : Bottom Assembly
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Dielectric 2
-      File : PCB.2
-
-    Adding Layer      : Dielectric 2
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Top Courtyard
-      File : PCB.GM3
-
-    Adding Layer      : Top Courtyard
-
-
-Used DCodes :
-    D14
-*************************************************************
-
-*************************************************************
-Generating : Dielectric 1
-      File : PCB.1
-
-    Adding Layer      : Dielectric 1
-
-
-Used DCodes :
+    D105
+    D106
+    D107
+    D108
+    D109
+    D110
 *************************************************************
 
 *************************************************************
@@ -445,10 +514,8 @@ Used DCodes :
     D35
     D36
     D37
-    D70
-    D71
-    D72
-    D73
+    D38
+    D39
     D74
     D75
     D76
@@ -462,65 +529,11 @@ Used DCodes :
     D84
     D85
     D86
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : PCB.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
-    D14
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : PCB.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D17
-    D18
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
+    D87
+    D88
+    D89
+    D90
+    D91
 *************************************************************
 
 *************************************************************
@@ -533,11 +546,7 @@ Generating : Vdd
 
 
 Used DCodes :
-    D87
-    D88
-    D89
-    D90
-    D91
+    D11
     D92
     D93
     D94
@@ -545,5 +554,12 @@ Used DCodes :
     D96
     D97
     D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
 *************************************************************
 
