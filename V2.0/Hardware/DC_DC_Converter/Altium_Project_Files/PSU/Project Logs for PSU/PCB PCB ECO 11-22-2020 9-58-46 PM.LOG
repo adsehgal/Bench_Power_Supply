@@ -1,0 +1,6 @@
+Change Net Name : Old Net Name=NetCN1_A6 New Net Name=D_P
+Change Net Name : Old Net Name=NetCN1_A7 New Net Name=D_N
+Added Differential Pair: Name=D
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=UI
