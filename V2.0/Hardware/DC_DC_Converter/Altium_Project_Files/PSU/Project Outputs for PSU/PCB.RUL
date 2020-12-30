@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\PSU\PCB.PcbDoc
+DRC Rules Export File for PCB: C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\Altium_Project_Files\PSU\PCB.PcbDoc
 RuleKind=Width|RuleName=usbPwr|Scope=Board|Minimum=20.00
 RuleKind=Width|RuleName=Power_AGND|Scope=Board|Minimum=15.00
 RuleKind=Width|RuleName=Power_DGND|Scope=Board|Minimum=7.01

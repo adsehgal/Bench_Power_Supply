@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: PCB.GBR   12/29/2020  9:18:12 PM
+Gerber File Extension Report For: PCB.GBR   12/30/2020  12:51:23 AM
 ------------------------------------------------------------------------------------------
 
 
@@ -30,5 +30,7 @@ Layer Extension     Layer Description
 .gbr                Mechanical 15                           
 .gbr                Mechanical 13                           
 .gbr                Top Assembly                            
+.gbr                Bottom Designator                       
+.gbr                Top Designator                          
 .gbr                Profile                                 
 ------------------------------------------------------------------------------------------
