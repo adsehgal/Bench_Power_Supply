@@ -8,6 +8,7 @@
 #ifndef INC_DEBUG_H_
 #define INC_DEBUG_H_
 
+#include "main.h"
 #include "string.h"
 #include "stdio.h"
 #include "stdint.h"
@@ -20,8 +21,10 @@
 #define OLED_FOUND 0x01
 #define POT_FOUND 0x02
 
-#define CC_LED_PORT GPIOC
-#define CC_LED_PIN GPIO_PIN_10
+//#define CC_LED_PORT GPIOC
+//#define CC_LED_PIN GPIO_PIN_10
+#define CC_LED_PORT GPIOA
+#define CC_LED_PIN GPIO_PIN_5
 #define OE_LED_PORT GPIOA
 #define OE_LED_PIN GPIO_PIN_15
 #define FLASH_FREQ 100

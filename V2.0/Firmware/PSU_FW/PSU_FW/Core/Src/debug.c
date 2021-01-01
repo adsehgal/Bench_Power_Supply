@@ -26,16 +26,26 @@ uint8_t i2cScan(void)
 	for (uint16_t i = 0; i < 128; i++)
 	{
 		res = HAL_I2C_IsDeviceReady(&hi2c1, i << 1, 1, 10);
-		if (res == HAL_OK && i == SSD1306_I2C_ADDR)
+		if (res == HAL_OK && (i<<1) == SSD1306_I2C_ADDR )
 		{
 			devices |= OLED_FOUND;
 			printMsg("OLED found at 0x%02X\n", i);
 		}
-		else if (res == HAL_OK && i == MCP4018_ADDR)
+		else if (res == HAL_OK && (i<<1) == MCP4018_ADDR)
 		{
 			devices |= POT_FOUND;
 			printMsg("MCP4018 found at 0x%02X\n", i);
 		}
+		else if (res == HAL_OK)
+		{
+			printMsg("Unknown device found at 0x%02X\n", i);
+		}
+		else if (res == HAL_OK)
+		{
+			printMsg("Unknown device found at 0x%02X\n", i);
+			HAL_Delay(10);
+		}
+
 	}
 	printMsg("returning from scan %02X\n", devices);
 	return devices;
@@ -43,7 +53,6 @@ uint8_t i2cScan(void)
 
 void errorLEDs(uint8_t error)
 {
-	printMsg("errors");
 	while (1)
 	{
 		if (error == OLED_FOUND)

@@ -5598,3 +5598,1521 @@
 2020-12-30 15:38:38,862 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1927mS.
 2020-12-30 15:38:38,863 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
 2020-12-30 15:38:38,864 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 15:44:40,471 [INFO] Activator:170 - 
+
+
+2020-12-31 15:44:40,475 [INFO] Activator:171 - !SESSION log4j initialized
+2020-12-31 15:44:44,965 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2020-12-31 15:46:05,502 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-12-31 15:46:05,643 [INFO] ApplicationProperties:181 - Using Application install path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304
+2020-12-31 15:46:05,660 [INFO] DbMcusXml:71 - Set database path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//mcu/
+2020-12-31 15:46:05,664 [INFO] DbBoardsPdsc:57 - Set plugin database path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/boardmanager/
+2020-12-31 15:46:05,665 [INFO] DbMcus:259 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:05,665 [INFO] DbBoards:265 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:05,668 [INFO] DbExamples:329 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:05,678 [INFO] DbMcusDocs:112 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,681 [INFO] DbMcusJson:63 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,682 [INFO] DbBoardsDocs:112 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,683 [INFO] DbBoardsJson:56 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,687 [INFO] CrossReferenceDbSqlite:196 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-12-31 15:46:05,692 [INFO] DbExamplesSqlite:699 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,822 [INFO] RulesReader:52 - Compatibility file has been processed (228 Rules)
+2020-12-31 15:46:05,920 [INFO] MicroXplorer:565 - Detected Java Version = 1.8.0_252
+2020-12-31 15:46:05,921 [INFO] DbMcusXml:71 - Set database path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//mcu/
+2020-12-31 15:46:05,922 [INFO] DbBoardsPdsc:57 - Set plugin database path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/boardmanager/
+2020-12-31 15:46:05,922 [INFO] DbMcus:259 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:05,922 [INFO] DbBoards:265 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:05,923 [INFO] DbExamples:329 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:05,923 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,923 [INFO] DbMcusDocs:112 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,923 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,923 [INFO] DbMcusJson:63 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,924 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,924 [INFO] DbBoardsDocs:112 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,924 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,924 [INFO] DbBoardsJson:56 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:05,925 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,925 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,925 [INFO] CrossReferenceDbSqlite:196 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-12-31 15:46:05,925 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:05,926 [INFO] DbExamplesSqlite:699 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:06,011 [INFO] MainPanel:190 - HeapMemory: 379584512
+2020-12-31 15:46:06,104 [INFO] DbMcusXml:71 - Set database path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//mcu/
+2020-12-31 15:46:06,105 [INFO] DbBoardsPdsc:57 - Set plugin database path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/boardmanager/
+2020-12-31 15:46:06,105 [INFO] DbMcus:259 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:06,106 [INFO] DbBoards:265 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:06,106 [INFO] DbExamples:329 - Set plugin images path to: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//plugins/mcufinder/images/
+2020-12-31 15:46:06,107 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,108 [INFO] DbMcusDocs:112 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:06,108 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,108 [INFO] DbMcusJson:63 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:06,108 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,108 [INFO] DbBoardsDocs:112 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:06,109 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,109 [INFO] DbBoardsJson:56 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:06,109 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,109 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,109 [INFO] CrossReferenceDbSqlite:196 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-12-31 15:46:06,110 [WARN] DbFile:36 - Overriding database path with different value: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/ => /Users/adityasehgal/.stmcufinder/plugins/mcufinder
+2020-12-31 15:46:06,110 [INFO] DbExamplesSqlite:699 - Set database path to: /Users/adityasehgal/.stmcufinder/plugins/mcufinder//mcu/
+2020-12-31 15:46:06,126 [INFO] ApplicationProperties:181 - Using Application install path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304
+2020-12-31 15:46:06,128 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2020-12-31 15:46:06,130 [INFO] PluginManage:292 - Check plugin analytics
+2020-12-31 15:46:06,410 [INFO] AnalyticsPlugin:225 - Accepted Software Licenses: 
+2020-12-31 15:46:06,411 [INFO] AnalyticsPlugin:227 - Accepted CMSIS Pack Licenses: 
+2020-12-31 15:46:06,411 [INFO] AnalyticsPlugin:229 - Accepted Firmware Licenses: 
+2020-12-31 15:46:06,412 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-12-31 15:46:06,413 [INFO] PluginManage:292 - Check plugin clock
+2020-12-31 15:46:06,432 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-12-31 15:46:06,433 [INFO] PluginManage:292 - Check plugin ddr
+2020-12-31 15:46:06,436 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-12-31 15:46:06,436 [INFO] PluginManage:292 - Check plugin filemanager
+2020-12-31 15:46:06,601 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-12-31 15:46:06,601 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-12-31 15:46:06,611 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-12-31 15:46:06,611 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-12-31 15:46:06,626 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-12-31 15:46:06,626 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-12-31 15:46:06,658 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-12-31 15:46:06,659 [INFO] PluginManage:292 - Check plugin power
+2020-12-31 15:46:06,675 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-12-31 15:46:06,675 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-12-31 15:46:06,693 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-12-31 15:46:06,694 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-12-31 15:46:06,875 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-12-31 15:46:06,875 [INFO] PluginManage:292 - Check plugin tools
+2020-12-31 15:46:06,875 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2020-12-31 15:46:06,876 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2020-12-31 15:46:06,877 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [1/15]
+2020-12-31 15:46:06,879 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-12-31 15:46:06,880 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-12-31 15:46:07,145 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2020-12-31 15:46:07,146 [INFO] PluginManage:292 - Check plugin updater
+2020-12-31 15:46:07,165 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-12-31 15:46:07,166 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2020-12-31 15:46:09,882 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [2/15]
+2020-12-31 15:46:10,912 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2020-12-31 15:46:11,009 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,010 [INFO] PluginManager:203 - loadIPPluginJar : add mdma
+2020-12-31 15:46:11,025 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,025 [INFO] PluginManager:203 - loadIPPluginJar : add freertos
+2020-12-31 15:46:11,034 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,034 [INFO] PluginManager:203 - loadIPPluginJar : add gic
+2020-12-31 15:46:11,050 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,051 [INFO] PluginManager:203 - loadIPPluginJar : add adc
+2020-12-31 15:46:11,056 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,057 [INFO] PluginManager:203 - loadIPPluginJar : add gtzc
+2020-12-31 15:46:11,059 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,060 [INFO] PluginManager:203 - loadIPPluginJar : add quadspi
+2020-12-31 15:46:11,064 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,065 [INFO] PluginManager:203 - loadIPPluginJar : add aes
+2020-12-31 15:46:11,069 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,069 [INFO] PluginManager:203 - loadIPPluginJar : add pdm2pcm
+2020-12-31 15:46:11,073 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,074 [INFO] PluginManager:203 - loadIPPluginJar : add hash
+2020-12-31 15:46:11,077 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,077 [INFO] PluginManager:203 - loadIPPluginJar : add tim
+2020-12-31 15:46:11,080 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,080 [INFO] PluginManager:203 - loadIPPluginJar : add tsc
+2020-12-31 15:46:11,083 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,084 [INFO] PluginManager:203 - loadIPPluginJar : add ts
+2020-12-31 15:46:11,088 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,088 [INFO] PluginManager:203 - loadIPPluginJar : add can
+2020-12-31 15:46:11,092 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,093 [INFO] PluginManager:203 - loadIPPluginJar : add dfsdm
+2020-12-31 15:46:11,097 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,097 [INFO] PluginManager:203 - loadIPPluginJar : add spi
+2020-12-31 15:46:11,101 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,101 [INFO] PluginManager:203 - loadIPPluginJar : add gfxmmu
+2020-12-31 15:46:11,103 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,104 [INFO] PluginManager:203 - loadIPPluginJar : add genericplugin
+2020-12-31 15:46:11,107 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,107 [INFO] PluginManager:203 - loadIPPluginJar : add cryp
+2020-12-31 15:46:11,114 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,117 [INFO] PluginManager:203 - loadIPPluginJar : add gpio
+2020-12-31 15:46:11,120 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,121 [INFO] PluginManager:203 - loadIPPluginJar : add comp
+2020-12-31 15:46:11,123 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,124 [INFO] PluginManager:203 - loadIPPluginJar : add tracer_emb
+2020-12-31 15:46:11,128 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,129 [INFO] PluginManager:203 - loadIPPluginJar : add openamp
+2020-12-31 15:46:11,134 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,134 [INFO] PluginManager:203 - loadIPPluginJar : add stm32_wpan
+2020-12-31 15:46:11,144 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,148 [INFO] PluginManager:203 - loadIPPluginJar : add plateformsettings
+2020-12-31 15:46:11,153 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,154 [INFO] PluginManager:203 - loadIPPluginJar : add ipddr
+2020-12-31 15:46:11,158 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,159 [INFO] PluginManager:203 - loadIPPluginJar : add usart
+2020-12-31 15:46:11,161 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,162 [INFO] PluginManager:203 - loadIPPluginJar : add ltdc
+2020-12-31 15:46:11,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,169 [INFO] PluginManager:203 - loadIPPluginJar : add nvic
+2020-12-31 15:46:11,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,171 [INFO] PluginManager:203 - loadIPPluginJar : add fatfs
+2020-12-31 15:46:11,179 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,179 [INFO] PluginManager:203 - loadIPPluginJar : add dma
+2020-12-31 15:46:11,186 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,187 [INFO] PluginManager:203 - loadIPPluginJar : add fmc
+2020-12-31 15:46:11,191 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,191 [INFO] PluginManager:203 - loadIPPluginJar : add i2s
+2020-12-31 15:46:11,193 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,194 [INFO] PluginManager:203 - loadIPPluginJar : add ucpd
+2020-12-31 15:46:11,197 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,197 [INFO] PluginManager:203 - loadIPPluginJar : add lorawan
+2020-12-31 15:46:11,201 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,201 [INFO] PluginManager:203 - loadIPPluginJar : add opamp
+2020-12-31 15:46:11,207 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,207 [INFO] PluginManager:203 - loadIPPluginJar : add touchsensing
+2020-12-31 15:46:11,212 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,212 [INFO] PluginManager:203 - loadIPPluginJar : add i2c
+2020-12-31 15:46:11,218 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,219 [INFO] PluginManager:203 - loadIPPluginJar : add resmgrutility
+2020-12-31 15:46:11,223 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:11,224 [INFO] PluginManager:203 - loadIPPluginJar : add sai
+2020-12-31 15:46:11,640 [FATAL] Updater:284 - Updater called before beeing initialized
+2020-12-31 15:46:11,730 [FATAL] Updater:284 - Updater called before beeing initialized
+2020-12-31 15:46:11,868 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2020-12-31 15:46:11,872 [FATAL] Updater:284 - Updater called before beeing initialized
+2020-12-31 15:46:11,872 [WARN] DetailPanel:347 - Failed to get advertising image, set to default
+2020-12-31 15:46:11,908 [FATAL] Updater:284 - Updater called before beeing initialized
+2020-12-31 15:46:11,909 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2020-12-31 15:46:12,884 [INFO] ThirdPartyUpdaterWithRetryManager:56 - Updater plugin not ready yet. [3/15]
+2020-12-31 15:46:15,888 [FATAL] Updater:284 - Updater called before beeing initialized
+2020-12-31 15:46:15,889 [ERROR] AbstractThirdPartyUpdaterManager:153 - java.lang.Integer cannot be cast to java.util.List
+2020-12-31 15:46:15,889 [INFO] ThirdParty:887 - Integrity check success = false
+2020-12-31 15:46:15,890 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2020-12-31 15:46:15,890 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2020-12-31 15:46:15,890 [INFO] ThirdParty:785 - entering critical section [close project]
+2020-12-31 15:46:15,893 [INFO] ThirdParty:796 - exiting critical section [close project]
+2020-12-31 15:46:15,899 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2020-12-31 15:46:15,900 [FATAL] Updater:284 - Updater called before beeing initialized
+2020-12-31 15:46:15,911 [ERROR] Updater:1065 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2020-12-31 15:46:15,915 [INFO] Updater:1002 - Updater Version found : 6.1.1
+2020-12-31 15:46:15,951 [INFO] ApplicationProperties:181 - Using Application install path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304
+2020-12-31 15:46:16,219 [INFO] MainUpdater:2644 - connection check result : 10
+2020-12-31 15:46:16,221 [INFO] MainUpdater:249 - Updater Check For Update Now.
+2020-12-31 15:46:16,222 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2020-12-31 15:46:16,265 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2020-12-31 15:46:16,333 [INFO] MainUpdater:2644 - connection check result : 10
+2020-12-31 15:46:16,335 [INFO] MainUpdater:2644 - connection check result : 10
+2020-12-31 15:46:17,197 [INFO] MicroXplorer:385 - Change Database Path : 
+2020-12-31 15:46:17,198 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2020-12-31 15:46:17,198 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2020-12-31 15:46:17,198 [INFO] ThirdParty:785 - entering critical section [close project]
+2020-12-31 15:46:17,198 [INFO] ThirdParty:796 - exiting critical section [close project]
+2020-12-31 15:46:17,200 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2020-12-31 15:46:17,202 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 302533440 Bytes (379584512)
+2020-12-31 15:46:17,203 [INFO] MicroXplorer:385 - Change Database Path : 
+2020-12-31 15:46:17,203 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2020-12-31 15:46:17,203 [INFO] OpenFileManager:274 - Change cursor
+2020-12-31 15:46:17,206 [WARN] ThirdParty:204 - Use empty third party IP manager
+2020-12-31 15:46:17,224 [WARN] IntegrityCheckThread:59 - waiting for thirdparty lock release [integrity check]
+2020-12-31 15:46:17,224 [INFO] IntegrityCheckThread:61 - entering critical section [integrity check]
+2020-12-31 15:46:17,268 [INFO] ThirdParty:887 - Integrity check success = true
+2020-12-31 15:46:17,268 [INFO] IntegrityCheckThread:75 - exiting critical section [integrity check]
+2020-12-31 15:46:17,268 [INFO] IntegrityCheckThread:78 - End integrity checks thread
+2020-12-31 15:46:18,735 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-12-31 15:46:18,736 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-12-31 15:46:18,736 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-12-31 15:46:18,736 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-12-31 15:46:18,736 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2020-12-31 15:46:18,740 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,741 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,741 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,741 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,741 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,741 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,741 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,742 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,743 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,744 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,744 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,744 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,744 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,744 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,744 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,745 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,745 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,745 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,745 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,746 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,746 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,746 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,746 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,746 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 15:46:18,763 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:18,764 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:18,870 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 412666256 Bytes (519045120)
+2020-12-31 15:46:18,872 [INFO] DbMcusXml:97 - Load MCU database from /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db//mcu/families.xml
+2020-12-31 15:46:19,603 [INFO] DbMcusJson:92 - JSON generation date=Wed Dec 09 09:22:40 PST 2020 (1607534560)
+2020-12-31 15:46:20,141 [INFO] DbMcus:176 - Found 1835 MCUs (1796 are supported by CubeMX, 1804 are visible in CubeMX)
+2020-12-31 15:46:20,144 [INFO] ApiDb:238 - Load user favorites file /Users/adityasehgal/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-12-31 15:46:20,144 [INFO] ApiDb:242 - User favorites MCUs=[]
+2020-12-31 15:46:20,144 [INFO] DbMcus:188 - Set 0 / 0 favorites MCUs
+2020-12-31 15:46:20,148 [WARN] ThirdParty:749 - waiting for thirdparty lock release [change project]
+2020-12-31 15:46:20,148 [INFO] ThirdParty:751 - entering critical section [change project]
+2020-12-31 15:46:20,148 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-12-31 15:46:20,149 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.0
+2020-12-31 15:46:20,150 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-12-31 15:46:20,150 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-12-31 15:46:20,150 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-12-31 15:46:20,150 [INFO] ThirdParty:757 - exiting critical section [change project]
+2020-12-31 15:46:20,436 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2020-12-31 15:46:20,437 [INFO] PinOutPanel:1434 - setPackage(STM32F401RETx,LQFP64)
+2020-12-31 15:46:20,832 [INFO] UtilMem:74 - Before build in PCC Used Memory: 391152368 Bytes (568328192)
+2020-12-31 15:46:21,252 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 15:46:21,292 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 15:46:21,354 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 15:46:21,359 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 15:46:21,569 [INFO] UtilMem:74 - After build in PCC Used Memory: 447249144 Bytes (568328192)
+2020-12-31 15:46:21,592 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,592 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,593 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,593 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,593 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,593 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,593 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,594 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,594 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,594 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,594 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,594 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,595 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,595 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,595 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,595 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,596 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,596 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,596 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,596 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,597 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,597 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,597 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,597 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,598 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,598 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,598 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,598 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,598 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,599 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,599 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,599 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,600 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,600 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,600 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,601 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,601 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,601 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 15:46:21,666 [INFO] ApiDbMcu:456 - Load IP Config File for PDM2PCM
+2020-12-31 15:46:21,681 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:21,682 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:21,710 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-12-31 15:46:21,820 [INFO] OpenFileManager:294 - Restore cursor
+2020-12-31 15:46:21,949 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:21,949 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:21,950 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 15:46:21,950 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:52,300 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:52,301 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:52,310 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:52,310 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,733 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,733 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,734 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,734 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,758 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,758 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,764 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,765 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,771 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,771 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,776 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:09:58,777 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:10:01,449 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 344044560 Bytes (568328192)
+2020-12-31 16:10:03,442 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 357676048 Bytes (568328192)
+2020-12-31 16:10:03,648 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 371307536 Bytes (568328192)
+2020-12-31 16:10:04,121 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 16:10:04,122 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 16:10:04,122 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 16:10:04,122 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 16:10:04,122 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 16:10:04,122 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 16:10:04,123 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 16:10:04,124 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 16:10:04,137 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:10:04,137 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:10:04,528 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 16:10:04,970 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 16:10:05,053 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 16:10:05,165 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 16:10:05,341 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:10:05,343 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:10:05,344 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:10:05,351 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 16:10:05,473 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 16:10:05,476 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 16:10:05,538 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 16:10:05,551 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 16:10:05,668 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 16:10:05,671 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 16:10:05,721 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 16:10:05,728 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 16:10:05,800 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 16:10:05,838 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 16:10:05,978 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 16:10:05,982 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 16:10:06,111 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 16:10:06,743 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 222mS.
+2020-12-31 16:10:06,750 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 16:10:07,367 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 16:10:07,383 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2020-12-31 16:10:07,393 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2020-12-31 16:10:07,398 [INFO] ApiDbMcu:456 - Load IP Config File for LIBJPEG
+2020-12-31 16:10:07,405 [INFO] ApiDbMcu:456 - Load IP Config File for MBEDTLS
+2020-12-31 16:10:07,419 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2020-12-31 16:10:07,426 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2020-12-31 16:10:09,449 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2699mS.
+2020-12-31 16:10:09,450 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2020-12-31 16:10:09,451 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 16:11:32,602 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,604 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,605 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,605 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,669 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,669 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,673 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,673 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,740 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,741 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,741 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,742 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,795 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,795 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,798 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:11:32,798 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:04,648 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,459x261,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2020-12-31 16:12:07,087 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:07,087 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:07,091 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:07,091 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:24,220 [INFO] Gpio:248 - dependency for GPIO [ADC1, I2C1, USART2]
+2020-12-31 16:12:37,355 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:37,355 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:37,359 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:37,360 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,254 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,254 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,267 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,267 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,267 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,268 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,310 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,311 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,312 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,312 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,315 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:43,316 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:58,433 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:58,433 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:58,437 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:12:58,437 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,210 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,211 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,211 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,211 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,248 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,248 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,252 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:06,252 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,055 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,056 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,095 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,095 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,097 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,097 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,099 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,099 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,141 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,141 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,142 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,142 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,172 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,172 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,175 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:14,175 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:22,967 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:22,967 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,010 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,010 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,013 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,014 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,016 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,016 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,063 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,063 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,064 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,064 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,099 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,099 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,101 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:13:23,101 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:14:00,671 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 273525296 Bytes (832569344)
+2020-12-31 16:14:02,339 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 298691120 Bytes (832569344)
+2020-12-31 16:14:02,542 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 312322608 Bytes (832569344)
+2020-12-31 16:14:02,686 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 16:14:02,686 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 16:14:02,686 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 16:14:02,686 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 16:14:02,687 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 16:14:02,687 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 16:14:02,687 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 16:14:02,687 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 16:14:02,694 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:14:02,695 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:14:02,858 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 16:14:02,903 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 16:14:02,925 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 16:14:02,982 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 16:14:03,087 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:14:03,089 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:14:03,090 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:14:03,098 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 16:14:03,176 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 16:14:03,179 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 16:14:03,232 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 16:14:03,241 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 16:14:03,355 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 16:14:03,358 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 16:14:03,408 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 16:14:03,413 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 16:14:03,475 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 16:14:03,495 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 16:14:03,555 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 16:14:03,559 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 16:14:03,656 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 16:14:04,252 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 170mS.
+2020-12-31 16:14:04,256 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 16:14:04,598 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 16:14:06,276 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2020mS.
+2020-12-31 16:14:06,277 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 16:14:06,279 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 16:32:41,138 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,139 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,142 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,142 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,145 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,145 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,190 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,190 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,190 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,190 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,220 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,220 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,222 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:41,222 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:46,662 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 728609328 Bytes (995098624)
+2020-12-31 16:32:48,098 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 752200248 Bytes (995098624)
+2020-12-31 16:32:48,382 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 796766768 Bytes (995098624)
+2020-12-31 16:32:48,544 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 16:32:48,544 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 16:32:48,544 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 16:32:48,545 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 16:32:48,545 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 16:32:48,545 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 16:32:48,545 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 16:32:48,545 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 16:32:48,551 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:48,551 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:32:48,708 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 16:32:48,746 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 16:32:48,770 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 16:32:48,821 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 16:32:48,922 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:32:48,923 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:32:48,925 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:32:48,933 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 16:32:48,998 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 16:32:49,001 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 16:32:49,052 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 16:32:49,060 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 16:32:49,143 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 16:32:49,147 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 16:32:49,187 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 16:32:49,194 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 16:32:49,249 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 16:32:49,269 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 16:32:49,316 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 16:32:49,320 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 16:32:49,404 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 16:32:49,929 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 182mS.
+2020-12-31 16:32:49,933 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 16:32:50,511 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 16:32:51,948 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2015mS.
+2020-12-31 16:32:51,949 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2020-12-31 16:32:51,950 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 16:39:13,680 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 582595088 Bytes (1058013184)
+2020-12-31 16:41:20,440 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:20,442 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:20,445 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:20,446 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:22,897 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:22,898 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:22,900 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:22,901 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,368 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,369 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,369 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,369 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,377 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,378 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,380 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,381 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,385 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,386 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,388 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:24,388 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:31,960 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:31,960 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:31,961 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:31,961 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,009 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,009 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,012 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,012 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,125 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,125 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,125 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,126 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,164 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,164 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,167 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:32,167 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,131 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,132 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,133 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,133 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,170 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,170 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,172 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,172 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,286 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,286 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,286 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,286 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,323 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,323 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,326 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:40,326 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:47,982 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:47,982 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:47,983 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:47,983 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,020 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,020 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,023 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,023 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,062 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,063 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,063 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,063 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,092 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,092 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,094 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:41:48,094 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:42:01,169 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 472492560 Bytes (1058013184)
+2020-12-31 16:42:02,729 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 485601800 Bytes (1058013184)
+2020-12-31 16:42:02,935 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 499233288 Bytes (1058013184)
+2020-12-31 16:42:03,172 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 16:42:03,172 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 16:42:03,173 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 16:42:03,173 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 16:42:03,173 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 16:42:03,173 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 16:42:03,173 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 16:42:03,173 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 16:42:03,177 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:42:03,177 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:42:03,348 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 16:42:03,388 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 16:42:03,404 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 16:42:03,447 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 16:42:03,528 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:42:03,530 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:42:03,531 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 16:42:03,538 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 16:42:03,594 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 16:42:03,597 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 16:42:03,641 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 16:42:03,647 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 16:42:03,720 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 16:42:03,723 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 16:42:03,763 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 16:42:03,769 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 16:42:03,824 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 16:42:03,843 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 16:42:03,895 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 16:42:03,898 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 16:42:04,043 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 16:42:04,552 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 175mS.
+2020-12-31 16:42:04,556 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 16:42:04,849 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 16:42:06,991 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2435mS.
+2020-12-31 16:42:06,992 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2020-12-31 16:42:06,993 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 16:59:58,623 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,625 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,625 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,626 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,636 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,637 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,639 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,639 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,645 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,646 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,648 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 16:59:58,648 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:00:00,688 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 528431664 Bytes (1073741824)
+2020-12-31 17:00:01,882 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 548354608 Bytes (1073741824)
+2020-12-31 17:00:02,122 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 563034672 Bytes (1073741824)
+2020-12-31 17:00:02,293 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:00:02,293 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:00:02,293 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:00:02,293 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:00:02,294 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 17:00:02,294 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:00:02,294 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:00:02,294 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:00:02,302 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:00:02,302 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:00:02,506 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 17:00:02,550 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 17:00:02,570 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:00:02,616 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 17:00:02,724 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:00:02,725 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:00:02,727 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:00:02,735 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:00:02,802 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 17:00:02,805 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:00:02,851 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:00:02,857 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:00:02,946 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:00:02,949 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 17:00:02,994 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 17:00:02,998 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:00:03,112 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:00:03,128 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 17:00:03,172 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 17:00:03,174 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 17:00:03,263 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 17:00:03,867 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 234mS.
+2020-12-31 17:00:03,871 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:00:04,224 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:00:06,118 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2247mS.
+2020-12-31 17:00:06,119 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:00:06,121 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:05:27,266 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,268 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,268 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,269 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,432 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,433 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,433 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:27,433 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,301 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,302 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,302 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,302 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,455 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,456 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,456 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:29,456 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,338 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,338 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,338 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,338 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,451 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,452 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,452 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:30,452 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:32,352 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 488192488 Bytes (1073741824)
+2020-12-31 17:05:33,855 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 511783408 Bytes (1073741824)
+2020-12-31 17:05:34,044 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 524892648 Bytes (1073741824)
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:05:34,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:05:34,184 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:05:34,189 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:34,189 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:05:34,370 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 17:05:34,409 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 17:05:34,429 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:05:34,473 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 17:05:34,550 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:05:34,552 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:05:34,553 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:05:34,559 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:05:34,612 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 17:05:34,614 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:05:34,656 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:05:34,662 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:05:34,730 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:05:34,732 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 17:05:34,770 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 17:05:34,775 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:05:34,823 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:05:34,839 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 17:05:34,882 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 17:05:34,885 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 17:05:35,013 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 17:05:35,501 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 172mS.
+2020-12-31 17:05:35,505 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:05:35,775 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:05:37,621 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2116mS.
+2020-12-31 17:05:37,621 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:05:37,622 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:08:54,108 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,109 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,110 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,110 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,190 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,191 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,191 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:08:54,191 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:11:21,317 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 652323856 Bytes (1073741824)
+2020-12-31 17:11:22,761 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 667530248 Bytes (1073741824)
+2020-12-31 17:11:23,048 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 712092688 Bytes (1073741824)
+2020-12-31 17:11:23,182 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:11:23,182 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:11:23,182 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:11:23,182 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:11:23,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 17:11:23,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:11:23,183 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:11:23,183 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:11:23,188 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:11:23,188 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:11:23,333 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 17:11:23,370 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 17:11:23,384 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:11:23,425 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 17:11:23,543 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:11:23,544 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:11:23,545 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:11:23,549 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:11:23,599 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 17:11:23,602 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:11:23,642 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:11:23,647 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:11:23,714 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:11:23,716 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 17:11:23,752 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 17:11:23,756 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:11:23,805 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:11:23,818 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 17:11:23,862 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 17:11:23,863 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 17:11:23,932 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 17:11:24,405 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 147mS.
+2020-12-31 17:11:24,409 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:11:24,740 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:11:26,402 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1993mS.
+2020-12-31 17:11:26,402 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:11:26,404 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:20:48,955 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:48,956 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:49,023 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:49,023 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:49,023 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:49,024 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:51,744 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:51,744 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:51,797 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:51,797 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:51,797 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:20:51,797 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:21:09,031 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 787460664 Bytes (1073741824)
+2020-12-31 17:21:10,441 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 811051584 Bytes (1073741824)
+2020-12-31 17:21:10,684 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 855618104 Bytes (1073741824)
+2020-12-31 17:21:10,864 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:21:10,865 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:21:10,865 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:21:10,865 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:21:10,865 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2020-12-31 17:21:10,865 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:21:10,865 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:21:10,866 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:21:10,871 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:21:10,872 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:21:11,042 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2020-12-31 17:21:11,080 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2020-12-31 17:21:11,096 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:21:11,136 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2020-12-31 17:21:11,209 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:21:11,210 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:21:11,211 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:21:11,218 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:21:11,273 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2020-12-31 17:21:11,277 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:21:11,321 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:21:11,327 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:21:11,401 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:21:11,403 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2020-12-31 17:21:11,444 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2020-12-31 17:21:11,449 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:21:11,504 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:21:11,521 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2020-12-31 17:21:11,571 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2020-12-31 17:21:11,574 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2020-12-31 17:21:11,647 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2020-12-31 17:21:12,130 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 160mS.
+2020-12-31 17:21:12,133 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:21:12,924 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:21:14,030 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1897mS.
+2020-12-31 17:21:14,031 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:21:14,032 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:24:02,416 [INFO] MainUpdater:2644 - connection check result : 10
+2020-12-31 17:24:02,827 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: /Users/adityasehgal/.stmcufinder/plugins/mcufinder/mcu/cs_comparisons_mx
+2020-12-31 17:24:02,836 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2020-12-31 17:24:02,839 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2020-12-31 17:24:03,203 [INFO] DetailPanel:344 - Set advertising image to /Users/adityasehgal/STM32Cube/Repository//stm32cubemx-promo_image.jpg
+2020-12-31 17:24:03,454 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2020-12-31 17:24:03,538 [INFO] DbBoardsPdsc:91 - Found 9 items
+2020-12-31 17:24:03,540 [INFO] DbBoardsPdsc:91 - Found 4 items
+2020-12-31 17:24:03,542 [INFO] DbBoardsPdsc:91 - Found 2 items
+2020-12-31 17:24:03,549 [INFO] DbBoardsPdsc:91 - Found 45 items
+2020-12-31 17:24:03,552 [INFO] DbBoardsPdsc:91 - Found 24 items
+2020-12-31 17:24:03,554 [INFO] DbBoardsPdsc:91 - Found 1 items
+2020-12-31 17:24:03,561 [INFO] DbBoardsPdsc:91 - Found 41 items
+2020-12-31 17:24:03,564 [INFO] DbBoardsPdsc:91 - Found 32 items
+2020-12-31 17:24:03,570 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-12-31 17:24:03,571 [WARN] DbBoardsPdsc:255 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2020-12-31 17:24:03,575 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-12-31 17:24:03,575 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-12-31 17:24:03,575 [WARN] DbBoardsPdsc:255 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-12-31 17:24:03,591 [INFO] DbBoardsJson:85 - JSON generation date=Thu Nov 05 06:55:26 PST 2020 (1604588126)
+2020-12-31 17:24:03,598 [INFO] DbBoards:118 - Found 158 boards (155 are supported by CubeMX)
+2020-12-31 17:24:03,607 [INFO] DbBoardsDocs:145 - JSON generation date=Wed Dec 09 09:22:40 PST 2020 (1607534560)
+2020-12-31 17:24:03,624 [INFO] DbBoardsDocs:81 - Found 190 boards documents
+2020-12-31 17:24:03,625 [WARN] DbBoards:128 - board B-L462E-CELL1 has no document id list !
+2020-12-31 17:24:03,625 [WARN] DbBoards:128 - board B-L475E-IOT01A2 has no document id list !
+2020-12-31 17:24:03,626 [WARN] DbBoards:128 - board NUCLEO-G0B1RE has no document id list !
+2020-12-31 17:24:03,626 [WARN] DbBoards:128 - board NUCLEO-G491RE has no document id list !
+2020-12-31 17:24:03,626 [WARN] DbBoards:128 - board NUCLEO-H743ZI2 has no document id list !
+2020-12-31 17:24:03,627 [WARN] DbBoards:128 - board NUCLEO-L4A6ZG has no document id list !
+2020-12-31 17:24:03,627 [WARN] DbBoards:128 - board NUCLEO-WB55RG has no document id list !
+2020-12-31 17:24:03,627 [WARN] DbBoards:128 - board NUCLEO-WL55JC1 has no document id list !
+2020-12-31 17:24:03,627 [WARN] DbBoards:128 - board NUCLEO-WL55JC2 has no document id list !
+2020-12-31 17:24:03,627 [WARN] DbBoards:128 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-12-31 17:24:03,627 [WARN] DbBoards:128 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STEVAL-BFA001V1B has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STEVAL-BFA001V2B has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STEVAL-IDP005V1 has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STEVAL-IDP005V2 has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STEVAL-STWINKT1 has no document id list !
+2020-12-31 17:24:03,628 [WARN] DbBoards:128 - board STM32F401C-DISCO has no document id list !
+2020-12-31 17:24:03,629 [WARN] DbBoards:128 - board STM32F769I-DISC1 has no document id list !
+2020-12-31 17:24:03,629 [WARN] DbBoards:128 - board STM32G0C1E-EV has no document id list !
+2020-12-31 17:24:03,629 [WARN] DbBoards:128 - board STM32G474E-EVAL1 has no document id list !
+2020-12-31 17:24:03,629 [WARN] DbBoards:128 - board STM32H743I-EVAL2 has no document id list !
+2020-12-31 17:24:03,629 [WARN] DbBoards:128 - board STM32H747I-DISC1 has no document id list !
+2020-12-31 17:24:03,629 [WARN] DbBoards:128 - board STM32H753I-EVAL2 has no document id list !
+2020-12-31 17:24:03,630 [WARN] DbBoards:128 - board STM32L-DISCOVERY has no document id list !
+2020-12-31 17:24:03,630 [WARN] DbBoards:128 - board STM32MP157A-DK1 has no document id list !
+2020-12-31 17:24:03,630 [WARN] DbBoards:128 - board STM32MP157F-DK2 has no document id list !
+2020-12-31 17:24:03,630 [WARN] DbBoards:128 - board STM32MP157F-EV1 has no document id list !
+2020-12-31 17:24:04,903 [INFO] ApiDb:238 - Load user favorites file /Users/adityasehgal/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-12-31 17:24:04,903 [INFO] ApiDb:242 - User favorites Boards=[]
+2020-12-31 17:24:04,903 [INFO] DbBoards:207 - Set 0 / 0 favorites Boards
+2020-12-31 17:24:11,702 [INFO] MultiScanPanel:198 - Auto-refresh data requested => check proxy status ongoing
+2020-12-31 17:24:11,760 [INFO] DetailPanel:344 - Set advertising image to /Users/adityasehgal/STM32Cube/Repository//stm32cubemx-promo_image.jpg
+2020-12-31 17:24:11,780 [INFO] BoardFilterPanel:214 - Update 0 favorites Boards
+2020-12-31 17:24:16,645 [INFO] BoardResultTable:600 - Mark Board NUCLEO-F401RE as favorite
+2020-12-31 17:24:34,508 [INFO] MainUpdater:2644 - connection check result : 10
+2020-12-31 17:24:34,508 [INFO] MainUpdater:2644 - connection check result : 10
+2020-12-31 17:24:34,691 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:34,691 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:34,692 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:34,692 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:34,704 [INFO] MicroXplorer:385 - Change Database Path : 
+2020-12-31 17:24:34,704 [INFO] MicroXplorer:415 - Change Database Version : DB.6.0.10
+2020-12-31 17:24:34,705 [WARN] ThirdParty:783 - waiting for thirdparty lock release [close project]
+2020-12-31 17:24:34,705 [INFO] ThirdParty:785 - entering critical section [close project]
+2020-12-31 17:24:34,705 [INFO] ThirdParty:796 - exiting critical section [close project]
+2020-12-31 17:24:34,707 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2020-12-31 17:24:34,713 [WARN] IpParametersView:138 - Warning: This peripheral hasn't parameters
+2020-12-31 17:24:34,716 [WARN] MainPanel:236 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2020-12-31 17:24:34,718 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 534855144 Bytes (1073741824)
+2020-12-31 17:24:34,718 [INFO] OpenFileManager:274 - Change cursor
+2020-12-31 17:24:34,719 [WARN] ThirdParty:204 - Use empty third party IP manager
+2020-12-31 17:24:34,733 [INFO] RulesReader:52 - Compatibility file has been processed (228 Rules)
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_S instance for project manager is applicable
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_S instance for context M0+ is applicable
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_NS instance for context M4 is applicable
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_S instance value for IP GTZC is applicable
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_S instance for mcu is applicable
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_S instance for VP is applicable
+2020-12-31 17:24:35,418 [INFO] Rule:212 - rule GTZC_S instance for signal is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule SPDIFRX instance for mcu is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule Rename Tracer Mode is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule SPDIFRX instance value for IP SPDIFRX is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule SPDIFRX instance for signal is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule SPDIFRX instance for project manager is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule SPDIFRX instance for project manager is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule ADC Scan  fix with FW F7 is applicable
+2020-12-31 17:24:35,419 [INFO] Rule:212 - rule ADC Scan  fix with FW F7 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule Add RTC Activate Clock Source is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule Add RTC Activate Calendar 1 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule Add RTC Activate Calendar 2 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule Add RTC Activate Calendar 3 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART TX Mode is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART RX Mode is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART RX TX Mode is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART PARITY NONE is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART PARITY EVEN is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART PARITY ODD is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule USART StopBits 1 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule USART StopBits 2 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule USART StopBits 1.5 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule USART StopBits 0.5 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART WORD LENGTH 7 is applicable
+2020-12-31 17:24:35,420 [INFO] Rule:212 - rule UART/USART WORD LENGTH 8 is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule UART/USART WORD LENGTH 9 is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Rename FMC NAND NCE signal is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Rename FMC NAND INT signal is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv L4 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv L4 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv F3 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv F3 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv Goldfish serie is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv Goldfish serie is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv L0 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv F0 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConvn L1 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv L1 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv F1 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv F1 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv F7 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv F7 family is applicable
+2020-12-31 17:24:35,421 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigConv F4 and F2 family is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Change Default Value for ADC ExternalTrigInjecConv F4 and F2 family is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule ADC SamplingTime fix with FW L0  is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule ADC SamplingTime fix with FW L0  is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule ADC SamplingTime fix with FW L0 is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule ADC SamplingTime fix with FW L0 is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule ADC SamplingTime fix with FW L0  is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule ADC SamplingTime fix with FW L0 is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename USB_OE Signal is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename Activate_OE Mode is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462/DIE415 pin PC14/OSC32_IN -> PC14-OSC32_IN (PC14) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462/DIE415 pin PC15/OSC32_OUT -> PC15-OSC32_OUT (PC15) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462/DIE415 pin PH0/OSC_IN -> PH0-OSC_IN (PH0) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462/DIE415 pin PH1/OSC_OUT -> PH1-OSC_OUT (PH1) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE415 pin PA13 -> PA13 (JTMS/SWDIO) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE415 pin PA14 -> PA14 (JTCK/SWCLK) is applicable
+2020-12-31 17:24:35,422 [INFO] Rule:212 - rule Rename DIE462/DIE415 pin PA15 -> PA15 (JTDI) is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename DIE462 pin PB3 -> PB3 (JTD0/TRACESWO) is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename DIE415 pin PB3 -> PB3 (JTD0-TRACESWO) is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename DIE462/DIE415 pin PB4 -> PB4 (NJTRST) is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename DIE462 pin PH3/BOOT0 -> PH3-BOOT0 (BOOT0) is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename CRYP DataEncryptionTypesList to Algorithm is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename AES DataEncryptionTypesList to Algorithm is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename TDESECB to CRYP_TDES_ECB is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename TDESCBC to CRYP_TDES_CBC is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename DESECB to CRYP_DES_ECB is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename DESCBC to CRYP_DES_CBC is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename AESECB to CRYP_AES_ECB is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename AESCBC to CRYP_AES_CBC is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename AESCTR to CRYP_AES_CTR is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename AESGCM to CRYP_AES_GCM is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename AESCCM to CRYP_AES_CCM is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename CAN TimeSeg1 to BS1 is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename CAN TimeSeg2 to BS2 is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule Rename CAN SyncJumpWidth to SJW is applicable
+2020-12-31 17:24:35,423 [INFO] Rule:212 - rule TimeTriggeredMode to TTCM is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename CAN AutoBusOff to ABOM is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename CAN AutoWakeUp to AWUM is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename CAN AutoRetransmission to NART is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename CAN ReceiveFifoLocked to RFLM is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename CAN TransmitFifoPriority to TXFP is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGH in HRTIMER HRTIM_OUTPUTFAULTLEVEL_HIGHZ is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule Rename TIMER TIM_CLEARINPUTSOURCE_OCREFCLR in  TIMER TIM_CLEARINPUTSOURCE_NONE for F7 family is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN_R1 - Rename FDCAN mode Master into Classic is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN_R2 - Rename FDCAN mode Slave into Classic is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R3 - if PA10.Mode=FullDuplex, add Pin PA12 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R3 - if PA9.Mode=FullDuplex, add Pin PA11 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R3 - Alternatepin_1 - if PE1.Mode=FullDuplex, add Pin PB9 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R3 - Alternatepin_1 - if PE0.Mode=FullDuplex, add Pin PB8 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R3 - Alternatepin_2 - if PD5.Mode=FullDuplex, add Pin PD1 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R3 - Alternatepin_2 - if PD4.Mode=FullDuplex, add Pin PD0 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA10 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PA9 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE1 is applicable
+2020-12-31 17:24:35,424 [INFO] Rule:212 - rule FDCAN1_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PE0 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD5 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN1_R4 - Alternatepin_2 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD4 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R3 - if PD10.Mode=FullDuplex, add Pin PB13 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R3 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R3 - Alternatepin_1 - if PB7.Mode=FullDuplex, add Pin PB6 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R3 - Alternatepin_1 - if PD9.Mode=FullDuplex, add Pin PB12 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD10 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R4 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD9 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PB7 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule FDCAN2_R4 - Alternatepin_1 - Rename Mode FullDuplex into Enable FDCAN_TXFD for pin PD6 is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule USART TxPinLevelInvertParam Mode is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule USART RxPinLevelInvertParam Mode is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule USART DataInvertParam Mode is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule USART SwapParam Mode is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule USART OverrunDisableParam Mode is applicable
+2020-12-31 17:24:35,425 [INFO] Rule:212 - rule USART DMADisableonRxErrorParam Mode is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule USART MSBFirstParam Mode is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule Update MwName for USB_DEVICE is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule Change PWR_Regulator_Voltage_Scale Default Value for RCC  H7 family is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule UART/USART IPParameter rename Prescaler parameter to ClockPrescaler is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule UART/USART Prescaler rename Prescaler parameter to ClockPrescaler is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule TIM1CLockSelection is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule TIM15CLockSelection is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC SDMMC3CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC SDMMC12CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC SPI6CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC LPTIM23CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC LPTIM1CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC USART1CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,426 [INFO] Rule:212 - rule align RCC USART24CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC USART6CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC UART78CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC USART35CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC I2C46CLockSelection BCLK value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC I2C12CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC I2C35CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule align RCC LPTIM45CLockSelection default value on MP1 is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule Rename DCMI PIXCK signal is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule Change Default Value for I2C46CLockSelection MP1 family is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule Change Default Value for UART for G4, G0 and WB families is applicable
+2020-12-31 17:24:35,427 [INFO] Rule:212 - rule Change Default Value for USART for G4, G0 and WB families is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change Default Value for USART for G4 family is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change USART1CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change USART2CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change USART3CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change UART4CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change UART5CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change LPUART1CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change LPTIM1CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change LPTIM2CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change RCC_MCO1Source refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change LSCOSource1 refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change SMPSCLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change LPTIM3CLockSelection refparam name for MP1 is applicable
+2020-12-31 17:24:35,428 [INFO] Rule:212 - rule Change MPCBB* Default Template Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change MPCWM* or MPCBB* Secure Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change MPCWM* or MPCBB* No Secure Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change TZSC IP Secure Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change TZSC IP No Secure Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change TZSC IP Privilege Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change TZSC IP No Privilege Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change TZIC IT Secure Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Change TZIC IT No Secure Mode to Parameters is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Add MPCBB1_NonSecureArea_Start_Address value with referenced to MPCBB1_NonSecureArea_Start value is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Add MPCBB2_NonSecureArea_Start_Address value with referenced to MPCBB2_NonSecureArea_Start value is applicable
+2020-12-31 17:24:35,429 [INFO] Rule:212 - rule Add MPCWM1_NonSecureArea*_Start_Address value with referenced to MPCWM1_NonSecureArea*_Start value is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule Add MPCWM2_NonSecureArea*_Start_Address value with referenced to MPCWM2_NonSecureArea*_Start value is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule Add MPCWM3_NonSecureArea_Start_Address value with referenced to MPCWM3_NonSecureArea_Start value is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule Change Default Value for PLL1UserDefinedConfig is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule Change GPIO_PuPd Default Value for USART in async mode is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule Change SMPSDivider Default Value is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule OPAMP is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32H7 is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32WB is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32L5 is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2020-12-31 17:24:35,430 [INFO] Rule:212 - rule LPUART IPParameter rename Prescaler parameter to ClockPrescaler for STM32G4 is applicable
+2020-12-31 17:24:35,431 [INFO] Rule:212 - rule USB device lib V2.5.3 for L0 rename USBD_SUPPORT_USER_STRING parameter to USBD_SUPPORT_USER_STRING_DESC4 is applicable
+2020-12-31 17:24:35,431 [INFO] Rule:212 - rule I2SCLockSelection clock entry align is applicable
+2020-12-31 17:24:35,431 [INFO] Rule:212 - rule Assign TIMx context if used as SYS timebase is applicable
+2020-12-31 17:24:35,439 [INFO] DbConfProperties:294 - Apply Compatibility (46/193 Rules)
+2020-12-31 17:24:35,451 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) Unable to find key (Mcu.ThirdPartyNb) in loaded IOC file
+2020-12-31 17:24:35,462 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-12-31 17:24:35,463 [INFO] RtosManager:464 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-12-31 17:24:35,463 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-12-31 17:24:35,463 [INFO] RtosManager:464 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-12-31 17:24:35,463 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,464 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,465 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,466 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,467 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,467 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,467 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,467 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2020-12-31 17:24:35,472 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (4000000)
+2020-12-31 17:24:35,532 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 752294232 Bytes (1073741824)
+2020-12-31 17:24:35,533 [WARN] ThirdParty:749 - waiting for thirdparty lock release [change project]
+2020-12-31 17:24:35,533 [INFO] ThirdParty:751 - entering critical section [change project]
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-12-31 17:24:35,533 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-12-31 17:24:35,534 [INFO] ThirdParty:939 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-12-31 17:24:35,534 [INFO] ThirdParty:757 - exiting critical section [change project]
+2020-12-31 17:24:35,590 [INFO] PinOutPanel:1434 - setPackage(No Configuration,No Configuration)
+2020-12-31 17:24:35,590 [INFO] PinOutPanel:1434 - setPackage(STM32F401RETx,LQFP64)
+2020-12-31 17:24:35,721 [INFO] UtilMem:74 - Before build in PCC Used Memory: 806067400 Bytes (1073741824)
+2020-12-31 17:24:35,815 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 17:24:35,848 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 17:24:35,867 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 17:24:35,870 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2020-12-31 17:24:35,901 [INFO] UtilMem:74 - After build in PCC Used Memory: 850107592 Bytes (1073741824)
+2020-12-31 17:24:35,909 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,909 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,910 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,911 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,911 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,911 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,911 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,912 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,912 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,912 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,913 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,913 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,913 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,913 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,913 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,913 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,914 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,915 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,915 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,916 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,916 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,916 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,917 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,917 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,917 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,918 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-12-31 17:24:35,920 [INFO] ApiDbMcu:456 - Load IP Config File for PDM2PCM
+2020-12-31 17:24:35,931 [INFO] OpenFileManager:294 - Restore cursor
+2020-12-31 17:24:36,228 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 512466120 Bytes (1073741824)
+2020-12-31 17:24:36,265 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 518757576 Bytes (1073741824)
+2020-12-31 17:24:36,392 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:24:36,392 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:24:36,392 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:24:36,392 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:24:36,392 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:24:36,393 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:24:36,554 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp_save
+2020-12-31 17:24:36,589 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp
+2020-12-31 17:24:36,607 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:24:36,644 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp
+2020-12-31 17:24:36,664 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:24:36,668 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:24:36,708 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c
+2020-12-31 17:24:36,710 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:24:36,746 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:24:36,750 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:24:36,805 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:24:36,808 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp_save
+2020-12-31 17:24:36,844 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp
+2020-12-31 17:24:36,847 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:24:36,891 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:24:36,905 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h_save
+2020-12-31 17:24:36,944 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h
+2020-12-31 17:24:36,946 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c_save
+2020-12-31 17:24:37,002 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c
+2020-12-31 17:24:37,691 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 178mS.
+2020-12-31 17:24:37,698 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:24:38,047 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:24:38,051 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2020-12-31 17:24:38,057 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2020-12-31 17:24:38,062 [INFO] ApiDbMcu:456 - Load IP Config File for LIBJPEG
+2020-12-31 17:24:38,070 [INFO] ApiDbMcu:456 - Load IP Config File for MBEDTLS
+2020-12-31 17:24:38,081 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2020-12-31 17:24:38,088 [INFO] ApiDbMcu:456 - Load IP Config File for USB_HOST
+2020-12-31 17:24:41,300 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 3602mS.
+2020-12-31 17:24:41,301 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:24:41,302 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:24:41,725 [INFO] ApiDb:263 - Save user favorites file /Users/adityasehgal/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-12-31 17:24:41,726 [INFO] ApiDb:267 - User favorites MCUs=[]
+2020-12-31 17:24:41,728 [INFO] ApiDb:263 - Save user favorites file /Users/adityasehgal/.stm32cubeide/favorites.boards.txt: 1 item(s)
+2020-12-31 17:24:41,728 [INFO] ApiDb:267 - User favorites Boards=[NUCLEO-F401RE]
+2020-12-31 17:24:56,409 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,409 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,419 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,419 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,420 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,420 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,446 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,447 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,448 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,448 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,450 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:24:56,450 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:15,496 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 447889984 Bytes (833617920)
+2020-12-31 17:25:19,386 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 459424320 Bytes (833617920)
+2020-12-31 17:25:19,554 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 470958656 Bytes (833617920)
+2020-12-31 17:25:19,714 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:25:19,714 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:25:19,714 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:25:19,714 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:25:19,714 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:25:19,714 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:25:19,715 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:25:19,717 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:19,718 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:19,899 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp_save
+2020-12-31 17:25:19,938 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp
+2020-12-31 17:25:19,947 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:25:19,993 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp
+2020-12-31 17:25:20,035 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:25:20,036 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:25:20,105 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:25:20,169 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c
+2020-12-31 17:25:20,171 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:25:20,221 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:25:20,226 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:25:20,305 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:25:20,306 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp_save
+2020-12-31 17:25:20,345 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp
+2020-12-31 17:25:20,350 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:25:20,400 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:25:20,415 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h_save
+2020-12-31 17:25:20,459 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h
+2020-12-31 17:25:20,461 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c_save
+2020-12-31 17:25:20,530 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c
+2020-12-31 17:25:20,926 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 72mS.
+2020-12-31 17:25:20,929 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:25:21,421 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:25:22,606 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1677mS.
+2020-12-31 17:25:22,607 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2020-12-31 17:25:22,643 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 35mS.
+2020-12-31 17:25:26,100 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,100 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,100 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,101 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,126 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,126 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,128 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,129 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,147 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,147 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,148 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,148 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,173 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,173 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,175 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:25:26,176 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:09,282 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,944x278,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2020-12-31 17:35:11,356 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:11,356 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:11,358 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:11,359 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,400 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,401 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,403 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,403 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,407 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,408 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,417 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,417 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,419 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,419 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,452 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,452 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,452 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:12,452 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,310 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,310 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,312 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,313 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,315 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,316 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,323 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,323 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,325 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,325 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,356 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,356 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,356 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:35:13,357 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:00,008 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 504953992 Bytes (851443712)
+2020-12-31 17:40:01,480 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 520156304 Bytes (851443712)
+2020-12-31 17:40:01,728 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 563147920 Bytes (851443712)
+2020-12-31 17:40:01,869 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:40:01,869 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:40:01,869 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:40:01,869 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:40:01,870 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:40:01,870 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:40:01,870 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:40:01,872 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:01,872 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:02,021 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp_save
+2020-12-31 17:40:02,060 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp
+2020-12-31 17:40:02,070 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:40:02,112 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp
+2020-12-31 17:40:02,202 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:40:02,203 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:40:02,207 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:40:02,260 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c
+2020-12-31 17:40:02,262 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:40:02,305 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:40:02,310 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:40:02,377 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:40:02,379 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp_save
+2020-12-31 17:40:02,418 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp
+2020-12-31 17:40:02,421 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:40:02,469 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:40:02,485 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h_save
+2020-12-31 17:40:02,530 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h
+2020-12-31 17:40:02,533 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c_save
+2020-12-31 17:40:02,600 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c
+2020-12-31 17:40:03,007 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 83mS.
+2020-12-31 17:40:03,016 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:40:03,580 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:40:04,698 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1682mS.
+2020-12-31 17:40:04,699 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2020-12-31 17:40:04,700 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:40:27,774 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:27,775 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:27,777 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:27,777 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,381 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,381 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,382 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,382 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,389 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,389 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,391 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,392 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,398 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,399 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,401 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:29,401 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:31,326 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 587614120 Bytes (896532480)
+2020-12-31 17:40:32,174 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 605962160 Bytes (896532480)
+2020-12-31 17:40:32,430 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 619071400 Bytes (896532480)
+2020-12-31 17:40:32,590 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2020-12-31 17:40:32,590 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2020-12-31 17:40:32,590 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2020-12-31 17:40:32,590 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2020-12-31 17:40:32,590 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2020-12-31 17:40:32,590 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2020-12-31 17:40:32,591 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2020-12-31 17:40:32,593 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:32,594 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2020-12-31 17:40:32,799 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp_save
+2020-12-31 17:40:32,841 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/license.tmp
+2020-12-31 17:40:32,854 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp_save
+2020-12-31 17:40:32,898 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/gpio.tmp
+2020-12-31 17:40:32,936 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:40:32,937 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-12-31 17:40:32,942 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c_save
+2020-12-31 17:40:33,000 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_it.c
+2020-12-31 17:40:33,003 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h_save
+2020-12-31 17:40:33,051 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_it.h
+2020-12-31 17:40:33,055 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c_save
+2020-12-31 17:40:33,127 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/stm32f4xx_hal_msp.c
+2020-12-31 17:40:33,128 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp_save
+2020-12-31 17:40:33,167 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/MXTmpFiles/system.tmp
+2020-12-31 17:40:33,172 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h_save
+2020-12-31 17:40:33,226 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/stm32f4xx_hal_conf.h
+2020-12-31 17:40:33,245 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h_save
+2020-12-31 17:40:33,294 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Inc/main.h
+2020-12-31 17:40:33,296 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c_save
+2020-12-31 17:40:33,387 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/Core/Src/main.c
+2020-12-31 17:40:33,929 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 64mS.
+2020-12-31 17:40:33,932 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2020-12-31 17:40:34,286 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2020-12-31 17:40:35,298 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1366mS.
+2020-12-31 17:40:35,299 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 17:40:35,303 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.

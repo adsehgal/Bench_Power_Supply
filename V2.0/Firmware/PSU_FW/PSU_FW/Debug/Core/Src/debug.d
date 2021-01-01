@@ -1,5 +1,5 @@
 Core/Src/debug.o: ../Core/Src/debug.c ../Core/Inc/debug.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+ ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
@@ -32,6 +32,8 @@ Core/Src/debug.o: ../Core/Src/debug.c ../Core/Inc/debug.h \
  ../Core/Inc/ssd1306_conf.h ../Core/Inc/mcp4018.h
 
 ../Core/Inc/debug.h:
+
+../Core/Inc/main.h:
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 

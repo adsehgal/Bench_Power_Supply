@@ -1,0 +1,20 @@
+17:41:02 **** Incremental Build of configuration Debug for project i2c test ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F401xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "i2c test.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/i2c test/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="i2c test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: i2c test.elf
+ 
+arm-none-eabi-objdump -h -S  i2c\ test.elf  > "i2c test.list"
+arm-none-eabi-objcopy  -O binary  i2c\ test.elf  "i2c test.bin"
+arm-none-eabi-size   i2c\ test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12756	    120	   1736	  14612	   3914	i2c test.elf
+Finished building: default.size.stdout
+ 
+Finished building: i2c test.bin
+ 
+Finished building: i2c test.list
+ 
+
+17:41:03 Build Finished. 0 errors, 0 warnings. (took 517ms)
+
