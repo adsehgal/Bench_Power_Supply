@@ -119,6 +119,8 @@ void ssd1306_WriteCommand(uint8_t byte);
 void ssd1306_WriteData(uint8_t *buffer, size_t buff_size);
 SSD1306_Error_t ssd1306_FillBuffer(uint8_t *buf, uint32_t len);
 
+void ssd1306_DrawBitMap(int16_t x, int16_t y, const uint8_t bitmap[], int16_t w, int16_t h, uint16_t color);
+
 _END_STD_C
 
 #endif // __SSD1306_H__

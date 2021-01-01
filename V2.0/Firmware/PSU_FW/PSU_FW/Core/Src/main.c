@@ -109,11 +109,10 @@ int main(void)
   {
     errorLEDs(i2cScanRet);
   }
-  printMsg("no error");
+  printMsg("no I2C errors\n\n");
   ssd1306_Init();
+  ssd1306_Fill(Black);
   showStartup();
-
-  //  ssd1306_TestAll();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -232,7 +231,7 @@ static void MX_I2C1_Init(void)
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.ClockSpeed = 400000;
   hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
@@ -360,9 +359,8 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void showStartup(void)
 {
-  ssd1306_FillBuffer((uint8_t *)&BOOTSCREEN, sizeof(BOOTSCREEN));
-  ssd1306_UpdateScreen();
-  HAL_Delay(2000);
+	ssd1306_DrawBitMap(0, 0, BOOTSCREEN, 128, 32, White);
+	HAL_Delay(2000);
 }
 /* USER CODE END 4 */
 
