@@ -1,0 +1,7 @@
+leds.c:10:6:errorLEDs	16	static
+leds.c:46:6:oeLedOn	4	static
+leds.c:50:6:oeLedOff	4	static
+leds.c:54:6:oeLedToggle	4	static
+leds.c:58:6:ccLedOn	4	static
+leds.c:62:6:ccLedOff	4	static
+leds.c:66:6:ccLedToggle	4	static

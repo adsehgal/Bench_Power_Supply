@@ -56,8 +56,8 @@ extern I2C_HandleTypeDef SSD1306_I2C_PORT;
 // Enumeration for screen colors
 typedef enum
 {
-    Black = 0x00, // Black color, no pixel
-    White = 0x01  // Pixel is set. Color depends on OLED
+    SSD1306_BLACK = 0x00, // SSD1306_BLACK color, no pixel
+    SSD1306_WHITE = 0x01  // Pixel is set. Color depends on OLED
 } SSD1306_COLOR;
 
 typedef enum

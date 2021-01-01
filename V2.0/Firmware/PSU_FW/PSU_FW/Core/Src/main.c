@@ -24,11 +24,12 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "ssd1306.h"
 #include "debug.h"
+#include "leds.h"
 #include "mcp4018.h"
 #include "gfx.h"
-//#include "ssd1306_tests.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -38,6 +39,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define INFO_TEXT_SIZE Font_7x10
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -111,8 +113,10 @@ int main(void)
   }
   printMsg("no I2C errors\n\n");
   ssd1306_Init();
-  ssd1306_Fill(Black);
+  ssd1306_Fill(SSD1306_BLACK);
   showStartup();
+  displayVoltageCurrent(1100, 2.32, 3.43);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -152,8 +156,7 @@ void SystemClock_Config(void)
   }
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
@@ -212,7 +215,6 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
-
 }
 
 /**
@@ -245,7 +247,6 @@ static void MX_I2C1_Init(void)
   }
   /* USER CODE BEGIN I2C1_Init 2 */
   /* USER CODE END I2C1_Init 2 */
-
 }
 
 /**
@@ -278,7 +279,6 @@ static void MX_USART2_UART_Init(void)
   /* USER CODE BEGIN USART2_Init 2 */
 
   /* USER CODE END USART2_Init 2 */
-
 }
 
 /**
@@ -297,23 +297,23 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, REG_EN_Pin|CC_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, REG_EN_Pin | CC_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5|OE_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5 | OE_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(nSW_UP_GPIO_Port, nSW_UP_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : REG_EN_Pin CC_LED_Pin */
-  GPIO_InitStruct.Pin = REG_EN_Pin|CC_LED_Pin;
+  GPIO_InitStruct.Pin = REG_EN_Pin | CC_LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PA5 OE_LED_Pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_5|OE_LED_Pin;
+  GPIO_InitStruct.Pin = GPIO_PIN_5 | OE_LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -353,14 +353,66 @@ static void MX_GPIO_Init(void)
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
-
 }
 
 /* USER CODE BEGIN 4 */
 void showStartup(void)
 {
-	ssd1306_DrawBitMap(0, 0, BOOTSCREEN, 128, 32, White);
-	HAL_Delay(2000);
+  ssd1306_DrawBitMap(0, 0, BOOTSCREEN, 128, 32, SSD1306_WHITE);
+  HAL_Delay(2000);
+}
+
+void displayVoltageCurrent(double Vin, double V, double I)
+{
+  ssd1306_Fill(SSD1306_BLACK);
+  ssd1306_SetCursor(2, 12);
+  char buff[10] = {};
+
+  ssd1306_WriteString("Vin = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+  if (Vin > 1000)
+  {
+    sprintf(buff, "%4.2f", Vin / 1000);
+    ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+    ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
+  }
+  else
+  {
+    sprintf(buff, "%4.2f", Vin);
+    ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+    ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
+  }
+
+  ssd1306_SetCursor(2, 24);
+  ssd1306_WriteString("Vout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+  if (V > 1000)
+  {
+    sprintf(buff, "%4.2f", V / 1000);
+    ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+    ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
+  }
+  else
+  {
+    sprintf(buff, "%4.2f", V);
+    ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+    ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
+  }
+
+  ssd1306_SetCursor(2, 36);
+  ssd1306_WriteString("Iout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+  if (I > 1000)
+  {
+    sprintf(buff, "%4.2f", I / 1000);
+    ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+    ssd1306_WriteString("A", INFO_TEXT_SIZE, SSD1306_WHITE);
+  }
+  else
+  {
+    sprintf(buff, "%4.2f", I);
+    ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+    ssd1306_WriteString("mA", INFO_TEXT_SIZE, SSD1306_WHITE);
+  }
+
+  ssd1306_UpdateScreen();
 }
 /* USER CODE END 4 */
 
@@ -379,7 +431,7 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef  USE_FULL_ASSERT
+#ifdef USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.

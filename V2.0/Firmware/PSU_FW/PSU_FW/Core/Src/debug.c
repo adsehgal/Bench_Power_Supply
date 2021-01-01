@@ -1,6 +1,7 @@
 #include "debug.h"
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_gpio.h"
+#include "leds.h"
 
 void printMsg(char *format, ...)
 {
@@ -26,12 +27,12 @@ uint8_t i2cScan(void)
 	for (uint16_t i = 0; i < 128; i++)
 	{
 		res = HAL_I2C_IsDeviceReady(&hi2c1, i << 1, 1, 10);
-		if (res == HAL_OK && (i<<1) == SSD1306_I2C_ADDR )
+		if (res == HAL_OK && (i << 1) == SSD1306_I2C_ADDR)
 		{
 			devices |= OLED_FOUND;
 			printMsg("OLED found at 0x%02X\n", i);
 		}
-		else if (res == HAL_OK && (i<<1) == MCP4018_ADDR)
+		else if (res == HAL_OK && (i << 1) == MCP4018_ADDR)
 		{
 			devices |= POT_FOUND;
 			printMsg("MCP4018 found at 0x%02X\n", i);
@@ -45,44 +46,7 @@ uint8_t i2cScan(void)
 			printMsg("Unknown device found at 0x%02X\n", i);
 			HAL_Delay(10);
 		}
-
 	}
 	printMsg("returning from scan %02X\n", devices);
 	return devices;
-}
-
-void errorLEDs(uint8_t error)
-{
-	while (1)
-	{
-		if (error == OLED_FOUND)
-		{
-			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ);
-			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
-			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-		}
-		else if (error == POT_FOUND)
-		{
-			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_Delay(FLASH_FREQ);
-			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
-			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-		}
-		else if (error == 0)
-		{
-			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
-			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
-		}
-		else
-		{
-			break;
-		}
-	}
 }

@@ -7320,3 +7320,25 @@
 2020-12-31 17:48:23,460 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1601mS.
 2020-12-31 17:48:23,461 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
 2020-12-31 17:48:23,463 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2020-12-31 20:13:57,234 [INFO] Activator:170 - 
+
+
+2020-12-31 20:13:57,238 [INFO] Activator:171 - !SESSION log4j initialized
+2020-12-31 20:14:02,218 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2020-12-31 20:36:12,684 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {}->http://sw-center.st.com:80: Socket closed
+2020-12-31 20:36:12,688 [INFO] RetryExec:113 - Retrying request to {}->http://sw-center.st.com:80
+2020-12-31 20:36:26,464 [INFO] Activator:170 - 
+
+
+2020-12-31 20:36:26,466 [INFO] Activator:171 - !SESSION log4j initialized
+2020-12-31 20:36:30,599 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 
+2020-12-31 20:41:33,202 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://eclipse.mirror.rafal.ca:443: The target server failed to respond
+2020-12-31 20:41:33,206 [INFO] RetryExec:113 - Retrying request to {s}->https://eclipse.mirror.rafal.ca:443
+2020-12-31 20:41:33,952 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://eclipse.mirror.rafal.ca:443: The target server failed to respond
+2020-12-31 20:41:33,953 [INFO] RetryExec:113 - Retrying request to {s}->https://eclipse.mirror.rafal.ca:443
+2020-12-31 20:41:33,954 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://eclipse.mirror.rafal.ca:443: The target server failed to respond
+2020-12-31 20:41:33,955 [INFO] RetryExec:113 - Retrying request to {s}->https://eclipse.mirror.rafal.ca:443
+2020-12-31 20:42:36,232 [INFO] Activator:170 - 
+
+
+2020-12-31 20:42:36,234 [INFO] Activator:171 - !SESSION log4j initialized

@@ -132,7 +132,7 @@ void ssd1306_Init(void)
     ssd1306_SetDisplayOn(1);    //--turn on SSD1306 panel
 
     // Clear screen
-    ssd1306_Fill(Black);
+    ssd1306_Fill(SSD1306_BLACK);
 
     // Flush buffer to screen
     ssd1306_UpdateScreen();
@@ -152,7 +152,7 @@ void ssd1306_Fill(SSD1306_COLOR color)
 
     for (i = 0; i < sizeof(SSD1306_Buffer); i++)
     {
-        SSD1306_Buffer[i] = (color == Black) ? 0x00 : 0xFF;
+        SSD1306_Buffer[i] = (color == SSD1306_BLACK) ? 0x00 : 0xFF;
     }
 }
 
@@ -193,7 +193,7 @@ void ssd1306_DrawPixel(uint8_t x, uint8_t y, SSD1306_COLOR color)
     }
 
     // Draw in the right color
-    if (color == White)
+    if (color == SSD1306_WHITE)
     {
         SSD1306_Buffer[x + (y / 8) * SSD1306_WIDTH] |= 1 << (y % 8);
     }
@@ -206,7 +206,7 @@ void ssd1306_DrawPixel(uint8_t x, uint8_t y, SSD1306_COLOR color)
 // Draw 1 char to the screen buffer
 // ch       => char om weg te schrijven
 // Font     => Font waarmee we gaan schrijven
-// color    => Black or White
+// color    => SSD1306_BLACK or SSD1306_WHITE
 char ssd1306_WriteChar(char ch, FontDef Font, SSD1306_COLOR color)
 {
     uint32_t i, b, j;
