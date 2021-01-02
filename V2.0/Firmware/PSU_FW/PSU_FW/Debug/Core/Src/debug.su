@@ -1,2 +1,2 @@
-debug.c:6:6:printMsg	96	static
-debug.c:18:9:i2cScan	48	static
+debug.c:7:6:printMsg	96	static
+debug.c:19:9:i2cScan	48	static

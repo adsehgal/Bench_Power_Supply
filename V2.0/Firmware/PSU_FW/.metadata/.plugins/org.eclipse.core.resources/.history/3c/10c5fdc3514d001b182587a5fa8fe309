@@ -1,0 +1,16 @@
+/*
+ * mcp4018.c
+ *
+ *  Created on: Jan 2, 2021
+ *      Author: adityasehgal
+ */
+
+#include "mcp4018.h"
+#include "main.h"
+
+
+uint8_t MCP4018_ReadVal(){
+	HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+}
+
+void MCP4018_WriteVal(uint8_t val);

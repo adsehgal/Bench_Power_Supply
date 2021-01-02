@@ -1,0 +1,11 @@
+/*
+ * mcp4018.c
+ *
+ *  Created on: Jan 2, 2021
+ *      Author: adityasehgal
+ */
+
+
+uint8_t MCP4018_ReadVal();
+
+void MCP4018_WriteVal(uint8_t val);

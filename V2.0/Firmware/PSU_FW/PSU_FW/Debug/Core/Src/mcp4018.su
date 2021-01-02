@@ -1,0 +1,2 @@
+mcp4018.c:12:9:MCP4018_ReadVal	24	static
+mcp4018.c:18:6:MCP4018_WriteVal	24	static

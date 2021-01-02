@@ -13,45 +13,20 @@
 
 _BEGIN_STD_C
 
-#include "ssd1306_conf.h"
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_gpio.h"
-
+#include "main.h"
 #include "ssd1306_fonts.h"
 
-/* vvv I2C config vvv */
 
-//#define SSD1306_I2C_PORT UI_I2C
 
-//#define SSD1306_I2C_ADDR (0x3D << 1)//(0x3C << 1)
+#define SSD1306_I2C_ADDR (0x3C << 1)
 
-/* ^^^ I2C config ^^^ */
-
-#ifndef SSD1306_Reset_Port
-#define SSD1306_Reset_Port GPIOB
-#endif
-#ifndef SSD1306_Reset_Pin
-#define SSD1306_Reset_Pin GPIO_PIN_8
-#endif
-
-extern I2C_HandleTypeDef SSD1306_I2C_PORT;
-
-// SSD1306 OLED height in pixels
-#ifndef SSD1306_HEIGHT
 #define SSD1306_HEIGHT 64
-#endif
-
-// SSD1306 width in pixels
-#ifndef SSD1306_WIDTH
 #define SSD1306_WIDTH 128
-#endif
-
-// some LEDs don't display anything in first two columns
-// #define SSD1306_WIDTH           130
-
-#ifndef SSD1306_BUFFER_SIZE
 #define SSD1306_BUFFER_SIZE SSD1306_WIDTH *SSD1306_HEIGHT / 8
-#endif
+
+extern I2C_HandleTypeDef hi2c1;
 
 // Enumeration for screen colors
 typedef enum

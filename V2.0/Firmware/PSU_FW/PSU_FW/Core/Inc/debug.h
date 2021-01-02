@@ -15,7 +15,7 @@
 #include "stdarg.h"
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_gpio.h"
-#include "ssd1306_conf.h"
+#include "ssd1306.h"
 #include "mcp4018.h"
 
 extern UART_HandleTypeDef huart2;

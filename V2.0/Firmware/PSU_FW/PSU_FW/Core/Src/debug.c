@@ -2,6 +2,7 @@
 #include "stm32f4xx_hal.h"
 #include "stm32f4xx_hal_gpio.h"
 #include "leds.h"
+#include "ssd1306.h"
 
 void printMsg(char *format, ...)
 {
@@ -32,7 +33,7 @@ uint8_t i2cScan(void)
 			devices |= OLED_FOUND;
 			printMsg("OLED found at 0x%02X\n", i);
 		}
-		else if (res == HAL_OK && (i << 1) == MCP4018_ADDR)
+		else if (res == HAL_OK && (i << 1) == MCP4018_I2C_ADDR)
 		{
 			devices |= POT_FOUND;
 			printMsg("MCP4018 found at 0x%02X\n", i);

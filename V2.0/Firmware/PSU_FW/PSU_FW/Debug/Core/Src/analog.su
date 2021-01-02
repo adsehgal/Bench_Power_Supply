@@ -1,0 +1,3 @@
+analog.c:10:10:readVin	32	static
+analog.c:30:10:readVout	32	static
+analog.c:50:10:readIOut	32	static

@@ -1,0 +1,27 @@
+/*
+ * analog.c
+ *
+ *  Created on: Jan 2, 2021
+ *      Author: adityasehgal
+ */
+
+#include "analog.h"
+
+uint32_t readVin(){
+		ADC_ChannelConfTypeDef sConfig = {0};
+		  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+		  */
+		  sConfig.Channel = ADC_CHANNEL_0;
+		  sConfig.Rank = 1;
+		  sConfig.SamplingTime = ADC_SAMPLETIME_28CYCLES;
+		  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+		  {
+		    Error_Handler();
+		  }
+}
+
+uint32_t readVout();
+
+uint32_t readIOut();
+
+

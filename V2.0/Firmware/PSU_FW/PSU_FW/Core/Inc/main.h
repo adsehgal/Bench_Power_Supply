@@ -54,9 +54,9 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
-  void showStartup(void);
+void showStartup(void);
 
-  void displayVoltageCurrent(double Vin, double V, double I);
+void displayVoltageCurrent(double Vin, double V, double I);
 
 /* USER CODE END EFP */
 
@@ -69,6 +69,8 @@ void Error_Handler(void);
 #define VO_SENSE_GPIO_Port GPIOA
 #define VI_SENSE_Pin GPIO_PIN_1
 #define VI_SENSE_GPIO_Port GPIOA
+#define VI_LED_Pin GPIO_PIN_12
+#define VI_LED_GPIO_Port GPIOA
 #define OE_LED_Pin GPIO_PIN_15
 #define OE_LED_GPIO_Port GPIOA
 #define CC_LED_Pin GPIO_PIN_10
@@ -84,8 +86,8 @@ void Error_Handler(void);
 #define nSW_UP_GPIO_Port GPIOB
 #define nSW_OE_Pin GPIO_PIN_5
 #define nSW_OE_GPIO_Port GPIOB
-#define LCD_RST_Pin GPIO_PIN_8
-#define LCD_RST_GPIO_Port GPIOB
+#define OLED_RST_Pin GPIO_PIN_8
+#define OLED_RST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

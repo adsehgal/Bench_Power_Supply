@@ -29,7 +29,8 @@ Core/Src/debug.o: ../Core/Src/debug.c ../Core/Inc/debug.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- ../Core/Inc/ssd1306_conf.h ../Core/Inc/mcp4018.h ../Core/Inc/leds.h
+ ../Core/Inc/ssd1306.h ../Core/Inc/ssd1306_fonts.h ../Core/Inc/mcp4018.h \
+ ../Core/Inc/leds.h ../Core/Inc/ssd1306.h
 
 ../Core/Inc/debug.h:
 
@@ -95,8 +96,12 @@ Core/Src/debug.o: ../Core/Src/debug.c ../Core/Inc/debug.h \
 
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 
-../Core/Inc/ssd1306_conf.h:
+../Core/Inc/ssd1306.h:
+
+../Core/Inc/ssd1306_fonts.h:
 
 ../Core/Inc/mcp4018.h:
 
 ../Core/Inc/leds.h:
+
+../Core/Inc/ssd1306.h:
