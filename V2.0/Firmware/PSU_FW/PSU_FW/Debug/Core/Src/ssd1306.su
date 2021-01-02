@@ -20,3 +20,4 @@ ssd1306.c:454:6:ssd1306_SetContrast	24	static
 ssd1306.c:461:6:ssd1306_SetDisplayOn	24	static
 ssd1306.c:477:9:ssd1306_GetDisplayOn	4	static
 ssd1306.c:482:6:ssd1306_DrawBitMap	32	static
+ssd1306.c:499:6:ssd1306_WriteErrorMsg	16	static

@@ -115,6 +115,10 @@ int main(void)
   ssd1306_Init();
   ssd1306_Fill(SSD1306_BLACK);
   showStartup();
+  HAL_StatusTypeDef adcRet = HAL_ADC_Start(&hadc1);
+  if (adcRet != HAL_OK){
+	  ssd1306_WriteErrorMsg(2, 12, "ADC start failed");
+  }
   displayVoltageCurrent(1100, 2.32, 3.43);
 
   /* USER CODE END 2 */
@@ -156,7 +160,8 @@ void SystemClock_Config(void)
   }
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
+                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
@@ -215,6 +220,7 @@ static void MX_ADC1_Init(void)
   /* USER CODE BEGIN ADC1_Init 2 */
 
   /* USER CODE END ADC1_Init 2 */
+
 }
 
 /**
@@ -247,6 +253,7 @@ static void MX_I2C1_Init(void)
   }
   /* USER CODE BEGIN I2C1_Init 2 */
   /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
@@ -279,6 +286,7 @@ static void MX_USART2_UART_Init(void)
   /* USER CODE BEGIN USART2_Init 2 */
 
   /* USER CODE END USART2_Init 2 */
+
 }
 
 /**
@@ -297,23 +305,23 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, REG_EN_Pin | CC_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, REG_EN_Pin|CC_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5 | OE_LED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5|OE_LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(nSW_UP_GPIO_Port, nSW_UP_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, nSW_UP_Pin|LCD_RST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : REG_EN_Pin CC_LED_Pin */
-  GPIO_InitStruct.Pin = REG_EN_Pin | CC_LED_Pin;
+  GPIO_InitStruct.Pin = REG_EN_Pin|CC_LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PA5 OE_LED_Pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_5 | OE_LED_Pin;
+  GPIO_InitStruct.Pin = GPIO_PIN_5|OE_LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -337,12 +345,12 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(nSW_DW_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : nSW_UP_Pin */
-  GPIO_InitStruct.Pin = nSW_UP_Pin;
+  /*Configure GPIO pins : nSW_UP_Pin LCD_RST_Pin */
+  GPIO_InitStruct.Pin = nSW_UP_Pin|LCD_RST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(nSW_UP_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pin : nSW_OE_Pin */
   GPIO_InitStruct.Pin = nSW_OE_Pin;
@@ -353,6 +361,7 @@ static void MX_GPIO_Init(void)
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+
 }
 
 /* USER CODE BEGIN 4 */
@@ -431,7 +440,7 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
-#ifdef USE_FULL_ASSERT
+#ifdef  USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
   *         where the assert_param error has occurred.

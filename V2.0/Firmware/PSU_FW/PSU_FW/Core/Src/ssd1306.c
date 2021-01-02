@@ -495,3 +495,11 @@ void ssd1306_DrawBitMap(int16_t x, int16_t y, const uint8_t bitmap[], int16_t w,
 	}
 	ssd1306_UpdateScreen();
 }
+
+void ssd1306_WriteErrorMsg(int16_t x, int16_t y, char *str){
+	ssd1306_Fill(SSD1306_BLACK);
+	ssd1306_UpdateScreen();
+	ssd1306_SetCursor(x, y);
+	ssd1306_WriteString(str, Font_7x10, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+}
