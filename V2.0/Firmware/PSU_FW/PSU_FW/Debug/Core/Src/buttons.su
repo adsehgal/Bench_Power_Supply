@@ -1,0 +1,5 @@
+buttons.c:12:9:readBtnUp	8	static
+buttons.c:19:9:readBtnDw	8	static
+buttons.c:26:9:readBtnVi	8	static
+buttons.c:33:9:readBtnOe	8	static
+buttons.c:41:9:whichBtn	16	static

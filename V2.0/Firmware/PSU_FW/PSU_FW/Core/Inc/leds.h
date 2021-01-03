@@ -24,4 +24,25 @@
 #define POT_FOUND 0x02
 
 void errorLEDs(uint8_t error);
+
+void viLedOn(void);
+
+void viLedOff(void);
+
+void viLedToggle(void);
+
+void oeLedOn(void);
+
+void oeLedOff(void);
+
+void oeLedToggle(void);
+
+void ccLedOn(void);
+
+void ccLedOff(void);
+
+void ccLedToggle(void);
+
+void setLeds(struct Stats psu);
+
 #endif /* INC_LEDS_H_ */

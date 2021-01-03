@@ -1,0 +1,23 @@
+/*
+ * buttons.c
+ *
+ *  Created on: 02-Jan-2021
+ *      Author: adityasehgal
+ */
+
+
+uint8_t whichBtn()
+{
+    uint8_t ret = 0b0000;
+
+    while (!HAL_GPIO_ReadPin(nSW_UP_GPIO_Port, nSW_UP_Pin))
+        ret |= UP;
+    while (!HAL_GPIO_ReadPin(nSW_DW_GPIO_Port, nSW_DW_Pin))
+        ret |= DW;
+    while (!HAL_GPIO_ReadPin(nSW_VI_GPIO_Port, nSW_VI_Pin))
+        ret |= VI;
+    if (!HAL_GPIO_ReadPin(nSW_OE_GPIO_Port, nSW_OE_Pin))
+        ret |= OEN;
+
+    return ret;
+}

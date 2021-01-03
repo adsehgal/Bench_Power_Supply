@@ -1,0 +1,15 @@
+/*
+ * buttons.h
+ *
+ *  Created on: 02-Jan-2021
+ *      Author: adityasehgal
+ */
+
+#ifndef INC_BUTTONS_H_
+#define INC_BUTTONS_H_
+
+#include <sys/_stdint.h>
+#include "main.h"
+uint8_t whichBtn();
+
+#endif /* INC_BUTTONS_H_ */

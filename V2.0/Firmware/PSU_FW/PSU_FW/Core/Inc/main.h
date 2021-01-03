@@ -1,22 +1,22 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.h
-  * @brief          : Header for main.c file.
-  *                   This file contains the common defines of the application.
-  ******************************************************************************
-  * @attention
-  *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-  * All rights reserved.</center></h2>
-  *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.h
+ * @brief          : Header for main.c file.
+ *                   This file contains the common defines of the application.
+ ******************************************************************************
+ * @attention
+ *
+ * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+ * All rights reserved.</center></h2>
+ *
+ * This software component is licensed by ST under BSD 3-Clause license,
+ * the "License"; You may not use this file except in compliance with the
+ * License. You may obtain a copy of the License at:
+ *                        opensource.org/licenses/BSD-3-Clause
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
@@ -37,26 +37,49 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+struct Stats {
+   uint8_t vSet;	//voltage set in a byte for MCP4018
+   uint32_t iSet;	//current set in mA
+   uint8_t iLim;	//bit[0] ? limit reached : limit NOT reached
+   uint8_t OE;		//bit[0] ? enabled : disabled
+   uint8_t VI;		//bit[0] ? voltage : current
+};
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-
+enum enables {
+	OE_ENABLED = SET,
+	OE_DISABLED = RESET,
+	VI_V_SEL = SET,
+	VI_I_SEL = RESET,
+	I_LIM_SET = SET,
+	I_LIM_NSET = RESET,
+};
+enum defaults {
+	V_DEFAULT = 0x3F, I_DEFAULT = 1000, I_LIM_DEFAULT = I_LIM_NSET, OE_DEFAULT = OE_DISABLED, VI_DEFAULT = VI_V_SEL,
+};
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
-
+#define SET 1
+#define RESET 0
 /* USER CODE END EM */
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
+void initPSU(void);
+
 void showStartup(void);
 
 void displayVoltageCurrent(double Vin, double V, double I);
+
+void enableOutput(void);
+
+void disableOutput(void);
 
 /* USER CODE END EFP */
 

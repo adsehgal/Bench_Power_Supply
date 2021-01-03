@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+formattingConfirmScopeForEmptySelection=false
 scalability.reconciler=false
 spelling_locale=en_GB
 spelling_locale_initialized=true

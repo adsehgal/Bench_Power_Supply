@@ -12,11 +12,11 @@
 
 extern ADC_HandleTypeDef hadc1;
 
-uint32_t readVin();
+double readVin(void);
 
-uint32_t readVout();
+double readVout(void);
 
-uint32_t readIOut();
+double readIOut(void);
 
 
 #endif /* INC_ANALOG_H_ */
