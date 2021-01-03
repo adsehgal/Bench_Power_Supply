@@ -28,12 +28,16 @@ From  : Project [PSU.PrjPcb]
    Generated File[PCB_Mechanical_4.gbr]
    Generated File[PCB_Mechanical_19.gbr]
    Generated File[PCB_Profile.gbr]
+   Generated File[PCB_NPTH_Drill.gbr]
+   Generated File[PCB_PTH_Drill.gbr]
+   Generated File[PCB_Drawing_1.gbr]
+   Generated File[PCB_Drillmap_1.gbr]
    Generated File[PCB.RUL]
    Generated File[PCB.EXTREP]
    Generated File[PCB.REP]
 
 
-Files Generated   : 30
+Files Generated   : 34
 Documents Printed : 0
 
-Finished Output Generation At 12:51:30 AM On 12/30/2020
+Finished Output Generation At 11:24:20 PM On 1/2/2021

@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: PCB.GBR   12/30/2020  12:51:23 AM
+Gerber File Extension Report For: PCB.GBR   1/2/2021  11:24:14 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -33,4 +33,8 @@ Layer Extension     Layer Description
 .gbr                Bottom Designator                       
 .gbr                Top Designator                          
 .gbr                Profile                                 
+.gbr                Non-plated through-hole drill file      
+.gbr                Plated through-hole drill file          
+.gbr                Drill Drawing                           
+.gbr                Drill Guide                             
 ------------------------------------------------------------------------------------------
