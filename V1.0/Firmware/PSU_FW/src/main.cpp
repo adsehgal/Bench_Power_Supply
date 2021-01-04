@@ -48,7 +48,7 @@ void setup()
   pinMode(CL_LED, OUTPUT);
   pinMode(nREG_EN, OUTPUT);
 
-  digitalWrite(nREG_EN, HIGH); //start the PSU with enable off
+  digitalWrite(nREG_EN, LOW); //start the PSU with enable off
   digitalWrite(OUT_LED, HIGH);
   digitalWrite(CL_LED, HIGH);
   initDiv();
@@ -102,13 +102,13 @@ void loop()
   {
     // Serial.println("VI cl\n");
     digitalWrite(CL_LED, LOW);
-    digitalWrite(nREG_EN, HIGH); //disable regulator
+    // digitalWrite(nREG_EN, HIGH); //disable regulator
   }
   else
   {
     // Serial.println("VI else\n");
     digitalWrite(CL_LED, HIGH); //keep LED enabled
-    digitalWrite(nREG_EN, LOW); //keep regulator enabled
+    // digitalWrite(nREG_EN, LOW); //keep regulator enabled
   }
 
   if (btnPress & OEN)
