@@ -52,11 +52,6 @@ enum textPositions {
 	INFO_X = 2,
 	ON_OFF_X = 105,
 	VIN_Y = 0,
-//	VOUT_Y = 12,
-//	IOUT_Y = 24,
-//	ISET_Y = 36,
-//	VSET_Y = 48,
-
 	VSET_Y = 12,
 	VOUT_Y = 24,
 	ISET_Y = 36,
@@ -103,6 +98,7 @@ void buttonsHandler(uint8_t buttons);
 
 uint32_t vSetCalc(void);
 
+void fatalErrorScreen(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

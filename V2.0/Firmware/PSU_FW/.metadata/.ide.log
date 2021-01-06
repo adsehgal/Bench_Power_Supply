@@ -10524,3 +10524,253 @@
 2021-01-05 22:53:21,525 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2075mS.
 2021-01-05 22:53:21,526 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
 2021-01-05 22:53:21,528 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-05 23:51:31,295 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 895004920 Bytes (1073741824)
+2021-01-05 23:54:58,531 [INFO] Gpio:248 - dependency for GPIO [ADC1, I2C1, USART2]
+2021-01-05 23:59:49,659 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 508277808 Bytes (1073741824)
+2021-01-06 00:00:17,526 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 888910896 Bytes (1073741824)
+2021-01-06 00:02:24,811 [INFO] DbMcusDocs:145 - JSON generation date=Wed Dec 09 09:22:40 PST 2020 (1607534560)
+2021-01-06 00:02:24,974 [INFO] DbMcusDocs:81 - Found 612 MCUs documents
+2021-01-06 00:02:32,935 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 543751360 Bytes (1073741824)
+2021-01-06 00:02:59,342 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 472033328 Bytes (1073741824)
+2021-01-06 00:04:27,568 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 580558904 Bytes (1073741824)
+2021-01-06 00:04:37,809 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,809 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,809 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,809 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,874 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,874 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,874 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:04:37,874 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:06:32,001 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 837166912 Bytes (1073741824)
+2021-01-06 00:06:37,369 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 859709256 Bytes (1073741824)
+2021-01-06 00:06:37,516 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-06 00:06:37,517 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-01-06 00:06:37,517 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2021-01-06 00:06:37,524 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:06:37,524 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:06:37,740 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2021-01-06 00:06:37,781 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2021-01-06 00:06:37,799 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2021-01-06 00:06:37,843 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2021-01-06 00:06:37,950 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:06:37,951 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:06:37,952 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:06:37,953 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:06:37,959 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2021-01-06 00:06:38,017 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2021-01-06 00:06:38,020 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2021-01-06 00:06:38,065 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2021-01-06 00:06:38,070 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2021-01-06 00:06:38,154 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2021-01-06 00:06:38,156 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2021-01-06 00:06:38,199 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2021-01-06 00:06:38,204 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-01-06 00:06:38,258 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2021-01-06 00:06:38,269 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-01-06 00:06:38,270 [WARN] CodeGenerator:3177 - IP not found : null
+2021-01-06 00:06:38,275 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2021-01-06 00:06:38,328 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2021-01-06 00:06:38,331 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2021-01-06 00:06:38,420 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2021-01-06 00:06:38,949 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 195mS.
+2021-01-06 00:06:38,951 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-06 00:06:39,711 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2021-01-06 00:06:40,945 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1994mS.
+2021-01-06 00:06:40,946 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:06:40,948 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:15:37,677 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 763210864 Bytes (1073741824)
+2021-01-06 00:15:55,381 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 893760616 Bytes (1073741824)
+2021-01-06 00:15:55,558 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-06 00:15:55,558 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-06 00:15:55,558 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-01-06 00:15:55,558 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-06 00:15:55,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-06 00:15:55,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-01-06 00:15:55,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-06 00:15:55,559 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-01-06 00:15:55,559 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2021-01-06 00:15:55,564 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:15:55,565 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:15:55,740 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2021-01-06 00:15:55,781 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2021-01-06 00:15:55,799 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2021-01-06 00:15:55,839 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2021-01-06 00:15:55,941 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:15:55,942 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:15:55,944 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:15:55,945 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:15:55,950 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2021-01-06 00:15:56,011 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2021-01-06 00:15:56,013 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2021-01-06 00:15:56,060 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2021-01-06 00:15:56,064 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2021-01-06 00:15:56,140 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2021-01-06 00:15:56,143 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2021-01-06 00:15:56,182 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2021-01-06 00:15:56,186 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-01-06 00:15:56,239 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2021-01-06 00:15:56,250 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-01-06 00:15:56,250 [WARN] CodeGenerator:3177 - IP not found : null
+2021-01-06 00:15:56,254 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2021-01-06 00:15:56,300 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2021-01-06 00:15:56,303 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2021-01-06 00:15:56,383 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2021-01-06 00:15:57,011 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 210mS.
+2021-01-06 00:15:57,014 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-06 00:15:57,344 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2021-01-06 00:15:59,162 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2148mS.
+2021-01-06 00:15:59,163 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:15:59,165 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:16:07,858 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 323620984 Bytes (1073741824)
+2021-01-06 00:16:27,814 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 388863280 Bytes (1073741824)
+2021-01-06 00:18:58,406 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 790422328 Bytes (1073741824)
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-06 00:18:58,555 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-01-06 00:18:58,556 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2021-01-06 00:18:58,562 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:18:58,562 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:18:58,761 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2021-01-06 00:18:58,797 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2021-01-06 00:18:58,814 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2021-01-06 00:18:58,857 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2021-01-06 00:18:58,982 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:18:58,983 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:18:58,984 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:18:58,985 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:18:58,992 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2021-01-06 00:18:59,047 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2021-01-06 00:18:59,050 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2021-01-06 00:18:59,096 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2021-01-06 00:18:59,102 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2021-01-06 00:18:59,178 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2021-01-06 00:18:59,180 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2021-01-06 00:18:59,220 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2021-01-06 00:18:59,224 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-01-06 00:18:59,280 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2021-01-06 00:18:59,291 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-01-06 00:18:59,291 [WARN] CodeGenerator:3177 - IP not found : null
+2021-01-06 00:18:59,296 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2021-01-06 00:18:59,341 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2021-01-06 00:18:59,344 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2021-01-06 00:18:59,427 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2021-01-06 00:18:59,907 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 163mS.
+2021-01-06 00:18:59,910 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-06 00:19:00,582 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2021-01-06 00:19:01,909 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1999mS.
+2021-01-06 00:19:01,909 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:19:01,911 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:30:52,511 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 868325160 Bytes (1073741824)
+2021-01-06 00:30:54,630 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 887988376 Bytes (1073741824)
+2021-01-06 00:30:54,858 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-06 00:30:54,859 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-01-06 00:30:54,860 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2021-01-06 00:30:54,869 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:30:54,869 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:30:55,069 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2021-01-06 00:30:55,107 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2021-01-06 00:30:55,124 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2021-01-06 00:30:55,165 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2021-01-06 00:30:55,265 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:30:55,266 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:30:55,268 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:30:55,269 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:30:55,274 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2021-01-06 00:30:55,329 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2021-01-06 00:30:55,332 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2021-01-06 00:30:55,374 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2021-01-06 00:30:55,380 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2021-01-06 00:30:55,453 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2021-01-06 00:30:55,455 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2021-01-06 00:30:55,495 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2021-01-06 00:30:55,500 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-01-06 00:30:55,550 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2021-01-06 00:30:55,561 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-01-06 00:30:55,562 [WARN] CodeGenerator:3177 - IP not found : null
+2021-01-06 00:30:55,567 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2021-01-06 00:30:55,615 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2021-01-06 00:30:55,618 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2021-01-06 00:30:55,696 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2021-01-06 00:30:56,426 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 308mS.
+2021-01-06 00:30:56,429 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-06 00:30:56,825 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2021-01-06 00:30:57,987 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 1558mS.
+2021-01-06 00:30:57,988 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:30:57,990 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:34:39,109 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,110 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,111 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,111 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,236 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,236 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,237 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:39,237 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:43,360 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 486517376 Bytes (1073741824)
+2021-01-06 00:34:45,776 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 575646336 Bytes (1073741824)
+2021-01-06 00:34:45,930 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-01-06 00:34:45,931 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-01-06 00:34:45,932 [INFO] CodeGenerator:639 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.1.1.202012091304//db/
+2021-01-06 00:34:45,937 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:45,937 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:34:46,102 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp_save
+2021-01-06 00:34:46,139 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/license.tmp
+2021-01-06 00:34:46,156 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp_save
+2021-01-06 00:34:46,195 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/gpio.tmp
+2021-01-06 00:34:46,300 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:34:46,300 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:34:46,301 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:34:46,302 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-01-06 00:34:46,308 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c_save
+2021-01-06 00:34:46,360 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_it.c
+2021-01-06 00:34:46,362 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h_save
+2021-01-06 00:34:46,404 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_it.h
+2021-01-06 00:34:46,409 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c_save
+2021-01-06 00:34:46,483 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/stm32f4xx_hal_msp.c
+2021-01-06 00:34:46,486 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp_save
+2021-01-06 00:34:46,523 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/MXTmpFiles/system.tmp
+2021-01-06 00:34:46,527 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-01-06 00:34:46,579 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/stm32f4xx_hal_conf.h
+2021-01-06 00:34:46,591 [WARN] IPConfigManager:2967 - IP not found : TIM
+2021-01-06 00:34:46,592 [WARN] CodeGenerator:3177 - IP not found : null
+2021-01-06 00:34:46,595 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h_save
+2021-01-06 00:34:46,699 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Inc/main.h
+2021-01-06 00:34:46,702 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c_save
+2021-01-06 00:34:46,781 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSU_FW/Core/Src/main.c
+2021-01-06 00:34:47,290 [INFO] ProjectBuilder:2328 - Time for Copy HAL[1] : 182mS.
+2021-01-06 00:34:47,293 [INFO] ProjectBuilder:3259 - Project Generator version: 3.11.2
+2021-01-06 00:34:47,630 [INFO] ConfigFileManager:1238 - The Die is : DIE433
+2021-01-06 00:34:49,506 [INFO] ProjectBuilder:3425 - Time for Generating toolchain IDE Files: 2213mS.
+2021-01-06 00:34:49,507 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 0mS.
+2021-01-06 00:34:49,509 [INFO] ProjectBuilder:2207 - Time for Copy CMSIS : 1mS.
+2021-01-06 00:36:12,799 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,800 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,801 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,801 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,883 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,883 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,883 [WARN] IP:2091 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:12,883 [WARN] IP:2091 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-01-06 00:36:17,094 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,578x522,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
