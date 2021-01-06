@@ -31,13 +31,14 @@ This repo contains project files for a bench top power supply I designed for my 
 * Non-standard footprint 3-D models have been provided in the STEP file format
 
 ## To Do
-- [ ] Connect OLED reset line to a GPIO</br>
-- [ ] Add reset pull up to MCU
-- [ ] ORed interrupt for buttons
+- [x] Connect OLED reset line to a GPIO</br>
+- [x] Add reset pull up to MCU
+- [x] ANDed interrupt for buttons
 - [ ] Add config flash storage
 - [ ] Bigger display?
-- [ ] Reduce inductor footprint
+- [x] Reduce inductor footprint
 - [ ] Add debouncing either in hardware or firmware, ideally both
+- [x] Add a reinit function
 
 ## Authors
 
