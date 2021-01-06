@@ -65,6 +65,7 @@ UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 struct Stats psuStats;
+uint8_t swIntFlag = RESET;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -83,37 +84,36 @@ static void MX_USART2_UART_Init(void);
 /* USER CODE END 0 */
 
 /**
-  * @brief  The application entry point.
-  * @retval int
-  */
-int main(void)
-{
-  /* USER CODE BEGIN 1 */
+ * @brief  The application entry point.
+ * @retval int
+ */
+int main(void) {
+	/* USER CODE BEGIN 1 */
 
-  /* USER CODE END 1 */
+	/* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+	/* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+	HAL_Init();
 
-  /* USER CODE BEGIN Init */
+	/* USER CODE BEGIN Init */
 
-  /* USER CODE END Init */
+	/* USER CODE END Init */
 
-  /* Configure the system clock */
-  SystemClock_Config();
+	/* Configure the system clock */
+	SystemClock_Config();
 
-  /* USER CODE BEGIN SysInit */
+	/* USER CODE BEGIN SysInit */
 
-  /* USER CODE END SysInit */
+	/* USER CODE END SysInit */
 
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_ADC1_Init();
-  MX_I2C1_Init();
-  MX_USART2_UART_Init();
-  /* USER CODE BEGIN 2 */
+	/* Initialize all configured peripherals */
+	MX_GPIO_Init();
+	MX_ADC1_Init();
+	MX_I2C1_Init();
+	MX_USART2_UART_Init();
+	/* USER CODE BEGIN 2 */
 
 	uint8_t i2cScanRet = i2cScan();
 	if (!i2cScanRet) {
@@ -122,10 +122,10 @@ int main(void)
 	printMsg("no I2C errors\n\n");
 
 	initPSU();
-  /* USER CODE END 2 */
+	/* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+	/* Infinite loop */
+	/* USER CODE BEGIN WHILE */
 	while (1) {
 		double Vin = readVin();
 
@@ -135,50 +135,9 @@ int main(void)
 
 		displayVoltageCurrent(Vin, Vout, Iout);
 
-		uint8_t buttons = whichBtn();
-
-		if (buttons & VI_BTN) {
-			if (psuStats.VI == VI_V_SEL) {
-				psuStats.VI = VI_I_SEL;
-			} else if (psuStats.VI == VI_I_SEL) {
-				psuStats.VI = VI_V_SEL;
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
-		}
-
-		if (buttons & UP_BTN) {
-			if (psuStats.VI & VI_V_SEL) {
-				psuStats.vSet++;
-				MCP4018_WriteVal(psuStats.vSet);
-			} else if (psuStats.VI & VI_I_SEL) {
-				psuStats.iSet++;
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
-		}
-
-		if (buttons & DW_BTN) {
-			if (psuStats.VI & VI_V_SEL) {
-				psuStats.vSet--;
-				MCP4018_WriteVal(psuStats.vSet);
-			} else if (psuStats.VI & VI_I_SEL) {
-				psuStats.iSet--;
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
-		}
-
-		if (buttons & OE_BTN) {
-			if (psuStats.OE == OE_ENABLED) {
-				psuStats.OE = OE_DISABLED;
-				disableOutput();
-			} else if (psuStats.OE == OE_DISABLED) {
-				psuStats.OE = OE_ENABLED;
-				enableOutput();
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
+		if (swIntFlag == SET) {
+			buttonsHandler(whichBtn());
+			swIntFlag = RESET;
 		}
 
 		if (Iout > psuStats.iSet) {
@@ -188,256 +147,244 @@ int main(void)
 		}
 
 		setLeds(psuStats);
-    /* USER CODE END WHILE */
+		/* USER CODE END WHILE */
 
-    /* USER CODE BEGIN 3 */
+		/* USER CODE BEGIN 3 */
 	}
-  /* USER CODE END 3 */
+	/* USER CODE END 3 */
 }
 
 /**
-  * @brief System Clock Configuration
-  * @retval None
-  */
-void SystemClock_Config(void)
-{
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+ * @brief System Clock Configuration
+ * @retval None
+ */
+void SystemClock_Config(void) {
+	RCC_OscInitTypeDef RCC_OscInitStruct = { 0 };
+	RCC_ClkInitTypeDef RCC_ClkInitStruct = { 0 };
 
-  /** Configure the main internal regulator output voltage
-  */
-  __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+	/** Configure the main internal regulator output voltage
+	 */
+	__HAL_RCC_PWR_CLK_ENABLE();
+	__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+	/** Initializes the RCC Oscillators according to the specified parameters
+	 * in the RCC_OscInitTypeDef structure.
+	 */
+	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+	RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+	RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+		Error_Handler();
+	}
+	/** Initializes the CPU, AHB and APB buses clocks
+	 */
+	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
+			| RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
+	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+	RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+	RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-  {
-    Error_Handler();
-  }
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK) {
+		Error_Handler();
+	}
 }
 
 /**
-  * @brief ADC1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_ADC1_Init(void)
-{
+ * @brief ADC1 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_ADC1_Init(void) {
 
-  /* USER CODE BEGIN ADC1_Init 0 */
+	/* USER CODE BEGIN ADC1_Init 0 */
 
-  /* USER CODE END ADC1_Init 0 */
+	/* USER CODE END ADC1_Init 0 */
 
-  ADC_ChannelConfTypeDef sConfig = {0};
+	ADC_ChannelConfTypeDef sConfig = { 0 };
 
-  /* USER CODE BEGIN ADC1_Init 1 */
+	/* USER CODE BEGIN ADC1_Init 1 */
 
-  /* USER CODE END ADC1_Init 1 */
-  /** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
-  */
-  hadc1.Instance = ADC1;
-  hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
-  hadc1.Init.Resolution = ADC_RESOLUTION_12B;
-  hadc1.Init.ScanConvMode = ENABLE;
-  hadc1.Init.ContinuousConvMode = ENABLE;
-  hadc1.Init.DiscontinuousConvMode = DISABLE;
-  hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
-  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 3;
-  hadc1.Init.DMAContinuousRequests = DISABLE;
-  hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
-  if (HAL_ADC_Init(&hadc1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_0;
-  sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_1;
-  sConfig.Rank = 2;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
-  */
-  sConfig.Channel = ADC_CHANNEL_13;
-  sConfig.Rank = 3;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN ADC1_Init 2 */
+	/* USER CODE END ADC1_Init 1 */
+	/** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
+	 */
+	hadc1.Instance = ADC1;
+	hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
+	hadc1.Init.Resolution = ADC_RESOLUTION_12B;
+	hadc1.Init.ScanConvMode = ENABLE;
+	hadc1.Init.ContinuousConvMode = ENABLE;
+	hadc1.Init.DiscontinuousConvMode = DISABLE;
+	hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
+	hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+	hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
+	hadc1.Init.NbrOfConversion = 3;
+	hadc1.Init.DMAContinuousRequests = DISABLE;
+	hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
+	if (HAL_ADC_Init(&hadc1) != HAL_OK) {
+		Error_Handler();
+	}
+	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+	 */
+	sConfig.Channel = ADC_CHANNEL_0;
+	sConfig.Rank = 1;
+	sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
+	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+	 */
+	sConfig.Channel = ADC_CHANNEL_1;
+	sConfig.Rank = 2;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
+	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+	 */
+	sConfig.Channel = ADC_CHANNEL_13;
+	sConfig.Rank = 3;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
+	/* USER CODE BEGIN ADC1_Init 2 */
 
-  /* USER CODE END ADC1_Init 2 */
+	/* USER CODE END ADC1_Init 2 */
 
 }
 
 /**
-  * @brief I2C1 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_I2C1_Init(void)
-{
+ * @brief I2C1 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_I2C1_Init(void) {
 
-  /* USER CODE BEGIN I2C1_Init 0 */
+	/* USER CODE BEGIN I2C1_Init 0 */
 
-  /* USER CODE END I2C1_Init 0 */
+	/* USER CODE END I2C1_Init 0 */
 
-  /* USER CODE BEGIN I2C1_Init 1 */
+	/* USER CODE BEGIN I2C1_Init 1 */
 
-  /* USER CODE END I2C1_Init 1 */
-  hi2c1.Instance = I2C1;
-  hi2c1.Init.ClockSpeed = 400000;
-  hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
-  hi2c1.Init.OwnAddress1 = 0;
-  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c1.Init.OwnAddress2 = 0;
-  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN I2C1_Init 2 */
-  /* USER CODE END I2C1_Init 2 */
+	/* USER CODE END I2C1_Init 1 */
+	hi2c1.Instance = I2C1;
+	hi2c1.Init.ClockSpeed = 400000;
+	hi2c1.Init.DutyCycle = I2C_DUTYCYCLE_2;
+	hi2c1.Init.OwnAddress1 = 0;
+	hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+	hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+	hi2c1.Init.OwnAddress2 = 0;
+	hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+	hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+	if (HAL_I2C_Init(&hi2c1) != HAL_OK) {
+		Error_Handler();
+	}
+	/* USER CODE BEGIN I2C1_Init 2 */
+	/* USER CODE END I2C1_Init 2 */
 
 }
 
 /**
-  * @brief USART2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART2_UART_Init(void)
-{
+ * @brief USART2 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_USART2_UART_Init(void) {
 
-  /* USER CODE BEGIN USART2_Init 0 */
+	/* USER CODE BEGIN USART2_Init 0 */
 
-  /* USER CODE END USART2_Init 0 */
+	/* USER CODE END USART2_Init 0 */
 
-  /* USER CODE BEGIN USART2_Init 1 */
+	/* USER CODE BEGIN USART2_Init 1 */
 
-  /* USER CODE END USART2_Init 1 */
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART2_Init 2 */
+	/* USER CODE END USART2_Init 1 */
+	huart2.Instance = USART2;
+	huart2.Init.BaudRate = 115200;
+	huart2.Init.WordLength = UART_WORDLENGTH_8B;
+	huart2.Init.StopBits = UART_STOPBITS_1;
+	huart2.Init.Parity = UART_PARITY_NONE;
+	huart2.Init.Mode = UART_MODE_TX_RX;
+	huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+	huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+	if (HAL_UART_Init(&huart2) != HAL_OK) {
+		Error_Handler();
+	}
+	/* USER CODE BEGIN USART2_Init 2 */
 
-  /* USER CODE END USART2_Init 2 */
+	/* USER CODE END USART2_Init 2 */
 
 }
 
 /**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_GPIO_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
+ * @brief GPIO Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_GPIO_Init(void) {
+	GPIO_InitTypeDef GPIO_InitStruct = { 0 };
 
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
+	/* GPIO Ports Clock Enable */
+	__HAL_RCC_GPIOC_CLK_ENABLE();
+	__HAL_RCC_GPIOA_CLK_ENABLE();
+	__HAL_RCC_GPIOD_CLK_ENABLE();
+	__HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, REG_EN_Pin|CC_LED_Pin, GPIO_PIN_RESET);
+	/*Configure GPIO pin Output Level */
+	HAL_GPIO_WritePin(GPIOC, REG_EN_Pin | CC_LED_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5|VI_LED_Pin|OE_LED_Pin, GPIO_PIN_RESET);
+	/*Configure GPIO pin Output Level */
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5 | VI_LED_Pin | OE_LED_Pin,
+			GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, nSW_UP_Pin|OLED_RST_Pin, GPIO_PIN_RESET);
+	/*Configure GPIO pin Output Level */
+	HAL_GPIO_WritePin(GPIOB, nSW_UP_Pin | OLED_RST_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : REG_EN_Pin CC_LED_Pin */
-  GPIO_InitStruct.Pin = REG_EN_Pin|CC_LED_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+	/*Configure GPIO pins : REG_EN_Pin CC_LED_Pin */
+	GPIO_InitStruct.Pin = REG_EN_Pin | CC_LED_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PA5 VI_LED_Pin OE_LED_Pin */
-  GPIO_InitStruct.Pin = GPIO_PIN_5|VI_LED_Pin|OE_LED_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+	/*Configure GPIO pins : PA5 VI_LED_Pin OE_LED_Pin */
+	GPIO_InitStruct.Pin = GPIO_PIN_5 | VI_LED_Pin | OE_LED_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : nSW_INT_Pin */
-  GPIO_InitStruct.Pin = nSW_INT_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(nSW_INT_GPIO_Port, &GPIO_InitStruct);
+	/*Configure GPIO pin : nSW_INT_Pin */
+	GPIO_InitStruct.Pin = nSW_INT_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(nSW_INT_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : nSW_VI_Pin */
-  GPIO_InitStruct.Pin = nSW_VI_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(nSW_VI_GPIO_Port, &GPIO_InitStruct);
+	/*Configure GPIO pin : nSW_VI_Pin */
+	GPIO_InitStruct.Pin = nSW_VI_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(nSW_VI_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : nSW_DW_Pin */
-  GPIO_InitStruct.Pin = nSW_DW_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(nSW_DW_GPIO_Port, &GPIO_InitStruct);
+	/*Configure GPIO pin : nSW_DW_Pin */
+	GPIO_InitStruct.Pin = nSW_DW_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(nSW_DW_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : nSW_UP_Pin OLED_RST_Pin */
-  GPIO_InitStruct.Pin = nSW_UP_Pin|OLED_RST_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+	/*Configure GPIO pins : nSW_UP_Pin OLED_RST_Pin */
+	GPIO_InitStruct.Pin = nSW_UP_Pin | OLED_RST_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : nSW_OE_Pin */
-  GPIO_InitStruct.Pin = nSW_OE_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(nSW_OE_GPIO_Port, &GPIO_InitStruct);
+	/*Configure GPIO pin : nSW_OE_Pin */
+	GPIO_InitStruct.Pin = nSW_OE_Pin;
+	GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
+	HAL_GPIO_Init(nSW_OE_GPIO_Port, &GPIO_InitStruct);
 
-  /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 0);
-  HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
+	/* EXTI interrupt init*/
+	HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 0);
+	HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
 
@@ -473,9 +420,10 @@ void showStartup(void) {
 
 void displayVoltageCurrent(double Vin, double V, double I) {
 	ssd1306_Fill(SSD1306_BLACK);
-	ssd1306_SetCursor(2, 12);
+	ssd1306_SetCursor(INFO_X, VIN_Y);
 	char buff[10] = { };
 
+	//Display voltage in
 	ssd1306_WriteString("Vin = ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	if (Vin > 1000) {
 		sprintf(buff, "%4.2f", Vin / 1000);
@@ -487,10 +435,37 @@ void displayVoltageCurrent(double Vin, double V, double I) {
 		ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 
-	ssd1306_SetCursor(2, 24);
+	//display whether PSU output is enabled
+	ssd1306_SetCursor(ON_OFF_X, VIN_Y);
+	if (psuStats.OE == OE_ENABLED)
+		ssd1306_WriteString("ON", INFO_TEXT_SIZE, SSD1306_WHITE);
+	else
+		ssd1306_WriteString("OFF", INFO_TEXT_SIZE, SSD1306_WHITE);
+
+	//display set voltage
+	ssd1306_SetCursor(INFO_X, VSET_Y);
+	ssd1306_WriteString("Vset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+	if (vSetCalc() >= 1000) {
+		sprintf(buff, "%4.2f", (double) vSetCalc() / 1000.0);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_V_SEL)
+			ssd1306_WriteString("V <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
+	} else {
+		sprintf(buff, "%4.2f", (double) psuStats.vSet);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_V_SEL)
+			ssd1306_WriteString("mV <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
+	}
+
+	//display output voltage
+	ssd1306_SetCursor(INFO_X, VOUT_Y);
 	ssd1306_WriteString("Vout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
-	if (V > 1000) {
-		sprintf(buff, "%4.2f", V / 1000);
+	if (V >= 1000) {
+		sprintf(buff, "%4.2f", V / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
@@ -499,10 +474,30 @@ void displayVoltageCurrent(double Vin, double V, double I) {
 		ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 
-	ssd1306_SetCursor(2, 36);
+	//display set current
+	ssd1306_SetCursor(INFO_X, ISET_Y);
+	ssd1306_WriteString("Iset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+	if (psuStats.iSet >= 1000) {
+		sprintf(buff, "%4.2f", (double) psuStats.iSet / 1000.0);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_I_SEL)
+			ssd1306_WriteString("A <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("A", INFO_TEXT_SIZE, SSD1306_WHITE);
+	} else {
+		sprintf(buff, "%4.2f", (double) psuStats.iSet);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_I_SEL)
+			ssd1306_WriteString("mA <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("mA", INFO_TEXT_SIZE, SSD1306_WHITE);
+	}
+
+	//display output current
+	ssd1306_SetCursor(INFO_X, IOUT_Y);
 	ssd1306_WriteString("Iout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
-	if (I > 1000) {
-		sprintf(buff, "%4.2f", I / 1000);
+	if (I >= 1000) {
+		sprintf(buff, "%4.2f", I / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		ssd1306_WriteString("A", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
@@ -522,27 +517,78 @@ void disableOutput(void) {
 	HAL_GPIO_WritePin(REG_EN_GPIO_Port, REG_EN_Pin, GPIO_PIN_SET);
 }
 
+void buttonsHandler(uint8_t buttons) {
+	if (buttons & VI_BTN) {
+		if (psuStats.VI == VI_V_SEL) {
+			psuStats.VI = VI_I_SEL;
+		} else if (psuStats.VI == VI_I_SEL) {
+			psuStats.VI = VI_V_SEL;
+		} else { //something went wrong, reinit psu
+			initPSU();
+		}
+	}
+
+	if (buttons & UP_BTN) {
+		if (psuStats.VI & VI_V_SEL) {
+			psuStats.vSet++;
+			MCP4018_WriteVal(psuStats.vSet);
+		} else if (psuStats.VI & VI_I_SEL) {
+			psuStats.iSet++;
+		} else { //something went wrong, reinit psu
+			initPSU();
+		}
+	}
+
+	if (buttons & DW_BTN) {
+		if (psuStats.VI & VI_V_SEL) {
+			psuStats.vSet--;
+			MCP4018_WriteVal(psuStats.vSet);
+		} else if (psuStats.VI & VI_I_SEL) {
+			psuStats.iSet--;
+		} else { //something went wrong, reinit psu
+			initPSU();
+		}
+	}
+
+	if (buttons & OE_BTN) {
+		if (psuStats.OE == OE_ENABLED) {
+			psuStats.OE = OE_DISABLED;
+			disableOutput();
+		} else if (psuStats.OE == OE_DISABLED) {
+			psuStats.OE = OE_ENABLED;
+			enableOutput();
+		} else { //something went wrong, reinit psu
+			initPSU();
+		}
+	}
+}
+
+uint32_t vSetCalc(void){
+	return (psuStats.vSet - 0) * (12000 - 0) / (0x7F - 0) + 0;
+}
+
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	if (GPIO_Pin == nSW_INT_Pin) // If The INT Source Is EXTI Line9 (A9 Pin)
 	{
-		printMsg("Int!\n");
+		swIntFlag = SET;
+		printMsg("Int\n");
+		buttonsHandler(OE_BTN | VI_BTN);
 	}
 }
 
 /* USER CODE END 4 */
 
 /**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
-void Error_Handler(void)
-{
-  /* USER CODE BEGIN Error_Handler_Debug */
+ * @brief  This function is executed in case of error occurrence.
+ * @retval None
+ */
+void Error_Handler(void) {
+	/* USER CODE BEGIN Error_Handler_Debug */
 	/* User can add his own implementation to report the HAL error return state */
 	__disable_irq();
 	while (1) {
 	}
-  /* USER CODE END Error_Handler_Debug */
+	/* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT
