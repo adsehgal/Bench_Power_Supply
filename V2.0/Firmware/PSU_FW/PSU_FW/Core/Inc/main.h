@@ -38,16 +38,25 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
 struct Stats {
-   uint8_t vSet;	//voltage set in a byte for MCP4018
-   uint32_t iSet;	//current set in mA
-   uint8_t iLim;	//bit[0] ? limit reached : limit NOT reached
-   uint8_t OE;		//bit[0] ? enabled : disabled
-   uint8_t VI;		//bit[0] ? voltage : current
+	uint8_t vSet;	//voltage set in a byte for MCP4018
+	uint32_t iSet;	//current set in mA
+	uint8_t iLim;	//bit[0] ? limit reached : limit NOT reached
+	uint8_t OE;		//bit[0] ? enabled : disabled
+	uint8_t VI;		//bit[0] ? voltage : current
 };
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
+enum textPositions {
+	INFO_X = 2,
+	ON_OFF_X = 105,
+	VIN_Y = 0,
+	VSET_Y = 12,
+	VOUT_Y = 24,
+	ISET_Y = 36,
+	IOUT_Y = 48,
+};
 enum enables {
 	OE_ENABLED = SET,
 	OE_DISABLED = RESET,
@@ -57,7 +66,11 @@ enum enables {
 	I_LIM_NSET = RESET,
 };
 enum defaults {
-	V_DEFAULT = 0x3F, I_DEFAULT = 1000, I_LIM_DEFAULT = I_LIM_NSET, OE_DEFAULT = OE_DISABLED, VI_DEFAULT = VI_V_SEL,
+	V_DEFAULT = 0x3F,
+	I_DEFAULT = 1000,
+	I_LIM_DEFAULT = I_LIM_NSET,
+	OE_DEFAULT = OE_DISABLED,
+	VI_DEFAULT = VI_V_SEL,
 };
 /* USER CODE END EC */
 
@@ -81,6 +94,11 @@ void enableOutput(void);
 
 void disableOutput(void);
 
+void buttonsHandler(uint8_t buttons);
+
+uint32_t vSetCalc(void);
+
+void fatalErrorScreen(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

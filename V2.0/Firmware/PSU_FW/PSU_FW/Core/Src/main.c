@@ -49,6 +49,8 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define INFO_TEXT_SIZE Font_7x10
+#define ERROR_TEXT_SIZE Font_11x18
+#define REFRESH_INTERVAL 2500	// 2500 / (84Ε6 / 8400) = 0.25s
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -61,10 +63,15 @@ ADC_HandleTypeDef hadc1;
 
 I2C_HandleTypeDef hi2c1;
 
+TIM_HandleTypeDef htim10;
+
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
 struct Stats psuStats;
+uint8_t swIntFlag = RESET;
+uint16_t timerVal = 0;
+uint8_t timerFlag = RESET;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -73,6 +80,7 @@ static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_TIM10_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -112,14 +120,17 @@ int main(void) {
 	MX_ADC1_Init();
 	MX_I2C1_Init();
 	MX_USART2_UART_Init();
+	MX_TIM10_Init();
 	/* USER CODE BEGIN 2 */
 
+	//check for i2c devices
 	uint8_t i2cScanRet = i2cScan();
 	if (!i2cScanRet) {
 		errorLEDs(i2cScanRet);
 	}
 	printMsg("no I2C errors\n\n");
 
+	//initialize entire system
 	initPSU();
 	/* USER CODE END 2 */
 
@@ -127,67 +138,37 @@ int main(void) {
 	/* USER CODE BEGIN WHILE */
 	while (1) {
 
+		//get all info from ADCs
 		double Vin = readVin();
 
 		double Vout = readVout();
 
 		double Iout = readIOut();
 
-		displayVoltageCurrent(Vin, Vout, Iout);
-
-		uint8_t buttons = whichBtn();
-
-		if (buttons & VI_BTN) {
-			if (psuStats.VI == VI_V_SEL) {
-				psuStats.VI = VI_I_SEL;
-			} else if (psuStats.VI == VI_I_SEL) {
-				psuStats.VI = VI_V_SEL;
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
+		//update display only when enough time has passed
+		if (__HAL_TIM_GET_COUNTER(&htim10) - timerVal >= REFRESH_INTERVAL) {
+			displayVoltageCurrent(Vin, Vout, Iout);
+			timerVal = __HAL_TIM_GET_COUNTER(&htim10);
 		}
 
-		if (buttons & UP_BTN) {
-			if (psuStats.VI & VI_V_SEL) {
-				psuStats.vSet++;
-				MCP4018_WriteVal(psuStats.vSet);
-			} else if (psuStats.VI & VI_I_SEL) {
-				psuStats.iSet++;
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
+		//only handle buttons if interrupt was flagged
+		if (swIntFlag == SET) {
+			buttonsHandler(whichBtn());
+			swIntFlag = RESET;
 		}
 
-		if (buttons & DW_BTN) {
-			if (psuStats.VI & VI_V_SEL) {
-				psuStats.vSet--;
-				MCP4018_WriteVal(psuStats.vSet);
-			} else if (psuStats.VI & VI_I_SEL) {
-				psuStats.iSet--;
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
-		}
-
-		if (buttons & OE_BTN) {
-			if (psuStats.OE == OE_ENABLED) {
-				psuStats.OE = OE_DISABLED;
-				disableOutput();
-			} else if (psuStats.OE == OE_DISABLED) {
-				psuStats.OE = OE_ENABLED;
-				enableOutput();
-			} else { //something went wrong, reinit psu
-				initPSU();
-			}
-		}
-
-		if(Iout > psuStats.iSet){
+		//check for current surpassing set limit
+		if (Iout > psuStats.iSet) {
 			psuStats.iLim = I_LIM_SET;
-		}else {
+		} else {
 			psuStats.iLim = I_LIM_NSET;
 		}
 
+		//set LEDs according to setup/errors
 		setLeds(psuStats);
+		/* USER CODE END WHILE */
+
+		/* USER CODE BEGIN 3 */
 	}
 	/* USER CODE END 3 */
 }
@@ -210,7 +191,12 @@ void SystemClock_Config(void) {
 	RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
 	RCC_OscInitStruct.HSIState = RCC_HSI_ON;
 	RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+	RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+	RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+	RCC_OscInitStruct.PLL.PLLM = 8;
+	RCC_OscInitStruct.PLL.PLLN = 84;
+	RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+	RCC_OscInitStruct.PLL.PLLQ = 4;
 	if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
 		Error_Handler();
 	}
@@ -218,12 +204,12 @@ void SystemClock_Config(void) {
 	 */
 	RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK
 			| RCC_CLOCKTYPE_PCLK1 | RCC_CLOCKTYPE_PCLK2;
-	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+	RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
 	RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+	RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
 	RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK) {
+	if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK) {
 		Error_Handler();
 	}
 }
@@ -247,7 +233,7 @@ static void MX_ADC1_Init(void) {
 	/** Configure the global features of the ADC (Clock, Resolution, Data Alignment and number of conversion)
 	 */
 	hadc1.Instance = ADC1;
-	hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV2;
+	hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
 	hadc1.Init.Resolution = ADC_RESOLUTION_12B;
 	hadc1.Init.ScanConvMode = ENABLE;
 	hadc1.Init.ContinuousConvMode = ENABLE;
@@ -317,6 +303,35 @@ static void MX_I2C1_Init(void) {
 	}
 	/* USER CODE BEGIN I2C1_Init 2 */
 	/* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+ * @brief TIM10 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_TIM10_Init(void) {
+
+	/* USER CODE BEGIN TIM10_Init 0 */
+
+	/* USER CODE END TIM10_Init 0 */
+
+	/* USER CODE BEGIN TIM10_Init 1 */
+
+	/* USER CODE END TIM10_Init 1 */
+	htim10.Instance = TIM10;
+	htim10.Init.Prescaler = 8400 - 1;
+	htim10.Init.CounterMode = TIM_COUNTERMODE_UP;
+	htim10.Init.Period = 65535;
+	htim10.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	htim10.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	if (HAL_TIM_Base_Init(&htim10) != HAL_OK) {
+		Error_Handler();
+	}
+	/* USER CODE BEGIN TIM10_Init 2 */
+
+	/* USER CODE END TIM10_Init 2 */
 
 }
 
@@ -421,7 +436,7 @@ static void MX_GPIO_Init(void) {
 	HAL_GPIO_Init(nSW_OE_GPIO_Port, &GPIO_InitStruct);
 
 	/* EXTI interrupt init*/
-	HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+	HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 0);
 	HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
@@ -449,18 +464,26 @@ void initPSU(void) {
 
 	//set pot value for Vout (half)
 	MCP4018_WriteVal(psuStats.vSet);
+
+	//initialize screen update timer
+	HAL_TIM_Base_Start(&htim10);
+	timerVal = __HAL_TIM_GET_COUNTER(&htim10);
 }
 
 void showStartup(void) {
+	//show logo
 	ssd1306_DrawBitMap(0, 0, BOOTSCREEN, 128, 32, SSD1306_WHITE);
 	HAL_Delay(2000);
 }
 
 void displayVoltageCurrent(double Vin, double V, double I) {
+	//clear screen
 	ssd1306_Fill(SSD1306_BLACK);
-	ssd1306_SetCursor(2, 12);
+
 	char buff[10] = { };
 
+	//Display voltage in
+	ssd1306_SetCursor(INFO_X, VIN_Y);
 	ssd1306_WriteString("Vin = ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	if (Vin > 1000) {
 		sprintf(buff, "%4.2f", Vin / 1000);
@@ -472,10 +495,37 @@ void displayVoltageCurrent(double Vin, double V, double I) {
 		ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 
-	ssd1306_SetCursor(2, 24);
+	//display whether PSU output is enabled
+	ssd1306_SetCursor(ON_OFF_X, VIN_Y);
+	if (psuStats.OE == OE_ENABLED)
+		ssd1306_WriteString("ON", INFO_TEXT_SIZE, SSD1306_WHITE);
+	else
+		ssd1306_WriteString("OFF", INFO_TEXT_SIZE, SSD1306_WHITE);
+
+	//display set voltage
+	ssd1306_SetCursor(INFO_X, VSET_Y);
+	ssd1306_WriteString("Vset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+	if (vSetCalc() >= 1000) {
+		sprintf(buff, "%4.2f", (double) vSetCalc() / 1000.0);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_V_SEL)
+			ssd1306_WriteString("V <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
+	} else {
+		sprintf(buff, "%4.2f", (double) psuStats.vSet);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_V_SEL)
+			ssd1306_WriteString("mV <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
+	}
+
+	//display output voltage
+	ssd1306_SetCursor(INFO_X, VOUT_Y);
 	ssd1306_WriteString("Vout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
-	if (V > 1000) {
-		sprintf(buff, "%4.2f", V / 1000);
+	if (V >= 1000) {
+		sprintf(buff, "%4.2f", V / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
@@ -484,10 +534,30 @@ void displayVoltageCurrent(double Vin, double V, double I) {
 		ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 
-	ssd1306_SetCursor(2, 36);
+	//display set current
+	ssd1306_SetCursor(INFO_X, ISET_Y);
+	ssd1306_WriteString("Iset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
+	if (psuStats.iSet >= 1000) {
+		sprintf(buff, "%4.2f", (double) psuStats.iSet / 1000.0);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_I_SEL)
+			ssd1306_WriteString("A <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("A", INFO_TEXT_SIZE, SSD1306_WHITE);
+	} else {
+		sprintf(buff, "%4.2f", (double) psuStats.iSet);
+		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
+		if (psuStats.VI == VI_I_SEL)
+			ssd1306_WriteString("mA <<", INFO_TEXT_SIZE, SSD1306_WHITE);
+		else
+			ssd1306_WriteString("mA", INFO_TEXT_SIZE, SSD1306_WHITE);
+	}
+
+	//display output current
+	ssd1306_SetCursor(INFO_X, IOUT_Y);
 	ssd1306_WriteString("Iout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
-	if (I > 1000) {
-		sprintf(buff, "%4.2f", I / 1000);
+	if (I >= 1000) {
+		sprintf(buff, "%4.2f", I / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		ssd1306_WriteString("A", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
@@ -499,13 +569,135 @@ void displayVoltageCurrent(double Vin, double V, double I) {
 	ssd1306_UpdateScreen();
 }
 
-void enableOutput(void){
+void enableOutput(void) {
 	HAL_GPIO_WritePin(REG_EN_GPIO_Port, REG_EN_Pin, GPIO_PIN_RESET);
 }
 
-void disableOutput(void){
+void disableOutput(void) {
 	HAL_GPIO_WritePin(REG_EN_GPIO_Port, REG_EN_Pin, GPIO_PIN_SET);
 }
+
+void buttonsHandler(uint8_t buttons) {
+	if (buttons & VI_BTN) {
+		if (psuStats.VI == VI_V_SEL) {
+			psuStats.VI = VI_I_SEL;
+		} else if (psuStats.VI == VI_I_SEL) {
+			psuStats.VI = VI_V_SEL;
+		} else { //something went wrong, reinit psu
+			fatalErrorScreen();
+			initPSU();
+		}
+	}
+
+	if (buttons & UP_BTN) {
+		if (psuStats.VI & VI_V_SEL) {
+			psuStats.vSet++;
+			MCP4018_WriteVal(psuStats.vSet);
+		} else if (psuStats.VI & VI_I_SEL) {
+			psuStats.iSet++;
+		} else { //something went wrong, reinit psu
+			fatalErrorScreen();
+			initPSU();
+		}
+	}
+
+	if (buttons & DW_BTN) {
+		if (psuStats.VI & VI_V_SEL) {
+			psuStats.vSet--;
+			MCP4018_WriteVal(psuStats.vSet);
+		} else if (psuStats.VI & VI_I_SEL) {
+			psuStats.iSet--;
+		} else { //something went wrong, reinit psu
+			fatalErrorScreen();
+			initPSU();
+		}
+	}
+
+	if (buttons & OE_BTN) {
+		if (psuStats.OE == OE_ENABLED) {
+			psuStats.OE = OE_DISABLED;
+			disableOutput();
+		} else if (psuStats.OE == OE_DISABLED) {
+			psuStats.OE = OE_ENABLED;
+			enableOutput();
+		} else { //something went wrong, reinit psu
+			fatalErrorScreen();
+			initPSU();
+		}
+	}
+}
+
+uint32_t vSetCalc(void) {
+	return (psuStats.vSet - 0) * (12000 - 0) / (0x7F - 0) + 0;
+}
+
+void fatalErrorScreen(void) {
+	disableOutput();
+	//clear screen
+	ssd1306_Fill(SSD1306_BLACK);
+
+	ssd1306_SetCursor(2, 0);
+	ssd1306_WriteString("FATAL", ERROR_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_SetCursor(2, 20);
+	ssd1306_WriteString("ERROR!", ERROR_TEXT_SIZE, SSD1306_WHITE);
+
+	//countdown 5 seconds
+	ssd1306_SetCursor(2, 40);
+	ssd1306_WriteString("Reinit(5)!", INFO_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+
+	ssd1306_SetCursor(2, 40);
+	ssd1306_WriteString("Reinit(4)!.", INFO_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+
+	ssd1306_SetCursor(2, 40);
+	ssd1306_WriteString("Reinit(3)!..", INFO_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+
+	ssd1306_SetCursor(2, 40);
+	ssd1306_WriteString("Reinit(2)!...", INFO_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+
+	ssd1306_SetCursor(2, 40);
+	ssd1306_WriteString("Reinit(1)!....", INFO_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+
+	ssd1306_SetCursor(2, 40);
+	ssd1306_WriteString("Reinit(0)!.....", INFO_TEXT_SIZE, SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(1000);
+
+	//flash screen
+	ssd1306_Fill(SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(50);
+	ssd1306_Fill(SSD1306_BLACK);
+	ssd1306_UpdateScreen();
+	HAL_Delay(50);
+	ssd1306_Fill(SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(50);
+	ssd1306_Fill(SSD1306_BLACK);
+	ssd1306_UpdateScreen();
+	HAL_Delay(50);
+	ssd1306_Fill(SSD1306_WHITE);
+	ssd1306_UpdateScreen();
+	HAL_Delay(50);
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (GPIO_Pin == nSW_INT_Pin) // If The INT Source Is EXTI Line9 (A9 Pin)
+	{
+		swIntFlag = SET;
+		printMsg("Int\n");
+	}
+}
+
 /* USER CODE END 4 */
 
 /**
