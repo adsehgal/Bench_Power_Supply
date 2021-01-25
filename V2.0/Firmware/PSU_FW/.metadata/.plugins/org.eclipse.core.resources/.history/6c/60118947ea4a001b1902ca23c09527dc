@@ -1,7 +1,0 @@
-#include "string.h"
-#include "stdio.h"
-#include "stdint.h"
-#include "stdarg.h"
-#include "stm32f4xx_hal_conf.h"
-
-void printmsg(char *format,...);

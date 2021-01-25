@@ -49,7 +49,7 @@ void setup()
   pinMode(nREG_EN, OUTPUT);
 
   digitalWrite(nREG_EN, LOW); //start the PSU with enable off
-  digitalWrite(OUT_LED, HIGH);
+  digitalWrite(OUT_LED, LOW);
   digitalWrite(CL_LED, HIGH);
   initDiv();
   initBtns();
@@ -168,7 +168,8 @@ void displayVoltageCurrent(double Vin, double V, double I)
   if (Vin > 1000)
   {
     display.print(Vin / 1000, 2);
-    display.println("V");
+    if (V_I_SEL == true)
+      display.println("V");
   }
   else
   {
@@ -181,12 +182,18 @@ void displayVoltageCurrent(double Vin, double V, double I)
   if (V > 1000)
   {
     display.print(V / 1000, 2);
-    display.println("V");
+    if (V_I_SEL == true)
+      display.println("V <<");
+    else
+      display.println("V");
   }
   else
   {
     display.print(V, 2);
-    display.println("mV");
+    if (V_I_SEL == true)
+      display.println("mV <<");
+    else
+      display.println("mV");
   }
 
   display.setCursor(2, 36);
@@ -194,12 +201,18 @@ void displayVoltageCurrent(double Vin, double V, double I)
   if (I > 1000)
   {
     display.print(I / 1000, 2);
-    display.println("A");
+    if (V_I_SEL == false)
+      display.println("A <<");
+    else
+      display.println("A");
   }
   else
   {
     display.print(I, 2);
-    display.println("mA");
+    if (V_I_SEL == false)
+      display.println("mA <<");
+    else
+      display.println("mA");
   }
 
   display.display();
