@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=P2 Old Footprint=62201421121 New Footprint=FTSH-107-01-L-DV-K-TR-Footprint-1
+Change Component Comment : Designator=P2 Old Comment=62201421121 New Comment=FTSH-107-01-L-DV-K-TR
+Change Managed Component Library Link : Designator=P2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=BE4BE9BE-0F6C-43C5-B3C6-0C74CA12A7BB Old ItemGUID=48777F06-A48D-40B4-848C-AC7B5CFEE436 New ItemGUID=90b5e6eb-5323-4a87-afe7-8782ec467b39 Old RevisionGUID=73A6CFA3-A58F-43FF-9102-B953254E29A8 New RevisionGUID=8c8375b5-d651-4dd8-bcb5-4a261c04df77
+Change component parameters: Designator = "P2" ("P2"); Footprint = "62201421121"; UniqueID = "\MWDPZTEQ\YGPFZGEB" ("\MWDPZTEQ\YGPFZGEB")
