@@ -4547,3 +4547,22 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/adity
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-01-10 20:09:26.032
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2021-01-31 23:13:54.700 -----------------------------------------------
+eclipse.buildId=Version 1.5.1
+java.version=1.8.0_252
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -keyring /Users/adityasehgal/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/adityasehgal/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2021-01-31 23:14:05.544
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-01-31 23:14:08.813
+!MESSAGE Log4j initialized with config file /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-01-31 23:14:15.103
+!MESSAGE Started RMI Server, listening on port 41338
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-01-31 23:14:15.561
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
