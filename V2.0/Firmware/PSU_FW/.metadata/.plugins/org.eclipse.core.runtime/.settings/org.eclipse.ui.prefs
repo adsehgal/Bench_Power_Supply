@@ -1,4 +1,5 @@
 CURRENT_THEME_ID=org.eclipse.ui.ide.systemDefault
+SHOW_TEXT_ON_PERSPECTIVE_BAR=true
 USE_COLORED_LABELS=false
 USE_ROUND_TABS=true
 eclipse.preferences.version=1
