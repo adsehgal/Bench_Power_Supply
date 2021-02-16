@@ -45,7 +45,7 @@ uint8_t readBtnOe(void)
 uint8_t whichBtn(void)
 {
 #ifdef UNCONNECTED
-#warning This build is for a dev board without all buttons and returns incorrect button reads
+#warning This build is for a dev board without all buttons and returns inverted button reads
 #endif
 	uint8_t ret = 0b0000;
 	while (readBtnUp())
