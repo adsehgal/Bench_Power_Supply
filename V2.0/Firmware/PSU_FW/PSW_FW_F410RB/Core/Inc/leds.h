@@ -45,4 +45,6 @@ void ccLedToggle(void);
 
 void setLeds(struct Stats psu);
 
+void initLeds(void);
+
 #endif /* INC_LEDS_H_ */

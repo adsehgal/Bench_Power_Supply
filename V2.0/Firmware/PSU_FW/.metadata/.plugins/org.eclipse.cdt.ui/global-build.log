@@ -1,21 +1,4 @@
-01:05:41 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
-make -j7 all 
-arm-none-eabi-gcc "../Core/Src/buttons.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/buttons.d" -MT"Core/Src/buttons.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/buttons.o"
-arm-none-eabi-gcc -o "PSW_FW_F410RB.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: PSW_FW_F410RB.elf
- 
-arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
-arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
-arm-none-eabi-size   PSW_FW_F410RB.elf 
-   text	   data	    bss	    dec	    hex	filename
-  39140	    500	   2924	  42564	   a644	PSW_FW_F410RB.elf
-Finished building: default.size.stdout
- 
-Finished building: PSW_FW_F410RB.bin
- 
-Finished building: PSW_FW_F410RB.list
- 
-01:06:58 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
+20:31:39 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/analog.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/analog.d" -MT"Core/Src/analog.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/analog.o"
 arm-none-eabi-gcc "../Core/Src/buttons.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/buttons.d" -MT"Core/Src/buttons.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/buttons.o"
@@ -33,14 +16,14 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
 arm-none-eabi-size   PSW_FW_F410RB.elf 
    text	   data	    bss	    dec	    hex	filename
-  39140	    500	   2924	  42564	   a644	PSW_FW_F410RB.elf
+  39340	    500	   2924	  42764	   a70c	PSW_FW_F410RB.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB.bin
  
 Finished building: PSW_FW_F410RB.list
  
-01:13:20 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
+20:35:54 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PSW_FW_F410RB.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -50,14 +33,14 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
 arm-none-eabi-size   PSW_FW_F410RB.elf 
    text	   data	    bss	    dec	    hex	filename
-  39140	    500	   2924	  42564	   a644	PSW_FW_F410RB.elf
+  39524	    500	   2924	  42948	   a7c4	PSW_FW_F410RB.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB.bin
  
 Finished building: PSW_FW_F410RB.list
  
-01:13:51 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
+20:38:47 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PSW_FW_F410RB.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -67,14 +50,14 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
 arm-none-eabi-size   PSW_FW_F410RB.elf 
    text	   data	    bss	    dec	    hex	filename
-  39140	    500	   2924	  42564	   a644	PSW_FW_F410RB.elf
+  39540	    500	   2924	  42964	   a7d4	PSW_FW_F410RB.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB.bin
  
 Finished building: PSW_FW_F410RB.list
  
-01:15:57 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
+20:40:08 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PSW_FW_F410RB.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -84,14 +67,14 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
 arm-none-eabi-size   PSW_FW_F410RB.elf 
    text	   data	    bss	    dec	    hex	filename
-  39284	    500	   2924	  42708	   a6d4	PSW_FW_F410RB.elf
+  39540	    500	   2924	  42964	   a7d4	PSW_FW_F410RB.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB.bin
  
 Finished building: PSW_FW_F410RB.list
  
-01:17:38 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
+20:40:56 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PSW_FW_F410RB.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -101,7 +84,7 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
 arm-none-eabi-size   PSW_FW_F410RB.elf 
    text	   data	    bss	    dec	    hex	filename
-  39156	    500	   2924	  42580	   a654	PSW_FW_F410RB.elf
+  39572	    500	   2924	  42996	   a7f4	PSW_FW_F410RB.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB.bin

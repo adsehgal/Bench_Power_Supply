@@ -119,3 +119,42 @@ void setLeds(struct Stats psu)
 		ccLedOff();
 	}
 }
+
+void initLeds(void)
+{
+	const uint8_t delay = 75;
+	ccLedOn();
+	HAL_Delay(delay);
+	ccLedOff();
+	oeLedOn();
+	HAL_Delay(delay);
+	oeLedOff();
+	viLedOn();
+	HAL_Delay(delay);
+	viLedOff();
+	ccLedOn();
+	HAL_Delay(delay);
+	ccLedOff();
+	oeLedOn();
+	HAL_Delay(delay);
+	oeLedOff();
+	viLedOn();
+	HAL_Delay(delay);
+	viLedOff();
+	ccLedOn();
+	HAL_Delay(delay);
+	ccLedOff();
+	oeLedOn();
+	HAL_Delay(delay);
+	oeLedOff();
+	viLedOn();
+	HAL_Delay(delay);
+	viLedOff();
+	ccLedOn();
+	HAL_Delay(delay);
+	ccLedOff();
+	oeLedOn();
+	HAL_Delay(delay);
+	oeLedOff();
+	viLedOn();
+}

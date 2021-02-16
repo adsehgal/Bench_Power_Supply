@@ -123,26 +123,7 @@ int main(void)
 	MX_TIM11_Init();
 	MX_USART2_UART_Init();
 	/* USER CODE BEGIN 2 */
-	HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(OLED_RST_GPIO_Port, OLED_RST_Pin, GPIO_PIN_SET);
-	ccLedOn();
-	HAL_Delay(100);
-	ccLedOff();
-	oeLedOn();
-	HAL_Delay(100);
-	oeLedOff();
-	viLedOn();
-	HAL_Delay(100);
-	viLedOff();
-	ccLedOn();
-	HAL_Delay(100);
-	ccLedOff();
-	oeLedOn();
-	HAL_Delay(100);
-	oeLedOff();
-	viLedOn();
-	HAL_Delay(100);
-	viLedOff();
+
 	//check for i2c devices
 	uint8_t i2cScanRet = i2cScan();
 	if (!i2cScanRet)
@@ -463,6 +444,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void initPSU(void)
 {
+	initLeds();
 	//init struct for PSU
 	psuStats.vSet = V_DEFAULT;
 	psuStats.iSet = I_DEFAULT;
@@ -498,11 +480,8 @@ void showStartup(void)
 	HAL_Delay(2000);
 }
 
-void displayVoltageCurrent(double Vin, double V, double I)
+void displayVin(double Vin)
 {
-	//clear screen
-	ssd1306_Fill(SSD1306_BLACK);
-
 	char buff[10] =
 	{ };
 
@@ -521,14 +500,23 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
+}
 
+void displayOnOff(void)
+{
 	//display whether PSU output is enabled
 	ssd1306_SetCursor(ON_OFF_X, VIN_Y);
 	if (psuStats.OE == OE_ENABLED)
-		ssd1306_WriteString("ON", INFO_TEXT_SIZE, SSD1306_WHITE);
+		ssd1306_WriteString("ON   ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	else
 		ssd1306_WriteString("OFF", INFO_TEXT_SIZE, SSD1306_WHITE);
 
+}
+
+void displaySetVoltage(void)
+{
+	char buff[10] =
+	{ };
 	//display set voltage
 	ssd1306_SetCursor(INFO_X, VSET_Y);
 	ssd1306_WriteString("Vset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -539,7 +527,7 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		if (psuStats.VI == VI_V_SEL)
 			ssd1306_WriteString("V <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
-			ssd1306_WriteString("V", INFO_TEXT_SIZE, SSD1306_WHITE);
+			ssd1306_WriteString("V     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 	else
 	{
@@ -548,9 +536,14 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		if (psuStats.VI == VI_V_SEL)
 			ssd1306_WriteString("mV <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
-			ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
+			ssd1306_WriteString("mV     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
+}
 
+void displayVout(double V)
+{
+	char buff[10] =
+	{ };
 	//display output voltage
 	ssd1306_SetCursor(INFO_X, VOUT_Y);
 	ssd1306_WriteString("Vout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -567,6 +560,12 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		ssd1306_WriteString("mV", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 
+}
+
+void displaySetCurrent(void)
+{
+	char buff[10] =
+	{ };
 	//display set current
 	ssd1306_SetCursor(INFO_X, ISET_Y);
 	ssd1306_WriteString("Iset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -577,7 +576,7 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		if (psuStats.VI == VI_I_SEL)
 			ssd1306_WriteString("A <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
-			ssd1306_WriteString("A", INFO_TEXT_SIZE, SSD1306_WHITE);
+			ssd1306_WriteString("A     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
 	else
 	{
@@ -586,9 +585,14 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		if (psuStats.VI == VI_I_SEL)
 			ssd1306_WriteString("mA <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
-			ssd1306_WriteString("mA", INFO_TEXT_SIZE, SSD1306_WHITE);
+			ssd1306_WriteString("mA     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
+}
 
+void displayIout(double I)
+{
+	char buff[10] =
+	{ };
 	//display output current
 	ssd1306_SetCursor(INFO_X, IOUT_Y);
 	ssd1306_WriteString("Iout = ", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -604,6 +608,24 @@ void displayVoltageCurrent(double Vin, double V, double I)
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		ssd1306_WriteString("mA", INFO_TEXT_SIZE, SSD1306_WHITE);
 	}
+}
+
+void displayVoltageCurrent(double Vin, double V, double I)
+{
+	//clear screen
+	ssd1306_Fill(SSD1306_BLACK);
+
+	displayVin(Vin);
+
+	displayOnOff();
+
+	displaySetVoltage();
+
+	displayVout(V);
+
+	displaySetCurrent();
+
+	displayIout(I);
 
 	ssd1306_UpdateScreen();
 }
@@ -636,18 +658,19 @@ void buttonsHandler(uint8_t buttons)
 			fatalErrorScreen();
 			initPSU();
 		}
+
 	}
 
 	if (buttons & UP_BTN)
 	{
 		if (psuStats.VI == VI_V_SEL)
 		{
-			psuStats.vSet++;
+			psuStats.vSet++;	//50mv incs
 			MCP4018_WriteVal(psuStats.vSet);
 		}
 		else if (psuStats.VI == VI_I_SEL)
 		{
-			psuStats.iSet++;
+			psuStats.iSet += 50;
 		}
 		else
 		{ //something went wrong, reinit psu
@@ -660,12 +683,12 @@ void buttonsHandler(uint8_t buttons)
 	{
 		if (psuStats.VI == VI_V_SEL)
 		{
-			psuStats.vSet--;
+			psuStats.vSet--;	//50mv decs
 			MCP4018_WriteVal(psuStats.vSet);
 		}
 		else if (psuStats.VI == VI_I_SEL)
 		{
-			psuStats.iSet--;
+			psuStats.iSet -= 50;
 		}
 		else
 		{ //something went wrong, reinit psu
@@ -692,6 +715,10 @@ void buttonsHandler(uint8_t buttons)
 			initPSU();
 		}
 	}
+	displayOnOff();
+	displaySetVoltage();
+	displaySetCurrent();
+	ssd1306_UpdateScreen();
 
 }
 

@@ -92,6 +92,18 @@ void Error_Handler(void);
 
   void showStartup(void);
 
+  void displayVin(double Vin);
+
+  void displayOnOff(void);
+
+  void displaySetVoltage(void);
+
+  void displayVout(double V);
+
+  void displaySetCurrent(void);
+
+  void displayIout(double I);
+
   void displayVoltageCurrent(double Vin, double V, double I);
 
   void enableOutput(void);
