@@ -17,9 +17,11 @@ const uint16_t SENSE_GAIN = 500;	//gain of diff amp for I
 const uint8_t R_SENSE = 10;		//mOhms
 const uint8_t IDLE_I_HIGH = 100;    //mA
 const uint8_t IDLE_I_LOW = 100;    //mA
-const uint8_t RESISTOR_TOP_VIN = 29;    //KOhm
-const uint8_t RESISTOR_TOP_VOUT = 26;    //KOhm
-const uint8_t RESISTOR_BOT = 10;    //KOhm
+const uint16_t RESISTOR_TOP_VIN = 29210;    //Ohm R19
+const uint16_t RESISTOR_BOT_VIN = 10000;    //Ohm R20
+const uint16_t RESISTOR_TOP_VOUT = 14010;    //Ohm R22
+const uint16_t RESISTOR_BOT_VOUT = 4720;    //Ohm R25
+
 
 double readVin(void) {
 	uint32_t retVal = 0;
@@ -37,7 +39,7 @@ double readVin(void) {
 	HAL_ADC_Stop(&hadc1);
 
 	double tempV = ((double) retVal / maxADCVal) * sysVolt;
-	tempV = (double) ((tempV * (RESISTOR_TOP_VIN + RESISTOR_BOT)) / (RESISTOR_BOT))
+	tempV = (double) ((tempV * (RESISTOR_TOP_VIN + RESISTOR_BOT_VIN)) / (RESISTOR_BOT_VIN))
 			* 1000.00;
 	return tempV;
 
@@ -59,7 +61,7 @@ double readVout(void) {
 	HAL_ADC_Stop(&hadc1);
 
 	double tempV = ((double) retVal / maxADCVal) * sysVolt;
-	tempV = (double) ((tempV * (RESISTOR_TOP_VOUT + RESISTOR_BOT)) / (RESISTOR_BOT))
+	tempV = (double) ((tempV * (RESISTOR_TOP_VOUT + RESISTOR_BOT_VOUT)) / (RESISTOR_BOT_VOUT))
 			* 1000.00;
 	return tempV;
 }
