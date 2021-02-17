@@ -48,11 +48,11 @@ uint8_t whichBtn(void)
 #warning This build is for a dev board without all buttons and returns inverted button reads
 #endif
 	uint8_t ret = 0b0000;
-	while (readBtnUp())
+	if (readBtnUp())
 		ret |= UP_BTN;
-	while (readBtnDw())
+	if (readBtnDw())
 		ret |= DW_BTN;
-	while (readBtnVi())
+	if (readBtnVi())
 		ret |= VI_BTN;
 	if (readBtnOe())
 		ret |= OE_BTN;

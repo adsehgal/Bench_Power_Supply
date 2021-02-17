@@ -70,3 +70,20 @@ Finished building: PSW_FW_F410RB.bin
  
 Finished building: PSW_FW_F410RB.list
  
+21:48:00 **** Incremental Build of configuration Debug for project PSW_FW_F410RB ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/buttons.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F410Rx -DUSE_HAL_DRIVER -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/buttons.d" -MT"Core/Src/buttons.o"  -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/buttons.o"
+arm-none-eabi-gcc -o "PSW_FW_F410RB.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB.map" -Wl,--gc-sections -static  -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PSW_FW_F410RB.elf
+ 
+arm-none-eabi-objdump -h -S  PSW_FW_F410RB.elf  > "PSW_FW_F410RB.list"
+arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB.elf  "PSW_FW_F410RB.bin"
+arm-none-eabi-size   PSW_FW_F410RB.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44812	   2516	   2992	  50320	   c490	PSW_FW_F410RB.elf
+Finished building: default.size.stdout
+ 
+Finished building: PSW_FW_F410RB.bin
+ 
+Finished building: PSW_FW_F410RB.list
+ 
