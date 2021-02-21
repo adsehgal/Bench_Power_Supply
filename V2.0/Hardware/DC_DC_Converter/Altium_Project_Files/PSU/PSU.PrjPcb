@@ -30,7 +30,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
-OutputPath=Project Outputs for PSU
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -176,282 +176,142 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for PSU\Design Rule Check - PCB.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
 DocumentPath=Project Outputs for PSU\Design Rule Check - PCB_V3.html
 DItemRevisionGUID=
 
-[GeneratedDocument3]
-DocumentPath=Project Outputs for PSU\PCB.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for PSU\PCB.REP
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for PSU\PCB.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for PSU\PCB_Copper_Plane_1.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for PSU\PCB_Copper_Plane_2.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for PSU\PCB_Copper_Signal_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for PSU\PCB_Copper_Signal_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for PSU\PCB_Drawing_1.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for PSU\PCB_Drillmap_1.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for PSU\PCB_Keep-out.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for PSU\PCB_Legend_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for PSU\PCB_Legend_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_1.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_2.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_3.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_4.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_5.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_13.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_15.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_16.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_19.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_20.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_21.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_23.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=Project Outputs for PSU\PCB_Mechanical_24.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=Project Outputs for PSU\PCB_NPTH_Drill.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=Project Outputs for PSU\PCB_Pads_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument30]
-DocumentPath=Project Outputs for PSU\PCB_Pads_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument31]
-DocumentPath=Project Outputs for PSU\PCB_Paste_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument32]
-DocumentPath=Project Outputs for PSU\PCB_Paste_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument33]
-DocumentPath=Project Outputs for PSU\PCB_Profile.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument34]
-DocumentPath=Project Outputs for PSU\PCB_PTH_Drill.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument35]
-DocumentPath=Project Outputs for PSU\PCB_Soldermask_Bot.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument36]
-DocumentPath=Project Outputs for PSU\PCB_Soldermask_Top.gbr
-DItemRevisionGUID=
-
-[GeneratedDocument37]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for PSU\PCB_V3.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument38]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for PSU\PCB_V3.REP
 DItemRevisionGUID=
 
-[GeneratedDocument39]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for PSU\PCB_V3.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument40]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for PSU\PCB_V3_Copper_Plane_1.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument41]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for PSU\PCB_V3_Copper_Plane_2.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument42]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for PSU\PCB_V3_Copper_Signal_Bot.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument43]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for PSU\PCB_V3_Copper_Signal_Top.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument44]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for PSU\PCB_V3_Drawing_1.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument45]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for PSU\PCB_V3_Drillmap_1.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument46]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for PSU\PCB_V3_Keep-out.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument47]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for PSU\PCB_V3_Legend_Bot.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument48]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for PSU\PCB_V3_Legend_Top.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument49]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_1.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument50]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_2.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument51]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_3.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument52]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_4.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument53]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_5.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument54]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_13.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument55]
+[GeneratedDocument20]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_15.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument56]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_16.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument57]
+[GeneratedDocument22]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_19.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument58]
+[GeneratedDocument23]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_20.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument59]
+[GeneratedDocument24]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_21.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument60]
+[GeneratedDocument25]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_23.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument61]
+[GeneratedDocument26]
 DocumentPath=Project Outputs for PSU\PCB_V3_Mechanical_24.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument62]
+[GeneratedDocument27]
 DocumentPath=Project Outputs for PSU\PCB_V3_NPTH_Drill.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument63]
+[GeneratedDocument28]
 DocumentPath=Project Outputs for PSU\PCB_V3_Pads_Bot.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument64]
+[GeneratedDocument29]
 DocumentPath=Project Outputs for PSU\PCB_V3_Pads_Top.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument65]
+[GeneratedDocument30]
 DocumentPath=Project Outputs for PSU\PCB_V3_Paste_Bot.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument66]
+[GeneratedDocument31]
 DocumentPath=Project Outputs for PSU\PCB_V3_Paste_Top.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument67]
+[GeneratedDocument32]
 DocumentPath=Project Outputs for PSU\PCB_V3_Profile.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument68]
+[GeneratedDocument33]
 DocumentPath=Project Outputs for PSU\PCB_V3_PTH_Drill.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument69]
+[GeneratedDocument34]
 DocumentPath=Project Outputs for PSU\PCB_V3_Soldermask_Bot.gbr
 DItemRevisionGUID=
 
-[GeneratedDocument70]
+[GeneratedDocument35]
 DocumentPath=Project Outputs for PSU\PCB_V3_Soldermask_Top.gbr
 DItemRevisionGUID=
 
@@ -502,7 +362,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for PSU
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
