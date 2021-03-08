@@ -17,7 +17,9 @@ extern UART_HandleTypeDef huart2;
 extern DMA_HandleTypeDef hdma_usart2_rx;
 extern DMA_HandleTypeDef hdma_usart2_tx;
 
-#define UART_DMA_BUFFER_SIZE 2048
+#define UART_RX_CHAR_SIZE 1
+#define UART_RX_BUFF_SIZE 128
+#define UART_DMA_BUFFER_SIZE 10
 #define PARSER_MESSAGE_LIST_SIZE 8
 #define PARSER_MESSAGE_SIZE 1024
 

@@ -8,11 +8,19 @@
 #ifndef INC_STATS_H_
 #define INC_STATS_H_
 
+//general bool type defines
 #define STATUS_SET 1
 #define STATUS_RESET 0
 
+//I2C device scan error codes
 #define OLED_FOUND 0x01
 #define POT_FOUND 0x02
+
+//interrupt flag defines
+#define INT_FLAG_CLEAR 0x00
+#define INT_FLAG_UART_RX 0x01
+#define INT_FLAG_UART_TX 0x02
+
 
 struct Stats {
 	uint8_t vSet;  //voltage set in a byte for MCP4018
