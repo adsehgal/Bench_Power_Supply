@@ -6,6 +6,7 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="Delay"/>
 		<list key="findhistory">
+			<item value="uar"/>
 			<item value="delay"/>
 			<item value="int"/>
 			<item value="hua"/>

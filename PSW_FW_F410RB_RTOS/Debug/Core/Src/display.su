@@ -1,0 +1,10 @@
+display.c:14:6:displayStartUpScreen	16	static
+display.c:19:6:displayInit	8	static
+display.c:25:6:displayVin	32	static
+display.c:42:6:displaySetVoltage	40	static
+display.c:68:6:displayVout	32	static
+display.c:85:6:displaySetCurrent	40	static
+display.c:107:6:displayIout	32	static
+display.c:123:6:displayOnOffStatus	24	static
+display.c:132:6:displayVoltageCurrent	48	static
+display.c:153:6:displayFatalError	8	static

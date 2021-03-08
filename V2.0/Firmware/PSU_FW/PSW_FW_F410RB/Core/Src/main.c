@@ -98,7 +98,7 @@ static void MX_USART2_UART_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+#warning CHECK WHAT CRYSTAL IS BEING USED - 16MHz or 8MHz
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -205,8 +205,8 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 4;
-  RCC_OscInitStruct.PLL.PLLN = 84;
+  RCC_OscInitStruct.PLL.PLLM = 8;
+  RCC_OscInitStruct.PLL.PLLN = 100;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   RCC_OscInitStruct.PLL.PLLR = 2;
@@ -223,7 +223,7 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_3) != HAL_OK)
   {
     Error_Handler();
   }
@@ -487,7 +487,7 @@ void showStartup(void)
 {
 	//show logo
 	ssd1306_DrawBitMap(0, 0, BOOTSCREEN, 128, 32, SSD1306_WHITE);
-	HAL_Delay(2000);
+	osDelay(2000);
 }
 
 void displayVin(double Vin)
@@ -754,49 +754,49 @@ void fatalErrorScreen(void)
 	ssd1306_SetCursor(2, 40);
 	ssd1306_WriteString("Reinit(5)!", INFO_TEXT_SIZE, SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
+	osDelay(1000);
 
 	ssd1306_SetCursor(2, 40);
 	ssd1306_WriteString("Reinit(4)!.", INFO_TEXT_SIZE, SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
+	osDelay(1000);
 
 	ssd1306_SetCursor(2, 40);
 	ssd1306_WriteString("Reinit(3)!..", INFO_TEXT_SIZE, SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
+	osDelay(1000);
 
 	ssd1306_SetCursor(2, 40);
 	ssd1306_WriteString("Reinit(2)!...", INFO_TEXT_SIZE, SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
+	osDelay(1000);
 
 	ssd1306_SetCursor(2, 40);
 	ssd1306_WriteString("Reinit(1)!....", INFO_TEXT_SIZE, SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
+	osDelay(1000);
 
 	ssd1306_SetCursor(2, 40);
 	ssd1306_WriteString("Reinit(0)!.....", INFO_TEXT_SIZE, SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(1000);
+	osDelay(1000);
 
 	//flash screen
 	ssd1306_Fill(SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(50);
+	osDelay(50);
 	ssd1306_Fill(SSD1306_BLACK);
 	ssd1306_UpdateScreen();
-	HAL_Delay(50);
+	osDelay(50);
 	ssd1306_Fill(SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(50);
+	osDelay(50);
 	ssd1306_Fill(SSD1306_BLACK);
 	ssd1306_UpdateScreen();
-	HAL_Delay(50);
+	osDelay(50);
 	ssd1306_Fill(SSD1306_WHITE);
 	ssd1306_UpdateScreen();
-	HAL_Delay(50);
+	osDelay(50);
 }
 
 void printSettings(void)

@@ -139,14 +139,14 @@ int main(void) {
 	MX_USART2_UART_Init();
 	/* USER CODE BEGIN 2 */
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_RESET);
-	HAL_Delay(100);
+	osDelay(100);
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, GPIO_PIN_SET);
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 	i2cScan();
-	HAL_Delay(1000);
+	osDelay(1000);
 	printMsg("Read: 0x%02X\n", MCP4018_ReadVal());
 	while (1) {
 		/* USER CODE END WHILE */
@@ -156,7 +156,7 @@ int main(void) {
 			if (MCP4018_WriteVal(i) == HAL_OK)
 				printMsg("Write: 0x%02X | Read: 0x%02X\n", i,
 						MCP4018_ReadVal());
-			HAL_Delay(1000);
+			osDelay(1000);
 		}
 	}
 	/* USER CODE END 3 */
