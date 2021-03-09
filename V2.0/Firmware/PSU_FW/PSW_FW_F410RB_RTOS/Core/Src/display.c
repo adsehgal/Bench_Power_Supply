@@ -46,10 +46,8 @@ void displaySetVoltage(Stats *psuStats) {
 	ssd1306_WriteString("Vset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
 
 	if (displayVSetCalc(psuStats->vSet) >= 1000) {
-//	if (2000 >= 1000) {
 		sprintf(buff, "%4.2f",
 				(double) displayVSetCalc(psuStats->vSet) / 1000.0);
-		sprintf(buff, "%4.2f", (double) 2500 / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		if (psuStats->VI == VI_V_SEL)
 			ssd1306_WriteString("V <<", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -57,7 +55,6 @@ void displaySetVoltage(Stats *psuStats) {
 			ssd1306_WriteString("V     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
 		sprintf(buff, "%4.2f", (double) displayVSetCalc(psuStats->vSet));
-		sprintf(buff, "%4.2f", (double) 200);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
 		if (psuStats->VI == VI_V_SEL)
 			ssd1306_WriteString("mV <<", INFO_TEXT_SIZE, SSD1306_WHITE);

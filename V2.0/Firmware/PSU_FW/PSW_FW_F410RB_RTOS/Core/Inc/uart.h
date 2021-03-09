@@ -29,7 +29,7 @@ typedef struct uartRxDataStruct {
 
 
 typedef enum uartRxMsgType {
-	MSG_NO_CMD = 0x01,
+	MSG_NO_CMD = 0x00,
 	MSG_ERR_CMD = 0x02,
 	MSG_V_SET = 0x04,
 	MSG_I_SET = 0x08,
@@ -68,6 +68,8 @@ void uartRxStringParser(uartRxData *uartRx, Stats *psuStats);
  * @param void
  * @retval void
  */
-uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats);
+uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet);
+
+void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet);
 
 #endif /* INC_UART_H_ */

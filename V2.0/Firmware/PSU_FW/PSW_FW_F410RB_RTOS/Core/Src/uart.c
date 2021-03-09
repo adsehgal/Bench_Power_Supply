@@ -40,14 +40,17 @@ void uartRxIntHandler(uartRxData *uartRx) {
 }
 
 void uartRxStringParser(uartRxData *uartRx, Stats *psuStats) {
+	uint32_t valueToSet = 0;
 	if (interruptFlags & INT_FLAG_UART_RX) {
 		interruptFlags &= !INT_FLAG_UART_RX;
-		uartRxStringDecoder(uartRx->uartRxBuff, psuStats);
+		uartRxMsg msgType = uartRxStringDecoder(uartRx->uartRxBuff, psuStats,
+				&valueToSet);
+		uartRxConfigSet(psuStats, msgType, valueToSet);
 		memset(uartRx->uartRxBuff, '\0', sizeof(uartRx->uartRxBuff));
 	}
 }
 
-uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats) {
+uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet) {
 	char *token;
 	uartRxMsg ret = MSG_NO_CMD; //Clear command variable
 	token = strtok(str, " ");     //get first word
@@ -61,8 +64,7 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats) {
 				double potCalc = 4960.0 / (((double) vVal / 800.0) - 1.0);
 				potCalc = (potCalc / 5000.0) * 128.0;
 				uint32_t vSet = (uint32_t) potCalc;
-				psuStats->vSet = vSet;
-				ledToggle(CC_LED);
+				*valueToSet = vSet;
 			} else {
 				ret |= MSG_ERR_CMD;
 			}
@@ -70,8 +72,8 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats) {
 			ret |= MSG_I_SET;
 			token = strtok(NULL, " ");
 			if (token[0] >= '0' && token[0] <= '9') {
-				int iVal = atoi(token);
-				psuStats->iSet = (uint32_t)iVal;
+				uint32_t iVal = (uint32_t) atoi(token);
+				*valueToSet = iVal;
 			}
 		} else if (!strcmp("OE_OFF", token)) {
 			ret |= MSG_OE_NEN;
@@ -87,10 +89,33 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats) {
 		token = strtok(NULL, " ");
 		if (token != NULL) { //check for more words in string
 			ret = MSG_ERR_CMD;
+			ledToggle(CC_LED);
 		}
 		return ret;
 	}
 
 	return MSG_NO_CMD;
 
+}
+
+void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet) {
+
+	if (msgType == MSG_ERR_CMD)
+		return;
+	else if (msgType == MSG_NO_CMD)
+		return;
+	else if (msgType == MSG_V_SET)
+		psuStats->vSet = valueToSet;
+	else if (msgType == MSG_I_SET)
+		psuStats->iSet = valueToSet;
+	else if (msgType == MSG_OE_EN)
+		psuStats->OE = OE_ENABLED;
+	else if (msgType == MSG_OE_NEN)
+		psuStats->OE = OE_DISABLED;
+	else if (msgType == MSG_VI_V_SEL)
+		psuStats->VI = VI_V_SEL;
+	else if (msgType == MSG_VI_I_SEL)
+		psuStats->VI = VI_I_SEL;
+	else
+		return;
 }

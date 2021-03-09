@@ -1,6 +1,7 @@
-16:08:50 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+16:24:01 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
 make -j7 all 
-arm-none-eabi-gcc "../Core/Src/display.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/display.d" -MT"Core/Src/display.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/display.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
 arm-none-eabi-gcc -o "PSW_FW_F410RB_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: PSW_FW_F410RB_RTOS.elf
  
@@ -8,21 +9,21 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB_RTOS.elf  > "PSW_FW_F410RB_RTOS.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB_RTOS.elf  "PSW_FW_F410RB_RTOS.bin"
 arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
    text	   data	    bss	    dec	    hex	filename
-  53980	    496	  22128	  76604	  12b3c	PSW_FW_F410RB_RTOS.elf
+  53404	    496	  22128	  76028	  128fc	PSW_FW_F410RB_RTOS.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB_RTOS.bin
  
 Finished building: PSW_FW_F410RB_RTOS.list
  
-16:08:53 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+16:24:04 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
 make -j7 all 
 arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
    text	   data	    bss	    dec	    hex	filename
-  53980	    496	  22128	  76604	  12b3c	PSW_FW_F410RB_RTOS.elf
+  53404	    496	  22128	  76028	  128fc	PSW_FW_F410RB_RTOS.elf
 Finished building: default.size.stdout
  
-16:09:57 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+16:25:01 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
 make -j7 all 
 arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
 arm-none-eabi-gcc -o "PSW_FW_F410RB_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
@@ -32,7 +33,42 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB_RTOS.elf  > "PSW_FW_F410RB_RTOS.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB_RTOS.elf  "PSW_FW_F410RB_RTOS.bin"
 arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
    text	   data	    bss	    dec	    hex	filename
-  53292	    496	  22128	  75916	  1288c	PSW_FW_F410RB_RTOS.elf
+  53420	    496	  22128	  76044	  1290c	PSW_FW_F410RB_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: PSW_FW_F410RB_RTOS.bin
+ 
+Finished building: PSW_FW_F410RB_RTOS.list
+ 
+16:26:42 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
+arm-none-eabi-gcc -o "PSW_FW_F410RB_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PSW_FW_F410RB_RTOS.elf
+ 
+arm-none-eabi-objdump -h -S  PSW_FW_F410RB_RTOS.elf  > "PSW_FW_F410RB_RTOS.list"
+arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB_RTOS.elf  "PSW_FW_F410RB_RTOS.bin"
+arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54100	    496	  22128	  76724	  12bb4	PSW_FW_F410RB_RTOS.elf
+Finished building: default.size.stdout
+ 
+Finished building: PSW_FW_F410RB_RTOS.bin
+ 
+Finished building: PSW_FW_F410RB_RTOS.list
+ 
+16:27:24 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+make -j7 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
+arm-none-eabi-gcc -o "PSW_FW_F410RB_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PSW_FW_F410RB_RTOS.elf
+ 
+arm-none-eabi-objdump -h -S  PSW_FW_F410RB_RTOS.elf  > "PSW_FW_F410RB_RTOS.list"
+arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB_RTOS.elf  "PSW_FW_F410RB_RTOS.bin"
+arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  54100	    496	  22128	  76724	  12bb4	PSW_FW_F410RB_RTOS.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB_RTOS.bin
