@@ -28,7 +28,7 @@ void ledOff(leds led);
 
 void ledToggle(leds led);
 
-void ledSet(struct Stats psuStats);
+void ledSet(Stats *psuStats);
 
 void ledsInit(void);
 

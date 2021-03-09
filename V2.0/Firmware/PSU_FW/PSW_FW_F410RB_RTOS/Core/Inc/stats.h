@@ -22,13 +22,13 @@
 #define INT_FLAG_UART_TX 0x02
 
 
-struct Stats {
+typedef struct StatsStruct {
 	uint8_t vSet;  //voltage set in a byte for MCP4018
 	uint32_t iSet; //current set in mA
 	uint8_t iLim;  //bit[0] ? limit reached : limit NOT reached
 	uint8_t OE;    //bit[0] ? enabled : disabled
 	uint8_t VI;    //bit[0] ? voltage : current
-};
+}Stats;
 
 enum enables {
 	OE_ENABLED = STATUS_SET,

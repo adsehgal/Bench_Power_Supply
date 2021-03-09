@@ -20232,3 +20232,11 @@
 2021-03-08 03:47:23,094 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 1477mS.
 2021-03-08 03:47:23,095 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 1mS.
 2021-03-08 03:47:23,097 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-08 13:58:56,716 [INFO] Activator:170 - 
+
+
+2021-03-08 13:58:56,719 [INFO] Activator:171 - !SESSION log4j initialized
+2021-03-08 13:59:28,301 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2021-03-08 13:59:28,304 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
+2021-03-08 13:59:28,502 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2021-03-08 13:59:28,503 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443

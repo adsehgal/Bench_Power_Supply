@@ -48,7 +48,7 @@ void displayVin(double Vin);
  * @param void
  * @retval void
  */
-void displaySetVoltage(struct Stats psuStats);
+void displaySetVoltage(Stats *psuStats);
 
 /**
  * @brief displays input voltage
@@ -62,7 +62,7 @@ void displayVout(double Vout);
  * @param void
  * @retval void
  */
-void displaySetCurrent(struct Stats psuStats);
+void displaySetCurrent(Stats *psuStats);
 
 /**
  * @brief displays input voltage
@@ -76,7 +76,7 @@ void displayIout(double Iout);
  * @param void
  * @retval void
  */
-void displayOnOffStatus(struct Stats psuStats);
+void displayOnOffStatus(Stats *psuStats);
 
 /**
  * @brief displays all V and I stats
@@ -85,7 +85,7 @@ void displayOnOffStatus(struct Stats psuStats);
  * @param Iout output current in mA
  * @retval void
  */
-void displayVoltageCurrent(struct Stats psuStats, double Vin, double Vout,
+void displayVoltageCurrent(Stats *psuStats, double Vin, double Vout,
 		double Iout);
 
 /**
@@ -94,5 +94,7 @@ void displayVoltageCurrent(struct Stats psuStats, double Vin, double Vout,
  * @retval void
  */
 void displayFatalError(void);
+
+uint32_t displayVSetCalc(uint8_t val);
 
 #endif /* INC_DISPLAY_H_ */

@@ -91,12 +91,9 @@ const osThreadAttr_t ledTask_attributes = {
   .priority = (osPriority_t) osPriorityLow,
 };
 /* USER CODE BEGIN PV */
-struct Stats psuStats;
-static uint8_t interruptFlags = INT_FLAG_CLEAR;
-static uint8_t uartRxBuff[UART_RX_BUFF_SIZE];
-static uint8_t uartRxChar = '\0';
-static uint32_t uartRxPos = 0;
-static uint8_t uartTxBuff[UART_DMA_BUFFER_SIZE];
+Stats psuStats;
+uartRxData uartRx;
+uint8_t interruptFlags = INT_FLAG_CLEAR;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -504,16 +501,7 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-
-	if (uartRxChar == '\n' || uartRxChar == '\r') {
-		uartRxPos = 0;	//reset position if a full message is received
-		interruptFlags |= INT_FLAG_UART_RX;
-	} else {
-		uartRxBuff[uartRxPos] = uartRxChar;	//concatenate received char to string
-		uartRxPos++;	//increment position of where to add next char
-	}
-//	txString(" %X\n", uartRxChar);
-	ledToggle(CC_LED);
+	uartRxIntHandler(&uartRx);
 }
 /* USER CODE END 4 */
 
@@ -549,15 +537,9 @@ void startUartRxTask(void *argument)
   /* USER CODE BEGIN startUartRxTask */
 	/* Infinite loop */
 	for (;;) {
-		HAL_UART_Receive_DMA(&huart2, &uartRxChar, UART_RX_CHAR_SIZE);
-		if (interruptFlags & INT_FLAG_UART_RX) {
-			interruptFlags &= !INT_FLAG_UART_RX;
-			txString("received %s\n", uartRxBuff);
-			memset(uartRxBuff, '\0', sizeof(uartRxBuff));
-
-		}
-		ledToggle(OE_LED);
-		osDelay(25);
+		HAL_UART_Receive_DMA(&huart2, (uint8_t *)&uartRx.uartRxChar, UART_RX_CHAR_SIZE);
+		uartRxStringParser(&uartRx, &psuStats);
+		osDelay(1);
 	}
 	osThreadTerminate(osThreadGetId());
   /* USER CODE END startUartRxTask */
@@ -580,7 +562,7 @@ void startOledTask(void *argument)
 
 	/* Infinite loop */
 	for (;;) {
-		displayVoltageCurrent(psuStats, Vin, Vout, Iout);
+		displayVoltageCurrent(&psuStats, Vin, Vout, Iout);
 		osDelay(500);
 		Vin++;
 	}
@@ -604,7 +586,7 @@ void startInitPsuTask(void *argument)
 	psuStats.iLim = I_LIM_DEFAULT;
 	psuStats.VI = VI_DEFAULT;
 	psuStats.OE = OE_DEFAULT;
-	ledSet(psuStats);
+	ledSet(&psuStats);
 	osThreadTerminate(osThreadGetId());	// do not need the task after init
 //should never get here!
 	ledOn(CC_LED);

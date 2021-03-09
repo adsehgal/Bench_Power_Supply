@@ -39,26 +39,27 @@ void displayVin(double Vin) {
 	}
 }
 
-void displaySetVoltage(struct Stats psuStats) {
+void displaySetVoltage(Stats *psuStats) {
 	char buff[10] = { };
 	//display set voltage
 	ssd1306_SetCursor(INFO_X, VSET_Y);
 	ssd1306_WriteString("Vset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
 
-//	if (vSetCalc() >= 1000) {
-	if (2000 >= 1000) {
-//		sprintf(buff, "%4.2f", (double) vSetCalc() / 1000.0);
+	if (displayVSetCalc(psuStats->vSet) >= 1000) {
+//	if (2000 >= 1000) {
+		sprintf(buff, "%4.2f",
+				(double) displayVSetCalc(psuStats->vSet) / 1000.0);
 		sprintf(buff, "%4.2f", (double) 2500 / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
-		if (psuStats.VI == VI_V_SEL)
+		if (psuStats->VI == VI_V_SEL)
 			ssd1306_WriteString("V <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
 			ssd1306_WriteString("V     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
-//		sprintf(buff, "%4.2f", (double) vSetCalc());
+		sprintf(buff, "%4.2f", (double) displayVSetCalc(psuStats->vSet));
 		sprintf(buff, "%4.2f", (double) 200);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
-		if (psuStats.VI == VI_V_SEL)
+		if (psuStats->VI == VI_V_SEL)
 			ssd1306_WriteString("mV <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
 			ssd1306_WriteString("mV     ", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -82,22 +83,22 @@ void displayVout(double Vout) {
 
 }
 
-void displaySetCurrent(struct Stats psuStats) {
+void displaySetCurrent(Stats *psuStats) {
 	char buff[10] = { };
 	//display set current
 	ssd1306_SetCursor(INFO_X, ISET_Y);
 	ssd1306_WriteString("Iset = ", INFO_TEXT_SIZE, SSD1306_WHITE);
-	if (psuStats.iSet >= 1000) {
-		sprintf(buff, "%4.2f", (double) psuStats.iSet / 1000.0);
+	if (psuStats->iSet >= 1000) {
+		sprintf(buff, "%4.2f", (double) psuStats->iSet / 1000.0);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
-		if (psuStats.VI == VI_I_SEL)
+		if (psuStats->VI == VI_I_SEL)
 			ssd1306_WriteString("A <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
 			ssd1306_WriteString("A     ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	} else {
-		sprintf(buff, "%4.2f", (double) psuStats.iSet);
+		sprintf(buff, "%4.2f", (double) psuStats->iSet);
 		ssd1306_WriteString(buff, INFO_TEXT_SIZE, SSD1306_WHITE);
-		if (psuStats.VI == VI_I_SEL)
+		if (psuStats->VI == VI_I_SEL)
 			ssd1306_WriteString("mA <<", INFO_TEXT_SIZE, SSD1306_WHITE);
 		else
 			ssd1306_WriteString("mA     ", INFO_TEXT_SIZE, SSD1306_WHITE);
@@ -120,16 +121,16 @@ void displayIout(double Iout) {
 	}
 }
 
-void displayOnOffStatus(struct Stats psuStats) {
+void displayOnOffStatus(Stats *psuStats) {
 	//display whether PSU output is enabled
 	ssd1306_SetCursor(ON_OFF_X, VIN_Y);
-	if (psuStats.OE == OE_ENABLED)
+	if (psuStats->OE == OE_ENABLED)
 		ssd1306_WriteString("ON   ", INFO_TEXT_SIZE, SSD1306_WHITE);
 	else
 		ssd1306_WriteString("OFF", INFO_TEXT_SIZE, SSD1306_WHITE);
 }
 
-void displayVoltageCurrent(struct Stats psuStats, double Vin, double Vout,
+void displayVoltageCurrent(Stats *psuStats, double Vin, double Vout,
 		double Iout) {
 	//clear screen
 	ssd1306_Fill(SSD1306_BLACK);
@@ -210,3 +211,8 @@ void displayFatalError(void) {
 
 }
 
+uint32_t displayVSetCalc(uint8_t val) {
+	double potCalc = (((double) val / 128.0)) * 5000.0;
+	double temp = 800.0 * ((4690.0 / potCalc) + 1.0);
+	return (uint32_t) (temp);
+}

@@ -66,20 +66,20 @@ void ledToggle(leds led) {
 		HAL_GPIO_TogglePin(OE_LED_GPIO_Port, OE_LED_Pin);
 }
 
-void ledSet(struct Stats psuStats) {
-	if (psuStats.OE == OE_ENABLED) {
+void ledSet(Stats *psuStats) {
+	if (psuStats->OE == OE_ENABLED) {
 		ledOn(OE_LED);
 	} else {
 		ledOff(OE_LED);
 	}
 
-	if (psuStats.VI == VI_V_SEL) {
+	if (psuStats->VI == VI_V_SEL) {
 		ledOn(VI_LED);
 	} else {
 		ledOff(VI_LED);
 	}
 
-	if (psuStats.iLim == I_LIM_SET) {
+	if (psuStats->iLim == I_LIM_SET) {
 		ledOn(CC_LED);
 	} else {
 		ledOff(CC_LED);
