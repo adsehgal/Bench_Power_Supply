@@ -13,25 +13,33 @@
 
 extern uint8_t interruptFlags;
 
-void uartTxString(char *format, ...) {
-	char str[UART_TX_BUFF_SIZE];
-
-	va_list args;
-	va_start(args, format);
-	int len = vsprintf(str, format, args);
-	va_end(args);
-
+//void uartTxString(char *format, ...) {
+//	char str[UART_TX_BUFF_SIZE];
+//
+//	va_list args;
+//	va_start(args, format);
+//	int len = vsprintf(str, format, args);
+//	va_end(args);
+//
+//	osDelay(1);
+//	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
+//		osDelay(1);	//make sure nothing else is being transmitted
+//	}
+//	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, len);
+//	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
+//		osDelay(1);	//makes sure string is sent before clearing it
+//	}
+//}
+void uartTxString(char *str) {
 	osDelay(1);
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
 		osDelay(1);	//make sure nothing else is being transmitted
 	}
-	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, len);
+	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
 		osDelay(1);	//makes sure string is sent before clearing it
 	}
 }
-
-void uartTxStringHandler(char *str);
 
 void uartRxIntHandler(uartRxData *uartRx) {
 	if (uartRx->uartRxChar == '\n' || uartRx->uartRxChar == '\r') {
@@ -109,10 +117,13 @@ void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet) {
 		uartTxString("Invalid command, enter \"HELP\" for commands\n");
 		return;
 	} else if (msgType == MSG_V_SET) {
-		uartTxString("Voltage Set to: %dmV\n", valueToSet);
+		char buff[UART_TX_BUFF_SIZE];
+		sprintf(buff, "Voltage Set to: %umV\n", (unsigned int)valueToSet);
+//		uartTxString("Voltage Set to: mV\n");//, valueToSet);
+		uartTxString(buff);
 		psuStats->vSet = valueToSet;
 	} else if (msgType == MSG_I_SET) {
-		uartTxString("Current Limit Set to: %dmA", valueToSet);
+//		uartTxString("Current Limit Set to: %dmA", valueToSet);
 		psuStats->iSet = valueToSet;
 	} else if (msgType == MSG_OE_EN) {
 		uartTxString("Output Enabled!\n");

@@ -11157,3 +11157,63 @@ java.lang.NumberFormatException: For input string: ""
 	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:874)
 	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
 	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:29:49.038
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 48 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:29:49.038
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:29:49.039
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 48 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:29:49.039
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:35:22.135
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 51 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:35:22.136
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:35:22.136
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 51 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:35:22.136
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:36:46.293
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:36:46.294
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:36:46.295
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 53 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:36:46.295
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:37:12.180
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 54 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:37:12.181
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:37:12.181
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 54 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:37:12.181
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:49:27.031
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 65 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:49:27.033
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:49:27.034
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 65 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2021-03-10 00:49:27.034
+!MESSAGE Existing sessions are:

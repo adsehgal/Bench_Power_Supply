@@ -556,9 +556,6 @@ void startInitPsuTask(void *argument) {
 	psuStats.VI = VI_DEFAULT;
 	psuStats.OE = OE_DEFAULT;
 
-	memset(uartTx.uartTxBuff, '\0', sizeof(uartTx.uartTxBuff));
-	uartTx.uartTxSendFlag = STATUS_RESET;
-
 	ledSet(&psuStats);
 	osThreadTerminate(osThreadGetId());	// do not need the task after init
 //should never get here!

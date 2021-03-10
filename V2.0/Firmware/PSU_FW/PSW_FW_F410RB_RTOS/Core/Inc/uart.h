@@ -46,15 +46,7 @@ typedef enum uartRxMsgType {
  * @retval void
  * @note uses HAL Transmit, need to change to DMA transmit
  */
-void uartTxString(char *format, ...);
-
-/**
- * @brief printf alternative - outputs to com port
- * @param format - printf type string formattign
- * @retval void
- * @note uses HAL Transmit, need to change to DMA transmit
- */
-void uartTxStringHandler(char * str);
+void uartTxString(char *str);
 
 /**
  * @brief recieves UART chars and concatenates them into a string
