@@ -17,6 +17,7 @@
 
 #define UART_RX_CHAR_SIZE 1
 #define UART_RX_BUFF_SIZE 128
+#define UART_TX_BUFF_SIZE 1024
 
 extern UART_HandleTypeDef huart2;
 extern DMA_HandleTypeDef hdma_usart2_rx;
@@ -26,7 +27,6 @@ typedef struct uartRxDataStruct {
 	char uartRxBuff[UART_RX_BUFF_SIZE];
 	char uartRxChar;
 } uartRxData;
-
 
 typedef enum uartRxMsgType {
 	MSG_NO_CMD = 0x00,
@@ -47,6 +47,14 @@ typedef enum uartRxMsgType {
  * @note uses HAL Transmit, need to change to DMA transmit
  */
 void uartTxString(char *format, ...);
+
+/**
+ * @brief printf alternative - outputs to com port
+ * @param format - printf type string formattign
+ * @retval void
+ * @note uses HAL Transmit, need to change to DMA transmit
+ */
+void uartTxStringHandler(char * str);
 
 /**
  * @brief recieves UART chars and concatenates them into a string

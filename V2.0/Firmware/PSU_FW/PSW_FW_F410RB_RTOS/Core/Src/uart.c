@@ -14,22 +14,24 @@
 extern uint8_t interruptFlags;
 
 void uartTxString(char *format, ...) {
-	char str[80];
+	char str[UART_TX_BUFF_SIZE];
 
-	/*Extract the the argument list using VA apis */
 	va_list args;
 	va_start(args, format);
 	int len = vsprintf(str, format, args);
 	va_end(args);
-	while ((HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY_TX)
-			|| (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY_TX_RX)) {
-		osDelay(10);
 
+	osDelay(1);
+	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
+		osDelay(1);	//make sure nothing else is being transmitted
 	}
-//	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, len);
-//	HAL_UART_Transmit_IT(&huart2, (uint8_t *)str, len);
-	HAL_UART_Transmit(&huart2, (uint8_t*) str, len, HAL_MAX_DELAY);
+	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, len);
+	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
+		osDelay(1);	//makes sure string is sent before clearing it
+	}
 }
+
+void uartTxStringHandler(char *str);
 
 void uartRxIntHandler(uartRxData *uartRx) {
 	if (uartRx->uartRxChar == '\n' || uartRx->uartRxChar == '\r') {
@@ -100,22 +102,32 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet) 
 
 void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet) {
 
-	if (msgType == MSG_ERR_CMD)
+	if (msgType == MSG_ERR_CMD) {
+		uartTxString("Invalid command, enter \"HELP\" for commands\n");
 		return;
-	else if (msgType == MSG_NO_CMD)
+	} else if (msgType == MSG_NO_CMD) {
+		uartTxString("Invalid command, enter \"HELP\" for commands\n");
 		return;
-	else if (msgType == MSG_V_SET)
+	} else if (msgType == MSG_V_SET) {
+		uartTxString("Voltage Set to: %dmV\n", valueToSet);
 		psuStats->vSet = valueToSet;
-	else if (msgType == MSG_I_SET)
+	} else if (msgType == MSG_I_SET) {
+		uartTxString("Current Limit Set to: %dmA", valueToSet);
 		psuStats->iSet = valueToSet;
-	else if (msgType == MSG_OE_EN)
+	} else if (msgType == MSG_OE_EN) {
+		uartTxString("Output Enabled!\n");
 		psuStats->OE = OE_ENABLED;
-	else if (msgType == MSG_OE_NEN)
+	} else if (msgType == MSG_OE_NEN) {
+		uartTxString("Output Disabled!\n");
 		psuStats->OE = OE_DISABLED;
-	else if (msgType == MSG_VI_V_SEL)
+	} else if (msgType == MSG_VI_V_SEL) {
+		uartTxString("Voltage Change Selected\n");
 		psuStats->VI = VI_V_SEL;
-	else if (msgType == MSG_VI_I_SEL)
+	} else if (msgType == MSG_VI_I_SEL) {
+		uartTxString("Current Change Selected\n");
 		psuStats->VI = VI_I_SEL;
-	else
+	} else {
+		uartTxString("Invalid command, enter \"HELP\" for commands\n");
 		return;
+	}
 }
