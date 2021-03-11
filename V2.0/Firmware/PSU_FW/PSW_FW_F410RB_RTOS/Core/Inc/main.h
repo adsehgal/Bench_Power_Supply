@@ -55,6 +55,9 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
+double potToVoltage(uint8_t potVal);
+uint8_t voltageToPot(double vVal);
+
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

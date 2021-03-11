@@ -14,6 +14,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include "stats.h"
+#include "main.h"
 
 #define UART_RX_CHAR_SIZE 1
 #define UART_RX_BUFF_SIZE 128
@@ -29,14 +30,15 @@ typedef struct uartRxDataStruct {
 } uartRxData;
 
 typedef enum uartRxMsgType {
-	MSG_NO_CMD = 0x00,
-	MSG_ERR_CMD = 0x02,
-	MSG_V_SET = 0x04,
-	MSG_I_SET = 0x08,
-	MSG_OE_EN = 0x10,
-	MSG_OE_NEN = 0x11,
-	MSG_VI_V_SEL = 0x12,
-	MSG_VI_I_SEL = 0x14,
+	MSG_NO_CMD = 0x00,		//No command
+	MSG_ERR_CMD = 0x02,		//Unknown command
+	MSG_HELP = 0x01,		//"HELP"
+	MSG_V_SET = 0x04,		//"V_SET #"
+	MSG_I_SET = 0x08,		//"I_SET #"
+	MSG_OE_EN = 0x10,		//"OE_ON"
+	MSG_OE_NEN = 0x11,		//"OE_OFF"
+	MSG_VI_V_SEL = 0x12,	//"VI_V_SEL"
+	MSG_VI_I_SEL = 0x14,	//"VI_I_SEL"
 
 } uartRxMsg;
 

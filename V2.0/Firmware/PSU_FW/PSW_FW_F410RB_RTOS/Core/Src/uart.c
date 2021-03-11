@@ -13,30 +13,10 @@
 
 extern uint8_t interruptFlags;
 
-//void uartTxString(char *format, ...) {
-//	char str[UART_TX_BUFF_SIZE];
-//
-//	va_list args;
-//	va_start(args, format);
-//	int len = vsprintf(str, format, args);
-//	va_end(args);
-//
-//	osDelay(1);
-//	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
-//		osDelay(1);	//make sure nothing else is being transmitted
-//	}
-//	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, len);
-//	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
-//		osDelay(1);	//makes sure string is sent before clearing it
-//	}
-//}
 void uartTxString(char *str) {
-
 	osDelay(1);
-//	ledToggle(CC_LED);
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
-		ledToggle(CC_LED);
-		osDelay(100);	//make sure nothing else is being transmitted
+		osDelay(1);	//make sure nothing else is being transmitted
 	}
 	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
@@ -74,9 +54,7 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet) 
 			token = strtok(NULL, " ");
 			if (token[0] >= '0' && token[0] <= '9') {
 				int vVal = atoi(token);
-				double potCalc = 4960.0 / (((double) vVal / 800.0) - 1.0);
-				potCalc = (potCalc / 5000.0) * 128.0;
-				uint32_t vSet = (uint32_t) potCalc;
+				uint32_t vSet = (uint32_t) voltageToPot(vVal);
 				*valueToSet = vSet;
 			} else {
 				ret |= MSG_ERR_CMD;
@@ -96,6 +74,8 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet) 
 			ret |= MSG_VI_V_SEL;
 		} else if (!strcmp("VI_I_SEL", token)) {
 			ret |= MSG_VI_I_SEL;
+		} else if (!strcmp("HELP", token)) {
+			ret |= MSG_HELP;
 		} else {
 			ret = MSG_ERR_CMD;
 		}
@@ -121,12 +101,14 @@ void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet) {
 		return;
 	} else if (msgType == MSG_V_SET) {
 		char buff[UART_TX_BUFF_SIZE];
-		sprintf(buff, "Voltage Set to: %umV\n", (unsigned int)valueToSet);
-//		uartTxString("Voltage Set to: mV\n");//, valueToSet);
+		double voltage = potToVoltage((uint8_t)valueToSet);
+		sprintf(buff, "Voltage Set to: %4.2fmV\n", (double) voltage);
 		uartTxString(buff);
 		psuStats->vSet = valueToSet;
 	} else if (msgType == MSG_I_SET) {
-//		uartTxString("Current Limit Set to: %dmA", valueToSet);
+		char buff[UART_TX_BUFF_SIZE];
+		sprintf(buff, "Current Set to: %4.2umA\n", (unsigned int) valueToSet);
+		uartTxString(buff);
 		psuStats->iSet = valueToSet;
 	} else if (msgType == MSG_OE_EN) {
 		uartTxString("Output Enabled!\n");
@@ -140,8 +122,28 @@ void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet) {
 	} else if (msgType == MSG_VI_I_SEL) {
 		uartTxString("Current Change Selected\n");
 		psuStats->VI = VI_I_SEL;
+	} else if (msgType == MSG_HELP) {
+		uartTxString("PSU Commands:\n");
+		osDelay(5);
+		uartTxString("	HELP: Produces Valid Commands List\n");
+		osDelay(5);
+		uartTxString("	V_SET #: Sets output voltage to user input in mV\n");
+		osDelay(5);
+		uartTxString("	I_SET #: Sets current limit to user input in mA\n");
+		osDelay(5);
+		uartTxString("	ΟΕ_ΟΝ: Enables the voltage regulator\n");
+		osDelay(5);
+		uartTxString("	ΟΕ_ΟFF: Disables the voltage regulator\n");
+		osDelay(5);
+		uartTxString(
+				"	VI_V_SEL: Allows user to change output voltage on board\n");
+		osDelay(5);
+		uartTxString(
+				"	VI_I_SEL: Allows user to change current limit on board\n");
 	} else {
 		uartTxString("Invalid command, enter \"HELP\" for commands\n");
+		osDelay(5);
 		return;
 	}
+	osDelay(5);
 }
