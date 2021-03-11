@@ -27,6 +27,7 @@
 #include "leds.h"
 #include "stats.h"
 #include "uart.h"
+#include "analog.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,9 +47,11 @@
 
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
+DMA_HandleTypeDef hdma_adc1;
 
 I2C_HandleTypeDef hi2c1;
 
+TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim11;
 
 UART_HandleTypeDef huart2;
@@ -79,6 +82,8 @@ const osThreadAttr_t ledTask_attributes = { .name = "ledTask", .stack_size = 128
 Stats psuStats;
 uartRxData uartRx;
 uint8_t interruptFlags = INT_FLAG_CLEAR;
+
+extern uint32_t analogBuff[ANALOG_DMA_BUFF_SIZE];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -89,6 +94,7 @@ static void MX_ADC1_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_TIM11_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_TIM1_Init(void);
 void startUartTxTask(void *argument);
 void startUartRxTask(void *argument);
 void startOledTask(void *argument);
@@ -136,8 +142,11 @@ int main(void) {
 	MX_I2C1_Init();
 	MX_TIM11_Init();
 	MX_USART2_UART_Init();
+	MX_TIM1_Init();
 	/* USER CODE BEGIN 2 */
-
+	HAL_ADC_Start(&hadc1);
+	HAL_ADC_Start_DMA(&hadc1, analogBuff, ANALOG_DMA_BUFF_SIZE);
+	HAL_TIM_Base_Start(&htim1);
 	/* USER CODE END 2 */
 
 	/* Init scheduler */
@@ -265,13 +274,13 @@ static void MX_ADC1_Init(void) {
 	hadc1.Instance = ADC1;
 	hadc1.Init.ClockPrescaler = ADC_CLOCK_SYNC_PCLK_DIV4;
 	hadc1.Init.Resolution = ADC_RESOLUTION_12B;
-	hadc1.Init.ScanConvMode = DISABLE;
+	hadc1.Init.ScanConvMode = ENABLE;
 	hadc1.Init.ContinuousConvMode = DISABLE;
 	hadc1.Init.DiscontinuousConvMode = DISABLE;
-	hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_NONE;
-	hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
+	hadc1.Init.ExternalTrigConvEdge = ADC_EXTERNALTRIGCONVEDGE_RISING;
+	hadc1.Init.ExternalTrigConv = ADC_EXTERNALTRIGCONV_T1_CC1;
 	hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-	hadc1.Init.NbrOfConversion = 1;
+	hadc1.Init.NbrOfConversion = 3;
 	hadc1.Init.DMAContinuousRequests = DISABLE;
 	hadc1.Init.EOCSelection = ADC_EOC_SINGLE_CONV;
 	if (HAL_ADC_Init(&hadc1) != HAL_OK) {
@@ -282,6 +291,20 @@ static void MX_ADC1_Init(void) {
 	sConfig.Channel = ADC_CHANNEL_13;
 	sConfig.Rank = 1;
 	sConfig.SamplingTime = ADC_SAMPLETIME_3CYCLES;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
+	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+	 */
+	sConfig.Channel = ADC_CHANNEL_0;
+	sConfig.Rank = 2;
+	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
+		Error_Handler();
+	}
+	/** Configure for the selected ADC regular channel its corresponding rank in the sequencer and its sample time.
+	 */
+	sConfig.Channel = ADC_CHANNEL_1;
+	sConfig.Rank = 3;
 	if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK) {
 		Error_Handler();
 	}
@@ -320,6 +343,49 @@ static void MX_I2C1_Init(void) {
 	/* USER CODE BEGIN I2C1_Init 2 */
 
 	/* USER CODE END I2C1_Init 2 */
+
+}
+
+/**
+ * @brief TIM1 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_TIM1_Init(void) {
+
+	/* USER CODE BEGIN TIM1_Init 0 */
+
+	/* USER CODE END TIM1_Init 0 */
+
+	TIM_ClockConfigTypeDef sClockSourceConfig = { 0 };
+	TIM_MasterConfigTypeDef sMasterConfig = { 0 };
+
+	/* USER CODE BEGIN TIM1_Init 1 */
+
+	/* USER CODE END TIM1_Init 1 */
+	htim1.Instance = TIM1;
+	htim1.Init.Prescaler = 999;
+	htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
+	htim1.Init.Period = 999;
+	htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+	htim1.Init.RepetitionCounter = 0;
+	htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+	if (HAL_TIM_Base_Init(&htim1) != HAL_OK) {
+		Error_Handler();
+	}
+	sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+	if (HAL_TIM_ConfigClockSource(&htim1, &sClockSourceConfig) != HAL_OK) {
+		Error_Handler();
+	}
+	sMasterConfig.MasterOutputTrigger = TIM_TRGO_UPDATE;
+	sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_ENABLE;
+	if (HAL_TIMEx_MasterConfigSynchronization(&htim1, &sMasterConfig)
+			!= HAL_OK) {
+		Error_Handler();
+	}
+	/* USER CODE BEGIN TIM1_Init 2 */
+
+	/* USER CODE END TIM1_Init 2 */
 
 }
 
@@ -390,6 +456,7 @@ static void MX_DMA_Init(void) {
 
 	/* DMA controller clock enable */
 	__HAL_RCC_DMA1_CLK_ENABLE();
+	__HAL_RCC_DMA2_CLK_ENABLE();
 
 	/* DMA interrupt init */
 	/* DMA1_Stream5_IRQn interrupt configuration */
@@ -398,6 +465,9 @@ static void MX_DMA_Init(void) {
 	/* DMA1_Stream6_IRQn interrupt configuration */
 	HAL_NVIC_SetPriority(DMA1_Stream6_IRQn, 5, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Stream6_IRQn);
+	/* DMA2_Stream0_IRQn interrupt configuration */
+	HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 5, 0);
+	HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
 
 }
 
@@ -483,10 +553,23 @@ double potToVoltage(uint8_t potVal) {
 	return temp;
 
 }
+
 uint8_t voltageToPot(double vVal) {
 	double potCalc = 4960.0 / (((double) vVal / 800.0) - 1.0);
 	potCalc = (potCalc / 5000.0) * 128.0;
 	return (uint8_t) potCalc;
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
+	for (int i = 0; i < ANALOG_DMA_BUFF_SIZE; i++) {
+		char buff[90];
+		sprintf(buff, "%d\n", analogBuff[0]);
+		uartTxString(buff);
+		sprintf(buff, "%d\n", analogBuff[1]);
+		uartTxString(buff);
+		sprintf(buff, "%d\n", analogBuff[2]);
+		uartTxString(buff);
+	}
 }
 
 /* USER CODE END 4 */

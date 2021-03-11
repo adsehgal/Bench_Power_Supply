@@ -1,6 +1,25 @@
-22:13:17 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+22:53:17 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
 make -j7 all 
-arm-none-eabi-gcc "../Core/Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/uart.d" -MT"Core/Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/uart.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F410Rx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_ADC_ConvCpltCallback':
+../Core/Src/main.c:566:19: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  566 |   sprintf(buff, "%d\n", analogBuff[0]);
+      |                  ~^     ~~~~~~~~~~~~~
+      |                   |               |
+      |                   int             uint32_t {aka long unsigned int}
+      |                  %ld
+../Core/Src/main.c:568:19: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  568 |   sprintf(buff, "%d\n", analogBuff[1]);
+      |                  ~^     ~~~~~~~~~~~~~
+      |                   |               |
+      |                   int             uint32_t {aka long unsigned int}
+      |                  %ld
+../Core/Src/main.c:570:19: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  570 |   sprintf(buff, "%d\n", analogBuff[2]);
+      |                  ~^     ~~~~~~~~~~~~~
+      |                   |               |
+      |                   int             uint32_t {aka long unsigned int}
+      |                  %ld
 arm-none-eabi-gcc -o "PSW_FW_F410RB_RTOS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/STM32F410RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PSW_FW_F410RB_RTOS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: PSW_FW_F410RB_RTOS.elf
  
@@ -8,17 +27,17 @@ arm-none-eabi-objdump -h -S  PSW_FW_F410RB_RTOS.elf  > "PSW_FW_F410RB_RTOS.list"
 arm-none-eabi-objcopy  -O binary  PSW_FW_F410RB_RTOS.elf  "PSW_FW_F410RB_RTOS.bin"
 arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
    text	   data	    bss	    dec	    hex	filename
-  55076	    496	  22128	  77700	  12f84	PSW_FW_F410RB_RTOS.elf
+  57820	    496	  22304	  80620	  13aec	PSW_FW_F410RB_RTOS.elf
 Finished building: default.size.stdout
  
 Finished building: PSW_FW_F410RB_RTOS.bin
  
 Finished building: PSW_FW_F410RB_RTOS.list
  
-22:13:24 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+22:53:31 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
 make -j7 all 
 arm-none-eabi-size   PSW_FW_F410RB_RTOS.elf 
    text	   data	    bss	    dec	    hex	filename
-  55076	    496	  22128	  77700	  12f84	PSW_FW_F410RB_RTOS.elf
+  57820	    496	  22304	  80620	  13aec	PSW_FW_F410RB_RTOS.elf
 Finished building: default.size.stdout
  
