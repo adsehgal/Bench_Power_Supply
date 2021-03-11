@@ -31,9 +31,12 @@ extern uint8_t interruptFlags;
 //	}
 //}
 void uartTxString(char *str) {
+
 	osDelay(1);
+//	ledToggle(CC_LED);
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
-		osDelay(1);	//make sure nothing else is being transmitted
+		ledToggle(CC_LED);
+		osDelay(100);	//make sure nothing else is being transmitted
 	}
 	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
