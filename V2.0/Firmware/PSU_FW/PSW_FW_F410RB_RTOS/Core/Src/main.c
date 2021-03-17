@@ -663,9 +663,9 @@ void startOledTask(void *argument) {
 
 	/* Infinite loop */
 	for (;;) {
-		Vin = analogReadVin(analogBuffFinal[2]);
-		Vout = analogReadVout(analogBuffFinal[1]);
-		Iout = analogReadIOut(analogBuffFinal[0]);
+		Vin = analogReadVin(analogBuffFinal[ANALOG_BUFF_V_IN_POS]);
+		Vout = analogReadVout(analogBuffFinal[ANALOG_BUFF_V_OUT_POS]);
+		Iout = analogReadIOut(analogBuffFinal[ANALOG_BUFF_I_SENSE_POS]);
 		displayVoltageCurrent(&psuStats, Vin, Vout, Iout);
 		osDelay(500);
 		Vin++;
@@ -693,14 +693,14 @@ void startInitPsuTask(void *argument) {
 	ledSet(&psuStats);
 	osThreadTerminate(osThreadGetId());	// do not need the task after init
 //should never get here!
-	ledOn(CC_LED);
-	ledOff(OE_LED);
-	ledOn(VI_LED);
+	ledOn(LED_NUM_CC);
+	ledOff(LED_NUM_OE);
+	ledOn(LED_NUM_VI);
 	/* Infinite loop */
 	for (;;) {
-		ledToggle(CC_LED);
-		ledToggle(OE_LED);
-		ledToggle(VI_LED);
+		ledToggle(LED_NUM_CC);
+		ledToggle(LED_NUM_OE);
+		ledToggle(LED_NUM_VI);
 		osDelay(50);
 	}
 	/* USER CODE END startInitPsuTask */
@@ -715,17 +715,40 @@ void startInitPsuTask(void *argument) {
 /* USER CODE END Header_startLedTask */
 void startLedTask(void *argument) {
 	/* USER CODE BEGIN startLedTask */
+	osDelay(2000);	//wait for init sequence to complete
+	if (psuStats.OE == OE_ENABLED) {
+		ledOn(LED_NUM_OE);
+	} else {
+		ledOff(LED_NUM_OE);
+	}
+	if (psuStats.VI == VI_V_SEL) {
+		ledOn(LED_NUM_VI);
+	} else {
+		ledOff(LED_NUM_VI);
+	}
+	if (psuStats.iLim == I_LIM_SET) {
+		ledOn(LED_NUM_CC);
+	} else {
+		ledOff(LED_NUM_CC);
+	}
 	/* Infinite loop */
 	for (;;) {
-//		uartTxString("ADC INT TEST\n");
-//		char buff[90];
-//		sprintf(buff, "%lu\n", analogBuff[0]);
-//		uartTxString(buff);
-//		sprintf(buff, "%lu\n", analogBuff[1]);
-//		uartTxString(buff);
-//		sprintf(buff, "%lu\n", analogBuff[2]);
-//		uartTxString(buff);
-		osDelay(500);
+		if (psuStats.OE == OE_ENABLED) {
+			ledOn(LED_NUM_OE);
+		} else {
+			ledOff(LED_NUM_OE);
+		}
+		if (psuStats.VI == VI_V_SEL) {
+			ledOn(LED_NUM_VI);
+		} else {
+			ledOff(LED_NUM_VI);
+		}
+		if (psuStats.iLim == I_LIM_SET) {
+			ledOn(LED_NUM_CC);
+		} else {
+			ledOff(LED_NUM_CC);
+		}
+		osDelay(25);
 	}
 	/* USER CODE END startLedTask */
 }

@@ -14,9 +14,9 @@
 #define FLASH_FREQ 100
 
 typedef enum led_type{
-	VI_LED = 0x01,
-	CC_LED = 0x02,
-	OE_LED = 0x04
+	LED_NUM_VI = 0x01,
+	LED_NUM_CC = 0x02,
+	LED_NUM_OE = 0x04
 }leds;
 
 

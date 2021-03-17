@@ -82,7 +82,7 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet) 
 		token = strtok(NULL, " ");
 		if (token != NULL) { //check for more words in string
 			ret = MSG_ERR_CMD;
-			ledToggle(CC_LED);
+			ledToggle(LED_NUM_CC);
 		}
 		return ret;
 	}

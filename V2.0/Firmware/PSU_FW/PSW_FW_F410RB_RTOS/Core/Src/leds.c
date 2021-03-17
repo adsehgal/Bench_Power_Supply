@@ -40,70 +40,70 @@ void ledsError(uint8_t error) {
 }
 
 void ledOn(leds led) {
-	if (led & VI_LED)
+	if (led & LED_NUM_VI)
 		HAL_GPIO_WritePin(VI_LED_GPIO_Port, VI_LED_Pin, GPIO_PIN_SET);
-	if (led & CC_LED)
+	if (led & LED_NUM_CC)
 		HAL_GPIO_WritePin(CC_LED_GPIO_Port, CC_LED_Pin, GPIO_PIN_SET);
-	if (led & OE_LED)
+	if (led & LED_NUM_OE)
 		HAL_GPIO_WritePin(OE_LED_GPIO_Port, OE_LED_Pin, GPIO_PIN_SET);
 }
 
 void ledOff(leds led) {
-	if (led & VI_LED)
+	if (led & LED_NUM_VI)
 		HAL_GPIO_WritePin(VI_LED_GPIO_Port, VI_LED_Pin, GPIO_PIN_RESET);
-	if (led & CC_LED)
+	if (led & LED_NUM_CC)
 		HAL_GPIO_WritePin(CC_LED_GPIO_Port, CC_LED_Pin, GPIO_PIN_RESET);
-	if (led & OE_LED)
+	if (led & LED_NUM_OE)
 		HAL_GPIO_WritePin(OE_LED_GPIO_Port, OE_LED_Pin, GPIO_PIN_RESET);
 }
 
 void ledToggle(leds led) {
-	if (led & VI_LED)
+	if (led & LED_NUM_VI)
 		HAL_GPIO_TogglePin(VI_LED_GPIO_Port, VI_LED_Pin);
-	if (led & CC_LED)
+	if (led & LED_NUM_CC)
 		HAL_GPIO_TogglePin(CC_LED_GPIO_Port, CC_LED_Pin);
-	if (led & OE_LED)
+	if (led & LED_NUM_OE)
 		HAL_GPIO_TogglePin(OE_LED_GPIO_Port, OE_LED_Pin);
 }
 
 void ledSet(Stats *psuStats) {
 	if (psuStats->OE == OE_ENABLED) {
-		ledOn(OE_LED);
+		ledOn(LED_NUM_OE);
 	} else {
-		ledOff(OE_LED);
+		ledOff(LED_NUM_OE);
 	}
 
 	if (psuStats->VI == VI_V_SEL) {
-		ledOn(VI_LED);
+		ledOn(LED_NUM_VI);
 	} else {
-		ledOff(VI_LED);
+		ledOff(LED_NUM_VI);
 	}
 
 	if (psuStats->iLim == I_LIM_SET) {
-		ledOn(CC_LED);
+		ledOn(LED_NUM_CC);
 	} else {
-		ledOff(CC_LED);
+		ledOff(LED_NUM_CC);
 	}
 }
 
 void ledsInit(void) {
-	ledOff(VI_LED);
-	ledOff(CC_LED);
-	ledOff(OE_LED);
+	ledOff(LED_NUM_VI);
+	ledOff(LED_NUM_CC);
+	ledOff(LED_NUM_OE);
 	const uint8_t delay = 50;
 	for (int i = 0; i < 10; i++) {
-		ledOn(CC_LED);
+		ledOn(LED_NUM_CC);
 		osDelay(delay);
-		ledOff(CC_LED);
-		ledOn(OE_LED);
+		ledOff(LED_NUM_CC);
+		ledOn(LED_NUM_OE);
 		osDelay(delay);
-		ledOff(OE_LED);
-		ledOn(VI_LED);
+		ledOff(LED_NUM_OE);
+		ledOn(LED_NUM_VI);
 		osDelay(delay);
-		ledOff(VI_LED);
-		ledOn(OE_LED);
+		ledOff(LED_NUM_VI);
+		ledOn(LED_NUM_OE);
 		osDelay(delay);
-		ledOff(OE_LED);
+		ledOff(LED_NUM_OE);
 	}
 
 }
