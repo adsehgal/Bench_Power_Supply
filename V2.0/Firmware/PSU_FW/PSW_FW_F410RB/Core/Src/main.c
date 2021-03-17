@@ -653,7 +653,7 @@ void disableOutput(void)
 void buttonsHandler(uint8_t buttons)
 {
 	printBtns(buttons);
-	if (buttons & VI_BTN)
+	if (buttons & BTN_NUM_VI)
 	{
 		if (psuStats.VI == VI_V_SEL)
 		{
@@ -671,7 +671,7 @@ void buttonsHandler(uint8_t buttons)
 
 	}
 
-	if (buttons & UP_BTN)
+	if (buttons & BTN_NUM_UP)
 	{
 		if (psuStats.VI == VI_V_SEL)
 		{
@@ -689,7 +689,7 @@ void buttonsHandler(uint8_t buttons)
 		}
 	}
 
-	if (buttons & DW_BTN)
+	if (buttons & BTN_NUM_DWN)
 	{
 		if (psuStats.VI == VI_V_SEL)
 		{
@@ -707,7 +707,7 @@ void buttonsHandler(uint8_t buttons)
 		}
 	}
 
-	if (buttons & OE_BTN)
+	if (buttons & BTN_NUM_OE)
 	{
 		if (psuStats.OE == OE_ENABLED)
 		{

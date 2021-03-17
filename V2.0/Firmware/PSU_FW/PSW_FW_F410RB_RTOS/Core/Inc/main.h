@@ -77,6 +77,7 @@ uint8_t voltageToPot(double vVal);
 #define CC_LED_GPIO_Port GPIOC
 #define nSW_INT_Pin GPIO_PIN_11
 #define nSW_INT_GPIO_Port GPIOC
+#define nSW_INT_EXTI_IRQn EXTI15_10_IRQn
 #define nSW_VI_Pin GPIO_PIN_12
 #define nSW_VI_GPIO_Port GPIOC
 #define nSW_DW_Pin GPIO_PIN_11

@@ -36041,3 +36041,1322 @@
 2021-03-16 21:59:36,748 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 1855mS.
 2021-03-16 21:59:36,748 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
 2021-03-16 21:59:36,754 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-16 22:17:38,084 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-16 22:17:38,084 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-16 22:17:38,630 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:38,630 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:38,631 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:38,631 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:38,680 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-16 22:17:38,682 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-16 22:17:38,682 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-16 22:17:38,683 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-16 22:17:38,683 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-16 22:17:38,683 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-16 22:17:38,683 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-16 22:17:38,687 [WARN] IpParametersView:138 - Warning: This peripheral hasn't parameters
+2021-03-16 22:17:38,690 [WARN] MainPanel:236 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2021-03-16 22:17:38,692 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 614408184 Bytes (941621248)
+2021-03-16 22:17:38,692 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-16 22:17:38,692 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-16 22:17:38,693 [INFO] OpenFileManager:303 - Change cursor
+2021-03-16 22:17:38,710 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-03-16 22:17:39,112 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-03-16 22:17:39,271 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 22:17:39,271 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 22:17:39,271 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 22:17:39,272 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 22:17:39,272 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 22:17:39,272 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 22:17:39,272 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,272 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,272 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,273 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:17:39,275 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 22:17:39,275 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 22:17:39,275 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 22:17:39,314 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 22:17:39,314 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 22:17:39,314 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 22:17:39,317 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-03-16 22:17:39,317 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-03-16 22:17:39,317 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-03-16 22:17:39,317 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-03-16 22:17:39,317 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-03-16 22:17:39,318 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 22:17:39,318 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 22:17:39,318 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 22:17:39,318 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-03-16 22:17:39,319 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-03-16 22:17:39,400 [INFO] RtosManager:784 - Current active RTOS is FREERTOS [Cortex-M4NS]
+2021-03-16 22:17:39,402 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,402 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART2_RX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART2_TX) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (ADC1) currently not set
+2021-03-16 22:17:39,403 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2021-03-16 22:17:39,404 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (ADC1) currently not set
+2021-03-16 22:17:39,406 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:39,406 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:39,406 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (48MHZClocksFreq_Value) has invalid value (50000000)
+2021-03-16 22:17:39,407 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-03-16 22:17:39,407 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (8000000)
+2021-03-16 22:17:39,453 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 456052536 Bytes (941621248)
+2021-03-16 22:17:39,453 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-03-16 22:17:39,453 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.1
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-03-16 22:17:39,453 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-03-16 22:17:39,454 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-03-16 22:17:39,494 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-16 22:17:39,494 [INFO] PinOutPanel:1435 - setPackage(STM32F410RBTx,LQFP64)
+2021-03-16 22:17:39,619 [INFO] UtilMem:74 - Before build in PCC Used Memory: 342139880 Bytes (941621248)
+2021-03-16 22:17:39,705 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:17:39,728 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:17:39,748 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:17:39,751 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:17:39,848 [INFO] UtilMem:74 - After build in PCC Used Memory: 386702312 Bytes (941621248)
+2021-03-16 22:17:39,855 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-03-16 22:17:39,869 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,870 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,870 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,870 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,870 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,870 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,871 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,872 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,872 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,872 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,873 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,874 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,875 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,875 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,875 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:17:39,877 [INFO] ApiDbMcu:458 - Load IP Config File for PDM2PCM
+2021-03-16 22:17:39,879 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:39,879 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:39,888 [WARN] FreeRTOS:989 - Null or empty value: should not occur! (nothing added to the table)
+2021-03-16 22:17:39,910 [INFO] RtosManager:597 - Active RTOS found at IOC load: FREERTOS [Cortex-M4NS]
+2021-03-16 22:17:39,911 [INFO] OpenFileManager:323 - Restore cursor
+2021-03-16 22:17:39,999 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:39,999 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:40,000 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:17:40,000 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:18:07,369 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 548183016 Bytes (941621248)
+2021-03-16 22:18:17,087 [INFO] Gpio:248 - dependency for GPIO [ADC1, I2C1, RCC, SYS, USART2]
+2021-03-16 22:18:43,257 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 689740776 Bytes (941621248)
+2021-03-16 22:18:46,642 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 747938792 Bytes (941621248)
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: FREERTOS
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-16 22:18:46,856 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-03-16 22:18:46,856 [INFO] CodeGenerator:641 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.2.0.202102191602//db/
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 22:18:46,863 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : Instancevalue: DMA2_Stream0
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : Instancevalue: DMA2_Stream0
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 22:18:46,863 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2021-03-16 22:18:46,863 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:18:46,863 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 22:18:46,864 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 22:18:46,867 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:18:46,867 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 22:18:46,877 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream5
+2021-03-16 22:18:46,877 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream5
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 22:18:46,877 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:18:46,877 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:18:46,877 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:18:46,877 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:18:46,877 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:18:46,877 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:18:46,878 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream6
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream6
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 22:18:46,879 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:18:46,879 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:18:46,879 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 22:18:46,880 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 22:18:47,052 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/license.tmp_save
+2021-03-16 22:18:47,097 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/license.tmp
+2021-03-16 22:18:47,124 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/gpio.tmp_save
+2021-03-16 22:18:47,169 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/gpio.tmp
+2021-03-16 22:18:47,428 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:18:47,433 [INFO] Middleware:1263 - No code input for Bsp Dependency
+2021-03-16 22:18:47,437 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_inc.tmp_save
+2021-03-16 22:18:47,480 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_inc.tmp
+2021-03-16 22:18:47,482 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2021-03-16 22:18:47,524 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelInit.tmp
+2021-03-16 22:18:47,525 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2021-03-16 22:18:47,566 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelStart.tmp
+2021-03-16 22:18:47,568 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2021-03-16 22:18:47,612 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_typedefs.tmp
+2021-03-16 22:18:47,613 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_vars.tmp_save
+2021-03-16 22:18:47,656 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_vars.tmp
+2021-03-16 22:18:47,658 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_pfp.tmp_save
+2021-03-16 22:18:47,699 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_pfp.tmp
+2021-03-16 22:18:47,701 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2021-03-16 22:18:47,743 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_obj_creat.tmp
+2021-03-16 22:18:47,745 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2021-03-16 22:18:47,784 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_default_thread.tmp
+2021-03-16 22:18:47,786 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_threads.tmp_save
+2021-03-16 22:18:47,826 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_threads.tmp
+2021-03-16 22:18:47,829 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/FreeRTOSConfig.h_save
+2021-03-16 22:18:47,890 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/FreeRTOSConfig.h
+2021-03-16 22:18:47,893 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/freertos.c_save
+2021-03-16 22:18:47,943 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/freertos.c
+2021-03-16 22:18:47,945 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:18:47,970 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:18:48,000 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma.tmp_save
+2021-03-16 22:18:48,045 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma.tmp
+2021-03-16 22:18:48,047 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma_GV.tmp_save
+2021-03-16 22:18:48,088 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma_GV.tmp
+2021-03-16 22:18:48,089 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:18:48,090 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:18:48,091 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:18:48,097 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_it.c_save
+2021-03-16 22:18:48,157 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_it.c
+2021-03-16 22:18:48,161 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_it.h_save
+2021-03-16 22:18:48,207 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_it.h
+2021-03-16 22:18:48,213 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_msp.c_save
+2021-03-16 22:18:48,294 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_msp.c
+2021-03-16 22:18:48,297 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/system.tmp_save
+2021-03-16 22:18:48,339 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/system.tmp
+2021-03-16 22:18:48,342 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_timebase_tim.c_save
+2021-03-16 22:18:48,389 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_timebase_tim.c
+2021-03-16 22:18:48,394 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-03-16 22:18:48,445 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_hal_conf.h
+2021-03-16 22:18:48,457 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-03-16 22:18:48,457 [WARN] CodeGenerator:3191 - IP not found : null
+2021-03-16 22:18:48,462 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/main.h_save
+2021-03-16 22:18:48,510 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/main.h
+2021-03-16 22:18:48,514 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/main.c_save
+2021-03-16 22:18:48,625 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/main.c
+2021-03-16 22:18:49,349 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 286mS.
+2021-03-16 22:18:49,353 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-16 22:18:49,687 [INFO] ConfigFileManager:1242 - The Die is : DIE458
+2021-03-16 22:18:49,691 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-03-16 22:18:49,695 [INFO] ApiDbMcu:458 - Load IP Config File for LIBJPEG
+2021-03-16 22:18:49,702 [INFO] ApiDbMcu:458 - Load IP Config File for MBEDTLS
+2021-03-16 22:18:51,023 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 1671mS.
+2021-03-16 22:18:51,025 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 1mS.
+2021-03-16 22:18:51,029 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-16 22:40:52,386 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-16 22:40:52,387 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-16 22:40:53,126 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:53,126 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:53,126 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:53,126 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:53,145 [INFO] Gpio:248 - dependency for GPIO [ADC1, I2C1, RCC, SYS, USART2]
+2021-03-16 22:40:53,176 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-16 22:40:53,176 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-16 22:40:53,176 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-16 22:40:53,176 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-16 22:40:53,176 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-16 22:40:53,177 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-16 22:40:53,192 [WARN] IpParametersView:138 - Warning: This peripheral hasn't parameters
+2021-03-16 22:40:53,194 [WARN] MainPanel:236 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2021-03-16 22:40:53,196 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 664600064 Bytes (969932800)
+2021-03-16 22:40:53,196 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-16 22:40:53,196 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-16 22:40:53,196 [INFO] OpenFileManager:303 - Change cursor
+2021-03-16 22:40:53,209 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-03-16 22:40:53,566 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-03-16 22:40:53,702 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 22:40:53,702 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 22:40:53,702 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 22:40:53,703 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 22:40:53,704 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 22:40:53,704 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,704 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,705 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 22:40:53,707 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 22:40:53,707 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 22:40:53,707 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 22:40:53,742 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 22:40:53,742 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 22:40:53,742 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 22:40:53,745 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-03-16 22:40:53,745 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-03-16 22:40:53,745 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-03-16 22:40:53,745 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-03-16 22:40:53,746 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-03-16 22:40:53,746 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 22:40:53,746 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 22:40:53,746 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 22:40:53,747 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-03-16 22:40:53,747 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-03-16 22:40:53,826 [INFO] RtosManager:784 - Current active RTOS is FREERTOS [Cortex-M4NS]
+2021-03-16 22:40:53,828 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,828 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,828 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART2_RX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,829 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART2_TX) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2021-03-16 22:40:53,830 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (ADC1) currently not set
+2021-03-16 22:40:53,832 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:53,832 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:53,832 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (48MHZClocksFreq_Value) has invalid value (50000000)
+2021-03-16 22:40:53,832 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-03-16 22:40:53,833 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (8000000)
+2021-03-16 22:40:53,876 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 698493952 Bytes (969932800)
+2021-03-16 22:40:53,877 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-03-16 22:40:53,877 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.1
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-03-16 22:40:53,877 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-03-16 22:40:53,878 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-03-16 22:40:53,878 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-03-16 22:40:53,915 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-16 22:40:53,918 [INFO] PinOutPanel:1435 - setPackage(STM32F410RBTx,LQFP64)
+2021-03-16 22:40:54,032 [INFO] UtilMem:74 - Before build in PCC Used Memory: 744631296 Bytes (969932800)
+2021-03-16 22:40:54,101 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:40:54,117 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:40:54,129 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:40:54,131 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 22:40:54,154 [INFO] UtilMem:74 - After build in PCC Used Memory: 789197824 Bytes (969932800)
+2021-03-16 22:40:54,159 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-03-16 22:40:54,167 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,167 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,168 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,169 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,170 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,171 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,172 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,172 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 22:40:54,174 [INFO] ApiDbMcu:458 - Load IP Config File for PDM2PCM
+2021-03-16 22:40:54,175 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:54,175 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:54,181 [WARN] FreeRTOS:989 - Null or empty value: should not occur! (nothing added to the table)
+2021-03-16 22:40:54,194 [INFO] RtosManager:597 - Active RTOS found at IOC load: FREERTOS [Cortex-M4NS]
+2021-03-16 22:40:54,195 [INFO] OpenFileManager:323 - Restore cursor
+2021-03-16 22:40:54,271 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:54,272 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:54,272 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:40:54,272 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:41:00,282 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-16 22:41:01,690 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:01,690 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:01,690 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:01,691 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:748 - 512 128
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:01,691 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:748 - 256 128
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:01,691 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:01,691 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:01,691 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:01,691 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:01,692 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:08,399 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 32
+2021-03-16 22:41:08,400 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 8192
+2021-03-16 22:41:21,856 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,857 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:21,857 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:21,857 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,857 [WARN] TasksAndQueuesTab:748 - 512 128
+2021-03-16 22:41:21,857 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:21,857 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,857 [WARN] TasksAndQueuesTab:748 - 256 128
+2021-03-16 22:41:21,857 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:21,857 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:21,858 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:21,858 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:21,858 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 22:41:21,858 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 22:41:25,043 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 457991752 Bytes (969932800)
+2021-03-16 22:41:26,488 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 482635336 Bytes (969932800)
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: FREERTOS
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-03-16 22:41:26,670 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-16 22:41:26,671 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-16 22:41:26,671 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-03-16 22:41:26,671 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-16 22:41:26,671 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-03-16 22:41:26,671 [INFO] CodeGenerator:641 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.2.0.202102191602//db/
+2021-03-16 22:41:26,678 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 22:41:26,679 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : Instancevalue: DMA2_Stream0
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : Instancevalue: DMA2_Stream0
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 22:41:26,679 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:41:26,679 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:41:26,679 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 22:41:26,680 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 22:41:26,685 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 22:41:26,685 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 22:41:26,695 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 22:41:26,695 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:41:26,695 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream5
+2021-03-16 22:41:26,695 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream5
+2021-03-16 22:41:26,695 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 22:41:26,695 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:41:26,695 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:41:26,695 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:41:26,696 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 22:41:26,697 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream6
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream6
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 22:41:26,698 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 22:41:26,698 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 22:41:26,698 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 22:41:26,699 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 22:41:26,904 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/license.tmp_save
+2021-03-16 22:41:26,949 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/license.tmp
+2021-03-16 22:41:26,979 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/gpio.tmp_save
+2021-03-16 22:41:27,025 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/gpio.tmp
+2021-03-16 22:41:27,292 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:41:27,299 [INFO] Middleware:1263 - No code input for Bsp Dependency
+2021-03-16 22:41:27,303 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_inc.tmp_save
+2021-03-16 22:41:27,342 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_inc.tmp
+2021-03-16 22:41:27,344 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2021-03-16 22:41:27,384 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelInit.tmp
+2021-03-16 22:41:27,386 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2021-03-16 22:41:27,426 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelStart.tmp
+2021-03-16 22:41:27,428 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2021-03-16 22:41:27,470 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_typedefs.tmp
+2021-03-16 22:41:27,472 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_vars.tmp_save
+2021-03-16 22:41:27,513 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_vars.tmp
+2021-03-16 22:41:27,515 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_pfp.tmp_save
+2021-03-16 22:41:27,555 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_pfp.tmp
+2021-03-16 22:41:27,557 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2021-03-16 22:41:27,599 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_obj_creat.tmp
+2021-03-16 22:41:27,601 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2021-03-16 22:41:27,641 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_default_thread.tmp
+2021-03-16 22:41:27,643 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_threads.tmp_save
+2021-03-16 22:41:27,682 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_threads.tmp
+2021-03-16 22:41:27,684 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/FreeRTOSConfig.h_save
+2021-03-16 22:41:27,738 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/FreeRTOSConfig.h
+2021-03-16 22:41:27,740 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/freertos.c_save
+2021-03-16 22:41:27,787 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/freertos.c
+2021-03-16 22:41:27,788 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:41:27,789 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:41:27,897 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma.tmp_save
+2021-03-16 22:41:27,941 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma.tmp
+2021-03-16 22:41:27,942 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma_GV.tmp_save
+2021-03-16 22:41:27,979 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma_GV.tmp
+2021-03-16 22:41:27,980 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:41:27,981 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:41:27,983 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 22:41:27,990 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_it.c_save
+2021-03-16 22:41:28,048 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_it.c
+2021-03-16 22:41:28,051 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_it.h_save
+2021-03-16 22:41:28,096 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_it.h
+2021-03-16 22:41:28,102 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_msp.c_save
+2021-03-16 22:41:28,186 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_msp.c
+2021-03-16 22:41:28,188 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/system.tmp_save
+2021-03-16 22:41:28,227 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/system.tmp
+2021-03-16 22:41:28,229 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_timebase_tim.c_save
+2021-03-16 22:41:28,274 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_timebase_tim.c
+2021-03-16 22:41:28,278 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-03-16 22:41:28,328 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_hal_conf.h
+2021-03-16 22:41:28,340 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-03-16 22:41:28,340 [WARN] CodeGenerator:3191 - IP not found : null
+2021-03-16 22:41:28,344 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/main.h_save
+2021-03-16 22:41:28,393 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/main.h
+2021-03-16 22:41:28,396 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/main.c_save
+2021-03-16 22:41:28,514 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/main.c
+2021-03-16 22:41:29,053 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 240mS.
+2021-03-16 22:41:29,056 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-16 22:41:29,534 [INFO] ConfigFileManager:1242 - The Die is : DIE458
+2021-03-16 22:41:29,538 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-03-16 22:41:29,541 [INFO] ApiDbMcu:458 - Load IP Config File for LIBJPEG
+2021-03-16 22:41:29,548 [INFO] ApiDbMcu:458 - Load IP Config File for MBEDTLS
+2021-03-16 22:41:30,811 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 1755mS.
+2021-03-16 22:41:30,812 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 1mS.
+2021-03-16 22:41:30,815 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-16 23:16:10,909 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-16 23:16:10,909 [INFO] MainUpdater:2661 - connection check result : 10
+2021-03-16 23:16:11,218 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:11,218 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:11,219 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:11,219 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:11,266 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-16 23:16:11,268 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-16 23:16:11,269 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-16 23:16:11,269 [WARN] ThirdParty:796 - waiting for thirdparty lock release [close project]
+2021-03-16 23:16:11,269 [INFO] ThirdParty:798 - entering critical section [close project]
+2021-03-16 23:16:11,269 [INFO] ThirdParty:809 - exiting critical section [close project]
+2021-03-16 23:16:11,270 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-16 23:16:11,275 [WARN] IpParametersView:138 - Warning: This peripheral hasn't parameters
+2021-03-16 23:16:11,277 [WARN] MainPanel:236 - <html><b><center>Warning: This peripheral has no parameters to be configured<br></b></html>
+2021-03-16 23:16:11,279 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 395622848 Bytes (969932800)
+2021-03-16 23:16:11,279 [INFO] MicroXplorer:442 - Change Database Path : 
+2021-03-16 23:16:11,279 [INFO] MicroXplorer:472 - Change Database Version : DB.6.0.20
+2021-03-16 23:16:11,279 [INFO] OpenFileManager:303 - Change cursor
+2021-03-16 23:16:11,294 [INFO] RulesReader:52 - Compatibility file has been processed (237 Rules)
+2021-03-16 23:16:11,753 [INFO] Context:587 - Trying to add GPIOservice into a context  which must be forbidden
+2021-03-16 23:16:11,886 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 23:16:11,886 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 23:16:11,886 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SFXS2LP1.3.0.0: no header file found
+2021-03-16 23:16:11,887 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 23:16:11,887 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 23:16:11,888 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.3.0.1: no header file found
+2021-03-16 23:16:11,888 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,888 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,888 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,888 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,889 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,890 [WARN] ModelIntegratedComponent:51 - No mode defined for component null
+2021-03-16 23:16:11,892 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 23:16:11,892 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2868A2' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 23:16:11,892 [WARN] ApiManager:294 - Cannot register API 'Board Extension:S2915A1' from pack STMicroelectronics.X-CUBE-SUBG2.4.0.0: no header file found
+2021-03-16 23:16:11,939 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A3' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 23:16:11,939 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS01A2' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 23:16:11,939 [WARN] ApiManager:294 - Cannot register API 'Board Extension:IKS02A1' from pack STMicroelectronics.X-CUBE-MEMS1.8.2.0: no header file found
+2021-03-16 23:16:11,955 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2021-03-16 23:16:11,955 [INFO] RtosManager:470 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2021-03-16 23:16:11,955 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2021-03-16 23:16:11,955 [INFO] RtosManager:470 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2021-03-16 23:16:11,955 [WARN] ModelIntegratedComponent:182 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2021-03-16 23:16:11,956 [WARN] ApiManager:294 - Cannot register API 'Board Extension:GNSS1A1' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 23:16:11,956 [WARN] ApiManager:294 - Cannot register API 'Board Support:Custom' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 23:16:11,956 [WARN] ApiManager:294 - Cannot register API 'Data Exchange:lib_gnss' from pack STMicroelectronics.X-CUBE-GNSS1.5.2.0: no header file found
+2021-03-16 23:16:11,956 [WARN] ApiManager:294 - Cannot register API 'Board Extension:NFC04A1' from pack STMicroelectronics.X-CUBE-NFC4.2.0.2: no header file found
+2021-03-16 23:16:11,957 [WARN] ApiManager:294 - Cannot register API 'Wireless:BlueNRG-2' from pack STMicroelectronics.X-CUBE-BLE2.3.2.0: no header file found
+2021-03-16 23:16:12,049 [INFO] RtosManager:784 - Current active RTOS is FREERTOS [Cortex-M4NS]
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART2_RX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,053 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (USART2_TX) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Channel) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC1) currently not set
+2021-03-16 23:16:12,054 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (DMA) : Parameter (FIFOMode) has Id (ADC1) currently not set
+2021-03-16 23:16:12,057 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,057 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,057 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (48MHZClocksFreq_Value) has invalid value (50000000)
+2021-03-16 23:16:12,057 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2021-03-16 23:16:12,057 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (RTCHSEDivFreq_Value) has invalid value (8000000)
+2021-03-16 23:16:12,141 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 419698464 Bytes (969932800)
+2021-03-16 23:16:12,142 [WARN] ThirdParty:762 - waiting for thirdparty lock release [change project]
+2021-03-16 23:16:12,142 [INFO] ThirdParty:764 - entering critical section [change project]
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :RoweBots I-CUBE-UNISONRTOS 5.5.0-4
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SFXS2LP1 3.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 3.0.1
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 4.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AZRTOS-H7 1.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 8.2.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-AI 6.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-ALGOBUILD 1.2.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 5.2.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 2.0.2
+2021-03-16 23:16:12,143 [INFO] ThirdParty:952 - CMSIS Pack Vendor :wolfSSL I-CUBE-wolfSSL 4.7.0
+2021-03-16 23:16:12,144 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.1
+2021-03-16 23:16:12,144 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2021-03-16 23:16:12,144 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.16.0
+2021-03-16 23:16:12,144 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2021-03-16 23:16:12,144 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2021-03-16 23:16:12,144 [INFO] ThirdParty:952 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 3.2.0
+2021-03-16 23:16:12,144 [INFO] ThirdParty:770 - exiting critical section [change project]
+2021-03-16 23:16:12,185 [INFO] PinOutPanel:1435 - setPackage(No Configuration,No Configuration)
+2021-03-16 23:16:12,185 [INFO] PinOutPanel:1435 - setPackage(STM32F410RBTx,LQFP64)
+2021-03-16 23:16:12,330 [INFO] UtilMem:74 - Before build in PCC Used Memory: 348131336 Bytes (969932800)
+2021-03-16 23:16:12,415 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 23:16:12,432 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 23:16:12,445 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 23:16:12,447 [INFO] SharedServices:72 - Folder for power plug-in: /Users/adityasehgal/.stm32cubemx/plugins/power
+2021-03-16 23:16:12,473 [INFO] UtilMem:74 - After build in PCC Used Memory: 392693768 Bytes (969932800)
+2021-03-16 23:16:12,479 [INFO] ApiDbMcu:458 - Load IP Config File for FREERTOS
+2021-03-16 23:16:12,518 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,518 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,518 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,518 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,518 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,519 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,520 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,521 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2021-03-16 23:16:12,524 [INFO] ApiDbMcu:458 - Load IP Config File for PDM2PCM
+2021-03-16 23:16:12,525 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,525 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,530 [WARN] FreeRTOS:989 - Null or empty value: should not occur! (nothing added to the table)
+2021-03-16 23:16:12,552 [INFO] RtosManager:597 - Active RTOS found at IOC load: FREERTOS [Cortex-M4NS]
+2021-03-16 23:16:12,553 [INFO] OpenFileManager:323 - Restore cursor
+2021-03-16 23:16:12,611 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,611 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,612 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:12,612 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:17,614 [ERROR] RtosPanel:542 - Can not restore the selected Tab for FREERTOS(A reason can be that the tab is no more available.)
+2021-03-16 23:16:19,326 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:19,326 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:748 - 512 128
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:19,326 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:748 - 256 128
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:19,326 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,326 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:19,327 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:19,327 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:19,327 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:19,327 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:28,557 [INFO] EditThreadDialog:688 - RAM SIZE (in KB): 32
+2021-03-16 23:16:28,558 [INFO] EditThreadDialog:690 - RAM SIZE (in words): 8192
+2021-03-16 23:16:32,596 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,596 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:32,596 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:32,597 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,597 [WARN] TasksAndQueuesTab:748 - 512 128
+2021-03-16 23:16:32,597 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:32,597 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,597 [WARN] TasksAndQueuesTab:748 - 256 128
+2021-03-16 23:16:32,597 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:32,597 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:32,598 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:32,598 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:748 - 128 128
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:32,598 [INFO] TasksAndQueuesTab:742 - Dynamic
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:748 - 512 128
+2021-03-16 23:16:32,598 [WARN] TasksAndQueuesTab:760 - max value is: 3840.0
+2021-03-16 23:16:34,540 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 619186184 Bytes (969932800)
+2021-03-16 23:16:35,773 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 337803776 Bytes (969932800)
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: NVIC
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: FREERTOS
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: USART
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: DMA
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: TIM1_8
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: SYS
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: GPIO
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: ADC
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: RCC
+2021-03-16 23:16:35,976 [INFO] BlockDiagram:2735 - set Specific Code input for plugin: I2C
+2021-03-16 23:16:35,976 [INFO] CodeGenerator:641 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.2.0.202102191602//db/
+2021-03-16 23:16:35,983 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 23:16:35,984 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : Instancevalue: DMA2_Stream0
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : Instancevalue: DMA2_Stream0
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 23:16:35,984 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-03-16 23:16:35,984 [INFO] Argument:278 - Argument : Modevalue: DMA_CIRCULAR
+2021-03-16 23:16:35,984 [INFO] Argument:288 - Argument : Modevalue: DMA_CIRCULAR
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 23:16:35,985 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 23:16:35,986 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 23:16:35,986 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 23:16:35,988 [WARN] IP:2088 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:35,988 [WARN] IP:2088 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 23:16:35,998 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream5
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream5
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 23:16:35,998 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 23:16:35,998 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 23:16:35,998 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_VERY_HIGH
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 23:16:35,999 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 23:16:36,000 [INFO] Argument:278 - Argument : hdmavalue: null
+2021-03-16 23:16:36,000 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 23:16:36,000 [INFO] Argument:278 - Argument : Instancevalue: DMA1_Stream6
+2021-03-16 23:16:36,000 [INFO] Argument:288 - Argument : Instancevalue: DMA1_Stream6
+2021-03-16 23:16:36,000 [INFO] Argument:278 - Argument : Initvalue: null
+2021-03-16 23:16:36,000 [INFO] Argument:280 - 	 sub Args: 
+2021-03-16 23:16:36,000 [INFO] Argument:278 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 23:16:36,000 [INFO] Argument:288 - Argument : Channelvalue: DMA_CHANNEL_4
+2021-03-16 23:16:36,000 [INFO] Argument:278 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-03-16 23:16:36,000 [INFO] Argument:288 - Argument : Directionvalue: DMA_MEMORY_TO_PERIPH
+2021-03-16 23:16:36,000 [INFO] Argument:278 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_BYTE
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_BYTE
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : Modevalue: DMA_NORMAL
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : Priorityvalue: DMA_PRIORITY_HIGH
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-03-16 23:16:36,001 [INFO] Argument:278 - Argument : FIFOThresholdvalue: null
+2021-03-16 23:16:36,001 [INFO] Argument:288 - Argument : FIFOThresholdvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : MemBurstvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : MemBurstvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : PeriphBurstvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : PeriphBurstvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : Lockvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : Lockvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : Statevalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : Statevalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : Parentvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : Parentvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : XferCpltCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : XferCpltCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : XferHalfCpltCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : XferM1CpltCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : XferErrorCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : XferErrorCallbackvalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:278 - Argument : ErrorCodevalue: null
+2021-03-16 23:16:36,002 [INFO] Argument:288 - Argument : ErrorCodevalue: null
+2021-03-16 23:16:36,203 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/license.tmp_save
+2021-03-16 23:16:36,243 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/license.tmp
+2021-03-16 23:16:36,270 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/gpio.tmp_save
+2021-03-16 23:16:36,312 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/gpio.tmp
+2021-03-16 23:16:36,605 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 23:16:36,611 [INFO] Middleware:1263 - No code input for Bsp Dependency
+2021-03-16 23:16:36,614 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_inc.tmp_save
+2021-03-16 23:16:36,653 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_inc.tmp
+2021-03-16 23:16:36,655 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelInit.tmp_save
+2021-03-16 23:16:36,693 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelInit.tmp
+2021-03-16 23:16:36,695 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelStart.tmp_save
+2021-03-16 23:16:36,733 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_kernelStart.tmp
+2021-03-16 23:16:36,735 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_typedefs.tmp_save
+2021-03-16 23:16:36,775 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_typedefs.tmp
+2021-03-16 23:16:36,777 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_vars.tmp_save
+2021-03-16 23:16:36,819 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_vars.tmp
+2021-03-16 23:16:36,820 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_pfp.tmp_save
+2021-03-16 23:16:36,858 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_pfp.tmp
+2021-03-16 23:16:36,860 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_obj_creat.tmp_save
+2021-03-16 23:16:36,902 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_obj_creat.tmp
+2021-03-16 23:16:36,904 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_default_thread.tmp_save
+2021-03-16 23:16:36,943 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_default_thread.tmp
+2021-03-16 23:16:36,945 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_threads.tmp_save
+2021-03-16 23:16:36,983 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/rtos_threads.tmp
+2021-03-16 23:16:36,986 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/FreeRTOSConfig.h_save
+2021-03-16 23:16:37,042 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/FreeRTOSConfig.h
+2021-03-16 23:16:37,044 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/freertos.c_save
+2021-03-16 23:16:37,090 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/freertos.c
+2021-03-16 23:16:37,091 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 23:16:37,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 23:16:37,121 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma.tmp_save
+2021-03-16 23:16:37,164 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma.tmp
+2021-03-16 23:16:37,165 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma_GV.tmp_save
+2021-03-16 23:16:37,203 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/dma_GV.tmp
+2021-03-16 23:16:37,204 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 23:16:37,205 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 23:16:37,205 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2021-03-16 23:16:37,212 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_it.c_save
+2021-03-16 23:16:37,270 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_it.c
+2021-03-16 23:16:37,273 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_it.h_save
+2021-03-16 23:16:37,316 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_it.h
+2021-03-16 23:16:37,322 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_msp.c_save
+2021-03-16 23:16:37,429 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_msp.c
+2021-03-16 23:16:37,432 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/system.tmp_save
+2021-03-16 23:16:37,473 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/MXTmpFiles/system.tmp
+2021-03-16 23:16:37,475 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_timebase_tim.c_save
+2021-03-16 23:16:37,522 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/stm32f4xx_hal_timebase_tim.c
+2021-03-16 23:16:37,527 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_hal_conf.h_save
+2021-03-16 23:16:37,582 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/stm32f4xx_hal_conf.h
+2021-03-16 23:16:37,596 [WARN] IPConfigManager:2976 - IP not found : TIM
+2021-03-16 23:16:37,597 [WARN] CodeGenerator:3191 - IP not found : null
+2021-03-16 23:16:37,602 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/main.h_save
+2021-03-16 23:16:37,677 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Inc/main.h
+2021-03-16 23:16:37,680 [INFO] CodeEngine:229 - oldGeneratedFile, /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/main.c_save
+2021-03-16 23:16:37,807 [INFO] CodeEngine:247 - Generated code: /Users/adityasehgal/Documents/GitHub/Bench_Power_Supply/V2.0/Firmware/PSU_FW/PSW_FW_F410RB_RTOS/Core/Src/main.c
+2021-03-16 23:16:38,476 [INFO] ProjectBuilder:2460 - Time for Copy HAL[1] : 261mS.
+2021-03-16 23:16:38,505 [INFO] ProjectBuilder:3418 - Project Generator version: 3.13.0-B3
+2021-03-16 23:16:38,830 [INFO] ConfigFileManager:1242 - The Die is : DIE458
+2021-03-16 23:16:38,834 [INFO] ApiDbMcu:458 - Load IP Config File for FATFS
+2021-03-16 23:16:38,839 [INFO] ApiDbMcu:458 - Load IP Config File for LIBJPEG
+2021-03-16 23:16:38,846 [INFO] ApiDbMcu:458 - Load IP Config File for MBEDTLS
+2021-03-16 23:16:40,070 [INFO] ProjectBuilder:3584 - Time for Generating toolchain IDE Files: 1565mS.
+2021-03-16 23:16:40,070 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.
+2021-03-16 23:16:40,074 [INFO] ProjectBuilder:2339 - Time for Copy CMSIS : 0mS.

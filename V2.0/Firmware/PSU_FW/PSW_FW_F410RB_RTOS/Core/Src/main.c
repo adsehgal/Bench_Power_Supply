@@ -28,6 +28,7 @@
 #include "stats.h"
 #include "uart.h"
 #include "analog.h"
+#include "buttons.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,6 +83,10 @@ const osThreadAttr_t ledTask_attributes = { .name = "ledTask", .stack_size = 128
 osThreadId_t regulatorCtrlTaHandle;
 const osThreadAttr_t regulatorCtrlTa_attributes = { .name = "regulatorCtrlTa",
 		.stack_size = 128 * 4, .priority = (osPriority_t) osPriorityLow, };
+/* Definitions for btnsTask */
+osThreadId_t btnsTaskHandle;
+const osThreadAttr_t btnsTask_attributes = { .name = "btnsTask", .stack_size =
+		512 * 4, .priority = (osPriority_t) osPriorityLow, };
 /* USER CODE BEGIN PV */
 Stats psuStats;
 uartRxData uartRx;
@@ -106,6 +111,7 @@ void startOledTask(void *argument);
 void startInitPsuTask(void *argument);
 void startLedTask(void *argument);
 void startRegulatorCtrlTask(void *argument);
+void startBtnsTask(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -196,6 +202,9 @@ int main(void) {
 	/* creation of regulatorCtrlTa */
 	regulatorCtrlTaHandle = osThreadNew(startRegulatorCtrlTask, NULL,
 			&regulatorCtrlTa_attributes);
+
+	/* creation of btnsTask */
+	btnsTaskHandle = osThreadNew(startBtnsTask, NULL, &btnsTask_attributes);
 
 	/* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -549,7 +558,7 @@ static void MX_GPIO_Init(void) {
 
 	/*Configure GPIO pin : nSW_INT_Pin */
 	GPIO_InitStruct.Pin = nSW_INT_Pin;
-	GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+	GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
 	HAL_GPIO_Init(nSW_INT_GPIO_Port, &GPIO_InitStruct);
 
@@ -571,6 +580,10 @@ static void MX_GPIO_Init(void) {
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
 	GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
 	HAL_GPIO_Init(OLED_RST_GPIO_Port, &GPIO_InitStruct);
+
+	/* EXTI interrupt init*/
+	HAL_NVIC_SetPriority(EXTI15_10_IRQn, 5, 0);
+	HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
 }
 
@@ -607,6 +620,12 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
 
 }
 
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (GPIO_Pin == nSW_INT_Pin) // If The INT Source Is button interrupt
+	{
+		interruptFlags |= INT_FLAG_BTN;
+	}
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_startUartTxTask */
@@ -774,6 +793,67 @@ void startRegulatorCtrlTask(void *argument) {
 		osDelay(50);
 	}
 	/* USER CODE END startRegulatorCtrlTask */
+}
+
+/* USER CODE BEGIN Header_startBtnsTask */
+/**
+ * @brief Function implementing the btnsTask thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_startBtnsTask */
+void startBtnsTask(void *argument) {
+	/* USER CODE BEGIN startBtnsTask */
+	/* Infinite loop */
+	for (;;) {
+		if (interruptFlags & INT_FLAG_BTN) {
+			interruptFlags &= ~INT_FLAG_BTN;
+			uint8_t btns = btnsRead();
+			if (btns == BTN_NUM_VI) {
+				if (psuStats.VI == VI_V_SEL) {
+					psuStats.VI = VI_I_SEL;
+				} else if (psuStats.VI == VI_I_SEL) {
+					psuStats.VI = VI_V_SEL;
+				} else { //something went wrong, reinit psu
+//					fatalErrorScreen();
+//					initPSU();
+				}
+			} else if (btns == BTN_NUM_UP) {
+				if (psuStats.VI == VI_V_SEL) {
+					psuStats.vSet--;	//reduce R to increase V
+//					MCP4018_WriteVal(psuStats.vSet);
+				} else if (psuStats.VI == VI_I_SEL) {
+					psuStats.iSet += 50;
+				} else { //something went wrong, reinit psu
+//					fatalErrorScreen();
+//					initPSU();
+				}
+			} else if (btns == BTN_NUM_DWN) {
+				if (psuStats.VI == VI_V_SEL) {
+					psuStats.vSet++;	//increase R to decrease V
+//					MCP4018_WriteVal(psuStats.vSet);
+				} else if (psuStats.VI == VI_I_SEL) {
+					psuStats.iSet -= 50;
+				} else { //something went wrong, reinit psu
+//					fatalErrorScreen();
+//					initPSU();
+				}
+
+			} else if (btns == BTN_NUM_OE) {
+				if (psuStats.OE == OE_ENABLED) {
+					psuStats.OE = OE_DISABLED;
+				} else if (psuStats.OE == OE_DISABLED) {
+					psuStats.OE = OE_ENABLED;
+				} else { //something went wrong, reinit psu
+//					fatalErrorScreen();
+//					initPSU();
+				}
+
+			}
+		}
+		osDelay(10);
+	}
+	/* USER CODE END startBtnsTask */
 }
 
 /**

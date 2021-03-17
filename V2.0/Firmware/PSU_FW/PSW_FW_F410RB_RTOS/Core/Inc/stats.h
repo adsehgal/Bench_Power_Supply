@@ -20,6 +20,7 @@
 #define INT_FLAG_CLEAR 0x00
 #define INT_FLAG_UART_RX 0x01
 #define INT_FLAG_UART_TX 0x02
+#define INT_FLAG_BTN 0x04
 
 
 typedef struct StatsStruct {
@@ -46,5 +47,7 @@ enum defaults {
 	OE_DEFAULT = OE_DISABLED,
 	VI_DEFAULT = VI_V_SEL,
 };
+
+
 
 #endif /* INC_STATS_H_ */
