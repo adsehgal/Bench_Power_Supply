@@ -11,8 +11,8 @@
 #include <stm32f4xx_hal_def.h>
 #include <sys/_stdint.h>
 
-const double maxADCVal = 4095.0;	//12bits
-const double sysVolt = 3.3;	//system voltage
+const double MAX_ADC_VAL = 4095.0;	//12bits
+const double SYS_VOLTAGE = 3.3;	//system voltage
 const uint16_t SENSE_GAIN = 500;	//gain of diff amp for I
 const uint8_t R_SENSE = 10;		//mOhms
 const uint8_t IDLE_I_HIGH = 100;    //mA
@@ -38,7 +38,7 @@ double readVin(void) {
 	retVal = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
 
-	double tempV = ((double) retVal / maxADCVal) * sysVolt;
+	double tempV = ((double) retVal / MAX_ADC_VAL) * SYS_VOLTAGE;
 	tempV = (double) ((tempV * (RESISTOR_TOP_VIN + RESISTOR_BOT_VIN)) / (RESISTOR_BOT_VIN))
 			* 1000.00;
 	return tempV;
@@ -60,7 +60,7 @@ double readVout(void) {
 	retVal = HAL_ADC_GetValue(&hadc1);
 	HAL_ADC_Stop(&hadc1);
 
-	double tempV = ((double) retVal / maxADCVal) * sysVolt;
+	double tempV = ((double) retVal / MAX_ADC_VAL) * SYS_VOLTAGE;
 	tempV = (double) ((tempV * (RESISTOR_TOP_VOUT + RESISTOR_BOT_VOUT)) / (RESISTOR_BOT_VOUT))
 			* 1000.00;
 	return tempV;
@@ -83,7 +83,7 @@ double readIOut(void) {
 
 	if (retVal <= 30)
 		retVal = 0;
-	double tempI = ((double) retVal / maxADCVal) * sysVolt;
+	double tempI = ((double) retVal / MAX_ADC_VAL) * SYS_VOLTAGE;
 	tempI = (tempI * 1000) / (SENSE_GAIN * (R_SENSE / 1000.00));
 	if ((tempI <= IDLE_I_HIGH) && (tempI >= IDLE_I_LOW))
 		return 0;

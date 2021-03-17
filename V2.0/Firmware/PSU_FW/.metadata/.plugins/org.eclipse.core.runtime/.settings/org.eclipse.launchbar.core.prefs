@@ -1,8 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=macosx
-configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSW_FW_F410RB Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSW_FW_F410RB_RTOS Debug
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSW_FW_F410RB Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_DMA_TEST_F410RB Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSW_FW_F410RB_RTOS Debug
 eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ADC_DMA_TEST_F410RB\ Debug/activeLaunchMode=debug
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSU_FW\ Debug/activeLaunchMode=run
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSU_FW\ Debug/activeLaunchTarget=null\:---
 org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:PSW_FW_F410RB\ Debug/activeLaunchMode=run
