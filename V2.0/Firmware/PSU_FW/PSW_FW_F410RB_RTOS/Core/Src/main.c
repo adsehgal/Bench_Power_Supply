@@ -29,6 +29,7 @@
 #include "uart.h"
 #include "analog.h"
 #include "buttons.h"
+#include "mcp4018.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -87,6 +88,10 @@ const osThreadAttr_t regulatorCtrlTa_attributes = { .name = "regulatorCtrlTa",
 osThreadId_t btnsTaskHandle;
 const osThreadAttr_t btnsTask_attributes = { .name = "btnsTask", .stack_size =
 		512 * 4, .priority = (osPriority_t) osPriorityLow, };
+/* Definitions for mcp4018Task */
+osThreadId_t mcp4018TaskHandle;
+const osThreadAttr_t mcp4018Task_attributes = { .name = "mcp4018Task",
+		.stack_size = 128 * 4, .priority = (osPriority_t) osPriorityLow, };
 /* USER CODE BEGIN PV */
 Stats psuStats;
 uartRxData uartRx;
@@ -112,6 +117,7 @@ void startInitPsuTask(void *argument);
 void startLedTask(void *argument);
 void startRegulatorCtrlTask(void *argument);
 void startBtnsTask(void *argument);
+void startMcp4018Task(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -205,6 +211,10 @@ int main(void) {
 
 	/* creation of btnsTask */
 	btnsTaskHandle = osThreadNew(startBtnsTask, NULL, &btnsTask_attributes);
+
+	/* creation of mcp4018Task */
+	mcp4018TaskHandle = osThreadNew(startMcp4018Task, NULL,
+			&mcp4018Task_attributes);
 
 	/* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
@@ -639,6 +649,7 @@ void startUartTxTask(void *argument) {
 	/* USER CODE BEGIN 5 */
 //	HAL_UART_Transmit_DMA(&huart2, uartTxBuff, UART_DMA_BUFFER_SIZE);
 	/* Infinite loop */
+	osThreadTerminate(osThreadGetId());
 	for (;;) {
 		osDelay(10);
 	}
@@ -854,6 +865,23 @@ void startBtnsTask(void *argument) {
 		osDelay(10);
 	}
 	/* USER CODE END startBtnsTask */
+}
+
+/* USER CODE BEGIN Header_startMcp4018Task */
+/**
+ * @brief Function implementing the mcp4018Task thread.
+ * @param argument: Not used
+ * @retval None
+ */
+/* USER CODE END Header_startMcp4018Task */
+void startMcp4018Task(void *argument) {
+	/* USER CODE BEGIN startMcp4018Task */
+	/* Infinite loop */
+	for (;;) {
+		mcp4018WriteVal(psuStats.vSet);
+		osDelay(10);
+	}
+	/* USER CODE END startMcp4018Task */
 }
 
 /**
