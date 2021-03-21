@@ -1,0 +1,7 @@
+21:45:29 **** Clean-only build of configuration Debug for project UART_TEST_F410RB ****
+make -j7 clean 
+rm -rf *
+ 
+
+21:45:29 Build Finished. 0 errors, 0 warnings. (took 229ms)
+

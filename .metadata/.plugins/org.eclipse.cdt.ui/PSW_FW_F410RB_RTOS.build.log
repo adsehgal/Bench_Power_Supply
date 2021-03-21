@@ -1,0 +1,45 @@
+23:32:14 **** Incremental Build of configuration Debug for project PSW_FW_F410RB_RTOS ****
+make -j7 all 
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -std=gnu11 -g -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" -std=gnu11 -g -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o"
+Error: Cannot find the specified linker script. Check the linker settings in the build configuration.
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c" -std=gnu11 -g -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/croutine.c" -std=gnu11 -g -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/croutine.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c" -std=gnu11 -g -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/event_groups.o"
+make: *** [makefile:97: fail-specified-linker-script-missing] Error 2
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/list.c" -std=gnu11 -g -c -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/list.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/list.o"
+make: *** Waiting for unfinished jobs....
+../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c:33:10: fatal error: FreeRTOS.h: No such file or directory
+   33 | #include "FreeRTOS.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/subdir.mk:19: Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.o] Error 1
+../Middlewares/Third_Party/FreeRTOS/Source/croutine.c:28:10: fatal error: FreeRTOS.h: No such file or directory
+   28 | #include "FreeRTOS.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/Third_Party/FreeRTOS/Source/subdir.mk:37: Middlewares/Third_Party/FreeRTOS/Source/croutine.o] Error 1
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c:37:10: fatal error: FreeRTOS.h: No such file or directory
+   37 | #include "FreeRTOS.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/Third_Party/FreeRTOS/Source/subdir.mk:39: Middlewares/Third_Party/FreeRTOS/Source/event_groups.o] Error 1
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:43:10: fatal error: FreeRTOS.h: No such file or directory
+   43 | #include "FreeRTOS.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk:19: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o] Error 1
+../Middlewares/Third_Party/FreeRTOS/Source/list.c:30:10: fatal error: FreeRTOS.h: No such file or directory
+   30 | #include "FreeRTOS.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c:26:10: fatal error: cmsis_compiler.h: No such file or directory
+   26 | #include "cmsis_compiler.h"             // Compiler agnostic definitions
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/Third_Party/FreeRTOS/Source/subdir.mk:41: Middlewares/Third_Party/FreeRTOS/Source/list.o] Error 1
+make: *** [Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/subdir.mk:19: Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.o] Error 1
+"make -j7 all" terminated with exit code 2. Build might be incomplete.
+
+23:32:14 Build Failed. 15 errors, 0 warnings. (took 370ms)
+

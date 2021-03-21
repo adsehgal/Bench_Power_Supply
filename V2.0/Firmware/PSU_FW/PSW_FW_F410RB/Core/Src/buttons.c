@@ -49,25 +49,25 @@ uint8_t whichBtn(void)
 #endif
 	uint8_t ret = 0b0000;
 	if (readBtnUp())
-		ret |= UP_BTN;
+		ret |= BTN_NUM_UP;
 	if (readBtnDw())
-		ret |= DW_BTN;
+		ret |= BTN_NUM_DWN;
 	if (readBtnVi())
-		ret |= VI_BTN;
+		ret |= BTN_NUM_VI;
 	if (readBtnOe())
-		ret |= OE_BTN;
+		ret |= BTN_NUM_OE;
 
 	return ret;
 }
 
 void printBtns(uint8_t btns)
 {
-	if (btns & UP_BTN)
+	if (btns & BTN_NUM_UP)
 		printMsg("UP Pressed\n");
-	if (btns & DW_BTN)
+	if (btns & BTN_NUM_DWN)
 		printMsg("DW Pressed\n");
-	if (btns & VI_BTN)
+	if (btns & BTN_NUM_VI)
 		printMsg("VI Pressed\n");
-	if (btns & OE_BTN)
+	if (btns & BTN_NUM_OE)
 		printMsg("OE Pressed\n");
 }

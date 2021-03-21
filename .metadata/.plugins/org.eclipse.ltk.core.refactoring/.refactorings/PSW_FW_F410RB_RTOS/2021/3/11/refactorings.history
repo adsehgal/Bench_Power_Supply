@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;PSW_FW_F410RB_RTOS/Core/Inc/oled.h&apos; to &apos;display.h&apos;" description="Rename resource &apos;oled.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/oled.h" name="display.h" stamp="1615181387960" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;PSW_FW_F410RB_RTOS/Core/Src/oled.c&apos; to &apos;display.c&apos;" description="Rename resource &apos;oled.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/oled.c" name="display.c" stamp="1615181400207" updateReferences="true"/>
+</session>

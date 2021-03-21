@@ -53,7 +53,7 @@ uint8_t i2cScan(void)
 		else if (res == HAL_OK)
 		{
 			printMsg("Unknown device found at 0x%02X\n", i);
-			HAL_Delay(10);
+			osDelay(10);
 		}
 	}
 	printMsg("returning from scan %02X\n", devices);

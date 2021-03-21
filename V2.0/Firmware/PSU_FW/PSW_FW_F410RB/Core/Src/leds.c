@@ -14,29 +14,29 @@ void errorLEDs(uint8_t error)
 		if (error == OLED_FOUND)
 		{
 			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ);
+			osDelay(FLASH_FREQ);
 			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
+			osDelay(FLASH_FREQ >> 1);
 			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_Delay(FLASH_FREQ);
+			osDelay(FLASH_FREQ);
 		}
 		else if (error == POT_FOUND)
 		{
 			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
-			HAL_Delay(FLASH_FREQ);
+			osDelay(FLASH_FREQ);
 			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
+			osDelay(FLASH_FREQ >> 1);
 			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
+			osDelay(FLASH_FREQ >> 1);
 		}
 		else if (error == 0)
 		{
 			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
 			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
+			osDelay(FLASH_FREQ >> 1);
 			HAL_GPIO_TogglePin(OE_LED_PORT, OE_LED_PIN);
 			HAL_GPIO_TogglePin(CC_LED_PORT, CC_LED_PIN);
-			HAL_Delay(FLASH_FREQ >> 1);
+			osDelay(FLASH_FREQ >> 1);
 		}
 		else
 		{
@@ -124,37 +124,37 @@ void initLeds(void)
 {
 	const uint8_t delay = 75;
 	ccLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	ccLedOff();
 	oeLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	oeLedOff();
 	viLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	viLedOff();
 	ccLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	ccLedOff();
 	oeLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	oeLedOff();
 	viLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	viLedOff();
 	ccLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	ccLedOff();
 	oeLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	oeLedOff();
 	viLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	viLedOff();
 	ccLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	ccLedOff();
 	oeLedOn();
-	HAL_Delay(delay);
+	osDelay(delay);
 	oeLedOff();
 	viLedOn();
 }

@@ -2036,10 +2036,6 @@ IEclipsePreferences#org-eclipse-team-cvs-ui {
 		'pref_console_command_color=88,110,117'
 		'pref_console_error_color=103,140,177'
 }
-IEclipsePreferences#org-eclipse-tm-terminal-control {
-	preferences:
-		'TerminalPrefInvertColors=true'
-}
 IEclipsePreferences#org-eclipse-ui-editors {
 	preferences:
 		'AbstractTextEditor.Color.Background=25,29,31'

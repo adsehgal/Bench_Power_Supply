@@ -13,7 +13,7 @@
 
 enum Btns
 {
-	UP_BTN = 0b0001, DW_BTN = 0b0010, VI_BTN = 0b0100, OE_BTN = 0b1000,
+	BTN_NUM_UP = 0b0001, BTN_NUM_DWN = 0b0010, BTN_NUM_VI = 0b0100, BTN_NUM_OE = 0b1000,
 };
 
 uint8_t readBtnUp(void);
