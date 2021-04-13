@@ -6,6 +6,7 @@
  */
 
 #include "analog.h"
+#include "uart.h"
 
 
 double analogReadVin(uint16_t Vin) {
@@ -27,14 +28,14 @@ double analogReadVout(uint16_t Vout) {
 	return tempV;
 }
 
-double analogReadIOut(uint16_t Iout) {
+double analogReadIOut(uint16_t Iout) {	//60mV 1mΩ 5V 1Ωload -> 5A
 //	uint32_t retVal = 0;
 
 	if (Iout <= 30)
 		Iout = 0;
 	double tempI = ((double) Iout / ANALOG_MAX_ADC_VAL) * ANALOG_SYSTEM_VOLTAGE;
 	tempI = (tempI * 1000) / (ANALOG_I_SENSE_GAIN * (ANALOG_SENSE_R / 1000.00));
-	if ((tempI <= ANALOG_IDLE_I_HIGH) && (tempI >= ANALOG_IDLE_I_LOW))
-		return 0;
-	return tempI - 2.500;
+//	if ((tempI <= ANALOG_IDLE_I_HIGH) && (tempI >= ANALOG_IDLE_I_LOW))
+//		return 0;
+	return tempI;// - 2.500;
 }

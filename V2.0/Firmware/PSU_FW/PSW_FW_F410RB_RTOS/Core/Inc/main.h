@@ -69,6 +69,10 @@ uint8_t voltageToPot(double vVal);
 #define VO_SENSE_GPIO_Port GPIOA
 #define VI_SENSE_Pin GPIO_PIN_1
 #define VI_SENSE_GPIO_Port GPIOA
+#define SPI_FLASH_CS_Pin GPIO_PIN_4
+#define SPI_FLASH_CS_GPIO_Port GPIOC
+#define SPI_SD_CS_Pin GPIO_PIN_5
+#define SPI_SD_CS_GPIO_Port GPIOC
 #define VI_LED_Pin GPIO_PIN_12
 #define VI_LED_GPIO_Port GPIOA
 #define OE_LED_Pin GPIO_PIN_15

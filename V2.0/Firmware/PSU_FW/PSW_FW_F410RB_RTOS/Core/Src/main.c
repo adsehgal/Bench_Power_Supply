@@ -230,10 +230,16 @@ int main(void) {
 	/* We should never get here as control is now taken by the scheduler */
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
+	ledToggle(LED_NUM_OE);
 	while (1) {
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
+		//panic blink!
+		ledToggle(LED_NUM_CC);
+		ledToggle(LED_NUM_OE);
+		ledToggle(LED_NUM_VI);
+		HAL_Delay(75);
 	}
 	/* USER CODE END 3 */
 }

@@ -18,7 +18,8 @@ void uartTxString(char *str) {
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
 		osDelay(1);	//make sure nothing else is being transmitted
 	}
-	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
+	HAL_UART_Transmit(&huart2, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
+//	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
 		osDelay(1);	//makes sure string is sent before clearing it
 	}

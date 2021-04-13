@@ -24,7 +24,7 @@ uint16_t analogBuffFinal[ANALOG_DMA_BUFF_SIZE];
 
 #define ANALOG_MAX_ADC_VAL 4095.0f	//12bits
 #define ANALOG_SYSTEM_VOLTAGE 3.3f	//system voltage
-#define ANALOG_I_SENSE_GAIN 500	//gain of diff amp for I
+#define ANALOG_I_SENSE_GAIN 100	//gain of diff amp for I
 #define ANALOG_SENSE_R 10		//mOhms
 #define ANALOG_IDLE_I_HIGH 100    //mA
 #define ANALOG_IDLE_I_LOW 100    //mA
