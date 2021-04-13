@@ -1,0 +1,86 @@
+Added Component: Designator=C49(CAPC2013X95X50LL10T25)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ripple Current (AC)"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=R36(RESC2013X50X35ML15T15)
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=R38(RESC2013X50X35ML15T15)
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Added Component: Designator=U18(WINB-SOIC-8_L)
+Add component (AddParameter): Name = "Category"; Value = "IntegratedCircuits(ICs)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet URL"; Value = "http://www.winbond.com/resource-files/w25q80dv_revg_07212015.pdf?__locale=zh_TW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Version"; Value = "Rev. G, 07/2015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Family"; Value = "Memory"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Format - Memory"; Value = "FLASH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "SPISerial"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "WinbondElectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer URL"; Value = "http://www.winbond.com/hq/index.html?__locale=en"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Memory Size"; Value = "8M(1Mx8)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Memory Type"; Value = "FLASH-NOR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40°C~85°C(TA)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "8-SOIC(0.209",5.30mmWidth)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Description"; Value = "8-Pin Small Outline Integrated Circuit, Body 5.28 x 5.28 mm, Pitch 1.27 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Reference"; Value = "SS-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "SpiFlash®"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Speed"; Value = "104MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Device Package"; Value = "8-SOIC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "2.7V~3.6V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3v3 Pin=C49-1
+Added Pin To Net: NetName=GND Pin=C49-2
+Added Pin To Net: NetName=+3v3 Pin=R36-2
+Added Pin To Net: NetName=+3v3 Pin=R38-2
+Added Pin To Net: NetName=GND Pin=U18-4
+Added Pin To Net: NetName=+3v3 Pin=U18-8
+Added Pin To Net: NetName=FLASH_HOLD Pin=R36-1
+Added Pin To Net: NetName=FLASH_HOLD Pin=U1-25
+Added Pin To Net: NetName=FLASH_HOLD Pin=U18-7
+Added Net: Name=FLASH_HOLD
+Added Pin To Net: NetName=FLASH_WP Pin=R38-1
+Added Pin To Net: NetName=FLASH_WP Pin=U1-37
+Added Pin To Net: NetName=FLASH_WP Pin=U18-3
+Added Net: Name=FLASH_WP
+Added Pin To Net: NetName=PA5 Pin=U1-21
+Added Pin To Net: NetName=PA5 Pin=U18-6
+Added Net: Name=PA5
+Added Pin To Net: NetName=PA6 Pin=U1-22
+Added Pin To Net: NetName=PA6 Pin=U18-2
+Added Net: Name=PA6
+Added Pin To Net: NetName=PA7 Pin=U1-23
+Added Pin To Net: NetName=PA7 Pin=U18-5
+Added Net: Name=PA7
+Added Pin To Net: NetName=SPI_FLASH_CS Pin=U1-24
+Added Pin To Net: NetName=SPI_FLASH_CS Pin=U18-1
+Added Net: Name=SPI_FLASH_CS
+Added Member To Class: ClassName=MCU Member=Component C49 Capacitor 100 nF +/-10% 50 V 0805
+Added Member To Class: ClassName=MCU Member=Component R36 Resistor 10k +/-1% 0805 125 mW
+Added Member To Class: ClassName=MCU Member=Component R38 Resistor 10k +/-1% 0805 125 mW
+Added Member To Class: ClassName=MCU Member=Component U18 W25Q80DVSSIG

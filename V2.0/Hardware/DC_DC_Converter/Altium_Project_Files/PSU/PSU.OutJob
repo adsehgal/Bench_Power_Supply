@@ -15,15 +15,15 @@ LifeCycleDefinitionGUID=
 RevisionNamingSchemeGUID=
 
 [PublishSettings]
-OutputFilePath2=C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\Altium_Project_Files\PSU\.PDF
+OutputFilePath2=C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\.PDF
 ReleaseManaged2=0
-OutputBasePath2=C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\Altium_Project_Files\PSU\
+OutputBasePath2=C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=PSU.pdf
+OutputFileName2=schematic.pdf
 OutputFileNameMulti2=
 UseOutputNameForMulti2=1
 OutputFileNameSpecial2=
@@ -94,7 +94,7 @@ WmvVideoCodecName4=Windows Media Video V7
 WmvQuality4=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\Altium_Project_Files\PSU\.PDF
+RelativeOutputPath2=C:\Users\adity\Documents\GitHub\Bench_Power_Supply\V2.0\Hardware\DC_DC_Converter\.PDF
 OpenOutputs2=0
 RelativeOutputPath3=
 OpenOutputs3=1

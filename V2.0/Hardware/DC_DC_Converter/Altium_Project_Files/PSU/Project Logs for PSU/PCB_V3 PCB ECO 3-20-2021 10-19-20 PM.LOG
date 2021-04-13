@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=FLASH_WP Pin=U1-37
+Added Pin To Net: NetName=FLASH_WP Pin=U1-26
+Added Room: Name=MCU
+Added Room: Name=Power
+Added Room: Name=UI
