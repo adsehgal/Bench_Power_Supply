@@ -28,7 +28,7 @@ double analogReadVout(uint16_t Vout) {
 	return tempV;
 }
 
-double analogReadIOut(uint16_t Iout) {	//60mV 1mΩ 5V 1Ωload -> 5A
+double analogReadIOut(uint16_t Iout) {
 //	uint32_t retVal = 0;
 
 	if (Iout <= 30)
