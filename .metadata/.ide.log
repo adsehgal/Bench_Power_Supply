@@ -3834,3 +3834,7 @@
 2021-03-07 23:33:43,870 [INFO] MultiScanPanel:200 - Auto-refresh data requested => check proxy status ongoing
 2021-03-07 23:33:43,870 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
 2021-03-07 23:33:44,096 [WARN] DetailPanel:315 - Failed to get advertising image, set to default
+2021-04-12 22:33:44,320 [INFO] Activator:170 - 
+
+
+2021-04-12 22:33:44,323 [INFO] Activator:171 - !SESSION log4j initialized

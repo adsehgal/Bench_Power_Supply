@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project>
     	
-    <configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1015318651" name="Debug">
+    <configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1474571684" name="Debug">
         		
         <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
             			
@@ -75,25 +75,43 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH" value="4">
+                    <entry kind="macro" name="__ARM_32BIT_STATE" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH_4T__" value="1">
+                    <entry kind="macro" name="__ARM_ARCH" value="7">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH_ISA_ARM" value="1">
+                    <entry kind="macro" name="__ARM_ARCH_7EM__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH_ISA_THUMB" value="1">
+                    <entry kind="macro" name="__ARM_ARCH_EXT_IDIV__" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_ARCH_ISA_THUMB" value="2">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_ARCH_PROFILE" value="77">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_ASM_SYNTAX_UNIFIED__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -105,7 +123,73 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_PCS" value="1">
+                    <entry kind="macro" name="__ARM_FEATURE_CLZ" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_COPROC" value="15">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_DSP" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_FMA" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_IDIV" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_LDREX" value="7">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_QBIT" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_SAT" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_SIMD32" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_UNALIGNED" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FP" value="4">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_PCS_VFP" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -813,6 +897,18 @@
                         					
                     </entry>
                     					
+                    <entry kind="macro" name="__FP_FAST_FMAF" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__FP_FAST_FMAF32" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
                     <entry kind="macro" name="__FRACT_EPSILON__" value="0x1P-15R">
                         						
                         <flag value="BUILTIN|READONLY"/>
@@ -843,31 +939,31 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_BOOL_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_BOOL_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_CHAR16_T_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_CHAR16_T_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_CHAR32_T_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_CHAR32_T_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_CHAR_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_CHAR_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_INT_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_INT_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -879,19 +975,19 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_LONG_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_LONG_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_POINTER_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_POINTER_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_SHORT_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_SHORT_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -903,7 +999,25 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="2">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -1761,12 +1875,6 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__SOFTFP__" value="1">
-                        						
-                        <flag value="BUILTIN|READONLY"/>
-                        					
-                    </entry>
-                    					
                     <entry kind="macro" name="__SQ_FBIT__" value="31">
                         						
                         <flag value="BUILTIN|READONLY"/>
@@ -2481,6 +2589,12 @@
                         					
                     </entry>
                     					
+                    <entry kind="macro" name="__thumb2__" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
                     <entry kind="macro" name="__thumb__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
@@ -2503,7 +2617,7 @@
                         					
                     </entry>
                     					
-                    <entry kind="includePath" name="/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.macos64_1.5.0.202011040924/tools/arm-none-eabi/include/c++/9.3.1/arm-none-eabi/thumb/nofp">
+                    <entry kind="includePath" name="/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.macos64_1.5.0.202011040924/tools/arm-none-eabi/include/c++/9.3.1/arm-none-eabi/thumb/v7e-m+fp/hard">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -2575,25 +2689,43 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH" value="4">
+                    <entry kind="macro" name="__ARM_32BIT_STATE" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH_4T__" value="1">
+                    <entry kind="macro" name="__ARM_ARCH" value="7">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH_ISA_ARM" value="1">
+                    <entry kind="macro" name="__ARM_ARCH_7EM__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_ARCH_ISA_THUMB" value="1">
+                    <entry kind="macro" name="__ARM_ARCH_EXT_IDIV__" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_ARCH_ISA_THUMB" value="2">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_ARCH_PROFILE" value="77">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_ASM_SYNTAX_UNIFIED__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -2605,7 +2737,73 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__ARM_PCS" value="1">
+                    <entry kind="macro" name="__ARM_FEATURE_CLZ" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_COPROC" value="15">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_DSP" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_FMA" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_IDIV" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_LDREX" value="7">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_QBIT" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_SAT" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_SIMD32" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FEATURE_UNALIGNED" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_FP" value="4">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__ARM_PCS_VFP" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -3325,6 +3523,18 @@
                         					
                     </entry>
                     					
+                    <entry kind="macro" name="__FP_FAST_FMAF" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__FP_FAST_FMAF32" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
                     <entry kind="macro" name="__FRACT_EPSILON__" value="0x1P-15R">
                         						
                         <flag value="BUILTIN|READONLY"/>
@@ -3355,31 +3565,31 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_BOOL_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_BOOL_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_CHAR16_T_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_CHAR16_T_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_CHAR32_T_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_CHAR32_T_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_CHAR_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_CHAR_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_INT_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_INT_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -3391,19 +3601,19 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_LONG_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_LONG_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_POINTER_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_POINTER_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_SHORT_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_SHORT_LOCK_FREE" value="2">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -3415,7 +3625,25 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="1">
+                    <entry kind="macro" name="__GCC_ATOMIC_WCHAR_T_LOCK_FREE" value="2">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
+                    <entry kind="macro" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -4292,12 +4520,6 @@
                     </entry>
                     					
                     <entry kind="macro" name="__SIZE_WIDTH__" value="32">
-                        						
-                        <flag value="BUILTIN|READONLY"/>
-                        					
-                    </entry>
-                    					
-                    <entry kind="macro" name="__SOFTFP__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -5221,6 +5443,12 @@
                         					
                     </entry>
                     					
+                    <entry kind="macro" name="__thumb2__" value="1">
+                        						
+                        <flag value="BUILTIN|READONLY"/>
+                        					
+                    </entry>
+                    					
                     <entry kind="macro" name="__thumb__" value="1">
                         						
                         <flag value="BUILTIN|READONLY"/>
@@ -5235,7 +5463,7 @@
         	
     </configuration>
     	
-    <configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1147222146" name="Release">
+    <configuration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1016493067" name="Release">
         		
         <extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
             			
