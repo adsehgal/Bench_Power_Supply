@@ -9,12 +9,6 @@
                 				
                 <language id="org.eclipse.cdt.core.gcc">
                     					
-                    <entry kind="includePath" name="/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.macos64_1.5.0.202011040924/tools/arm-none-eabi/include/newlib-nano">
-                        						
-                        <flag value="BUILTIN|READONLY"/>
-                        					
-                    </entry>
-                    					
                     <entry kind="includePath" name="/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.macos64_1.5.0.202011040924/tools/lib/gcc/arm-none-eabi/9.3.1/include">
                         						
                         <flag value="BUILTIN|READONLY"/>
@@ -1905,7 +1899,7 @@
                         					
                     </entry>
                     					
-                    <entry kind="macro" name="__STDC_VERSION__" value="201112L">
+                    <entry kind="macro" name="__STDC_VERSION__" value="201710L">
                         						
                         <flag value="BUILTIN|READONLY"/>
                         					
@@ -2604,12 +2598,6 @@
                 </language>
                 				
                 <language id="org.eclipse.cdt.core.g++">
-                    					
-                    <entry kind="includePath" name="/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.macos64_1.5.0.202011040924/tools/arm-none-eabi/include/newlib-nano">
-                        						
-                        <flag value="BUILTIN|READONLY"/>
-                        					
-                    </entry>
                     					
                     <entry kind="includePath" name="/Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.macos64_1.5.0.202011040924/tools/arm-none-eabi/include/c++/9.3.1">
                         						

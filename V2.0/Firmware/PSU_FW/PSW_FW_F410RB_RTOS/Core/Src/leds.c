@@ -5,7 +5,11 @@
  *      Author: adityasehgal
  */
 
+#if osCMSIS >= 2
 #include <cmsis_os2.h>
+#else
+#include <cmsis_os.h>
+#endif
 #include <leds.h>
 #include <main.h>
 #include <stm32f4xx_hal_gpio.h>

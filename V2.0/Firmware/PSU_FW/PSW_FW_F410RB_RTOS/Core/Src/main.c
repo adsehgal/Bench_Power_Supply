@@ -61,62 +61,14 @@ UART_HandleTypeDef huart2;
 DMA_HandleTypeDef hdma_usart2_rx;
 DMA_HandleTypeDef hdma_usart2_tx;
 
-/* Definitions for uartTxTask */
-osThreadId_t uartTxTaskHandle;
-const osThreadAttr_t uartTxTask_attributes = {
-  .name = "uartTxTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityNormal,
-};
-/* Definitions for uartRxTask */
-osThreadId_t uartRxTaskHandle;
-const osThreadAttr_t uartRxTask_attributes = {
-  .name = "uartRxTask",
-  .stack_size = 512 * 4,
-  .priority = (osPriority_t) osPriorityNormal1,
-};
-/* Definitions for oledTask */
-osThreadId_t oledTaskHandle;
-const osThreadAttr_t oledTask_attributes = {
-  .name = "oledTask",
-  .stack_size = 256 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
-/* Definitions for initPsuTask */
-osThreadId_t initPsuTaskHandle;
-const osThreadAttr_t initPsuTask_attributes = {
-  .name = "initPsuTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityHigh7,
-};
-/* Definitions for ledTask */
-osThreadId_t ledTaskHandle;
-const osThreadAttr_t ledTask_attributes = {
-  .name = "ledTask",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
-/* Definitions for regulatorCtrlTa */
-osThreadId_t regulatorCtrlTaHandle;
-const osThreadAttr_t regulatorCtrlTa_attributes = {
-  .name = "regulatorCtrlTa",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
-/* Definitions for btnsTask */
-osThreadId_t btnsTaskHandle;
-const osThreadAttr_t btnsTask_attributes = {
-  .name = "btnsTask",
-  .stack_size = 512 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
-/* Definitions for mcp4018Task */
-osThreadId_t mcp4018TaskHandle;
-const osThreadAttr_t mcp4018Task_attributes = {
-  .name = "mcp4018Task",
-  .stack_size = 128 * 4,
-  .priority = (osPriority_t) osPriorityLow,
-};
+osThreadId uartTxTaskHandle;
+osThreadId uartRxTaskHandle;
+osThreadId oledTaskHandle;
+osThreadId initPsuTaskHandle;
+osThreadId ledTaskHandle;
+osThreadId regulatorCtrlTaHandle;
+osThreadId btnsTaskHandle;
+osThreadId mcp4018TaskHandle;
 /* USER CODE BEGIN PV */
 Stats psuStats;
 uartRxData uartRx;
@@ -125,7 +77,6 @@ uint8_t interruptFlags = INT_FLAG_CLEAR;
 extern uint16_t analogBuffDMA[ANALOG_DMA_BUFF_SIZE];
 extern uint16_t analogBuffFinal[ANALOG_DMA_BUFF_SIZE];
 
-uint8_t allowOledUpdate = STATUS_RESET;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -137,14 +88,14 @@ static void MX_I2C1_Init(void);
 static void MX_TIM11_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
-void startUartTxTask(void *argument);
-void startUartRxTask(void *argument);
-void startOledTask(void *argument);
-void startInitPsuTask(void *argument);
-void startLedTask(void *argument);
-void startRegulatorCtrlTask(void *argument);
-void startBtnsTask(void *argument);
-void startMcp4018Task(void *argument);
+void startUartTxTask(void const * argument);
+void startUartRxTask(void const * argument);
+void startOledTask(void const * argument);
+void startInitPsuTask(void const * argument);
+void startLedTask(void const * argument);
+void startRegulatorCtrlTask(void const * argument);
+void startBtnsTask(void const * argument);
+void startMcp4018Task(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -194,9 +145,6 @@ int main(void)
 	HAL_TIM_Base_Start_IT(&htim11);	//0.5s interrupt to update oled
   /* USER CODE END 2 */
 
-  /* Init scheduler */
-  osKernelInitialize();
-
   /* USER CODE BEGIN RTOS_MUTEX */
 	/* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
@@ -214,37 +162,41 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of uartTxTask */
-  uartTxTaskHandle = osThreadNew(startUartTxTask, NULL, &uartTxTask_attributes);
+  /* definition and creation of uartTxTask */
+  osThreadDef(uartTxTask, startUartTxTask, osPriorityAboveNormal, 0, 512);
+  uartTxTaskHandle = osThreadCreate(osThread(uartTxTask), NULL);
 
-  /* creation of uartRxTask */
-  uartRxTaskHandle = osThreadNew(startUartRxTask, NULL, &uartRxTask_attributes);
+  /* definition and creation of uartRxTask */
+  osThreadDef(uartRxTask, startUartRxTask, osPriorityNormal, 0, 1024);
+  uartRxTaskHandle = osThreadCreate(osThread(uartRxTask), NULL);
 
-  /* creation of oledTask */
-  oledTaskHandle = osThreadNew(startOledTask, NULL, &oledTask_attributes);
+  /* definition and creation of oledTask */
+  osThreadDef(oledTask, startOledTask, osPriorityLow, 0, 512);
+  oledTaskHandle = osThreadCreate(osThread(oledTask), NULL);
 
-  /* creation of initPsuTask */
-  initPsuTaskHandle = osThreadNew(startInitPsuTask, NULL, &initPsuTask_attributes);
+  /* definition and creation of initPsuTask */
+  osThreadDef(initPsuTask, startInitPsuTask, osPriorityHigh, 0, 128);
+  initPsuTaskHandle = osThreadCreate(osThread(initPsuTask), NULL);
 
-  /* creation of ledTask */
-  ledTaskHandle = osThreadNew(startLedTask, NULL, &ledTask_attributes);
+  /* definition and creation of ledTask */
+  osThreadDef(ledTask, startLedTask, osPriorityLow, 0, 128);
+  ledTaskHandle = osThreadCreate(osThread(ledTask), NULL);
 
-  /* creation of regulatorCtrlTa */
-  regulatorCtrlTaHandle = osThreadNew(startRegulatorCtrlTask, NULL, &regulatorCtrlTa_attributes);
+  /* definition and creation of regulatorCtrlTa */
+  osThreadDef(regulatorCtrlTa, startRegulatorCtrlTask, osPriorityLow, 0, 128);
+  regulatorCtrlTaHandle = osThreadCreate(osThread(regulatorCtrlTa), NULL);
 
-  /* creation of btnsTask */
-  btnsTaskHandle = osThreadNew(startBtnsTask, NULL, &btnsTask_attributes);
+  /* definition and creation of btnsTask */
+  osThreadDef(btnsTask, startBtnsTask, osPriorityLow, 0, 512);
+  btnsTaskHandle = osThreadCreate(osThread(btnsTask), NULL);
 
-  /* creation of mcp4018Task */
-  mcp4018TaskHandle = osThreadNew(startMcp4018Task, NULL, &mcp4018Task_attributes);
+  /* definition and creation of mcp4018Task */
+  osThreadDef(mcp4018Task, startMcp4018Task, osPriorityLow, 0, 128);
+  mcp4018TaskHandle = osThreadCreate(osThread(mcp4018Task), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
 	/* add threads, ... */
   /* USER CODE END RTOS_THREADS */
-
-  /* USER CODE BEGIN RTOS_EVENTS */
-	/* add events, ... */
-  /* USER CODE END RTOS_EVENTS */
 
   /* Start scheduler */
   osKernelStart();
@@ -514,9 +466,9 @@ static void MX_USART2_UART_Init(void)
   /* USER CODE END USART2_Init 1 */
   huart2.Instance = USART2;
   huart2.Init.BaudRate = 115200;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.WordLength = UART_WORDLENGTH_9B;
   huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Parity = UART_PARITY_EVEN;
   huart2.Init.Mode = UART_MODE_TX_RX;
   huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   huart2.Init.OverSampling = UART_OVERSAMPLING_16;
@@ -644,18 +596,7 @@ uint8_t voltageToPot(double vVal) {
 }
 
 void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc) {
-//	uartTxString("ADC INT FOR\n");
-//	for (int i = 0; i < ANALOG_DMA_BUFF_SIZE; i++) {
-//	char buff[90];
-//	sprintf(buff, "a %d\n | ", analogBuffDMA[0]);
-//	uartTxString(buff);
-//	sprintf(buff, "b %d\n | ", analogBuffDMA[1]);
-//	uartTxString(buff);
-//	sprintf(buff, "c %d\n | ", analogBuffDMA[2]);
-//	uartTxString(buff);
-//	}
 	memcpy(analogBuffFinal, analogBuffDMA, sizeof(analogBuffDMA));
-
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
@@ -673,7 +614,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
  * @retval None
  */
 /* USER CODE END Header_startUartTxTask */
-void startUartTxTask(void *argument)
+void startUartTxTask(void const * argument)
 {
   /* USER CODE BEGIN 5 */
 //	HAL_UART_Transmit_DMA(&huart2, uartTxBuff, UART_DMA_BUFFER_SIZE);
@@ -693,9 +634,10 @@ void startUartTxTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startUartRxTask */
-void startUartRxTask(void *argument)
+void startUartRxTask(void const * argument)
 {
   /* USER CODE BEGIN startUartRxTask */
+	uartRxConfigSet(&psuStats, MSG_HELP, (int)NULL);
 	/* Infinite loop */
 	for (;;) {
 		HAL_UART_Receive_DMA(&huart2, (uint8_t*) &uartRx.uartRxChar,
@@ -714,7 +656,7 @@ void startUartRxTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startOledTask */
-void startOledTask(void *argument)
+void startOledTask(void const * argument)
 {
   /* USER CODE BEGIN startOledTask */
 	double Vin = 0;
@@ -724,13 +666,14 @@ void startOledTask(void *argument)
 
 	/* Infinite loop */
 	for (;;) {
-		if (allowOledUpdate == STATUS_SET) {
-			allowOledUpdate = STATUS_RESET;
+		if (interruptFlags & INT_FLAG_OLED_UPDATE) {	//check interrupt flag
+			interruptFlags &= ~INT_FLAG_OLED_UPDATE;	//clear interrupt flag
 			Vin = analogReadVin(analogBuffFinal[ANALOG_BUFF_V_IN_POS]);
 			Vout = analogReadVout(analogBuffFinal[ANALOG_BUFF_V_OUT_POS]);
 			Iout = analogReadIOut(analogBuffFinal[ANALOG_BUFF_I_SENSE_POS]);
 			displayVoltageCurrent(&psuStats, Vin, Vout, Iout);
 		}
+		//check if current limit reached
 		if (Iout >= psuStats.iSet) {
 			psuStats.iLim = I_LIM_SET;
 		} else {
@@ -748,7 +691,7 @@ void startOledTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startInitPsuTask */
-void startInitPsuTask(void *argument)
+void startInitPsuTask(void const * argument)
 {
   /* USER CODE BEGIN startInitPsuTask */
 	ledsInit();
@@ -781,7 +724,7 @@ void startInitPsuTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startLedTask */
-void startLedTask(void *argument)
+void startLedTask(void const * argument)
 {
   /* USER CODE BEGIN startLedTask */
 	osDelay(2000);	//wait for init sequence to complete
@@ -829,7 +772,7 @@ void startLedTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startRegulatorCtrlTask */
-void startRegulatorCtrlTask(void *argument)
+void startRegulatorCtrlTask(void const * argument)
 {
   /* USER CODE BEGIN startRegulatorCtrlTask */
 //Regulator enable pin is made active low
@@ -853,13 +796,13 @@ void startRegulatorCtrlTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startBtnsTask */
-void startBtnsTask(void *argument)
+void startBtnsTask(void const * argument)
 {
   /* USER CODE BEGIN startBtnsTask */
 	/* Infinite loop */
 	for (;;) {
-		if (interruptFlags & INT_FLAG_BTN) {
-			interruptFlags &= ~INT_FLAG_BTN;
+		if (interruptFlags & INT_FLAG_BTN) {	//check interrupt flag
+			interruptFlags &= ~INT_FLAG_BTN;	//clear interrupt flag
 			uint8_t btns = btnsRead();
 			if (btns == BTN_NUM_VI) {
 				if (psuStats.VI == VI_V_SEL) {
@@ -915,7 +858,7 @@ void startBtnsTask(void *argument)
  * @retval None
  */
 /* USER CODE END Header_startMcp4018Task */
-void startMcp4018Task(void *argument)
+void startMcp4018Task(void const * argument)
 {
   /* USER CODE BEGIN startMcp4018Task */
 	/* Infinite loop */
@@ -945,8 +888,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   /* USER CODE BEGIN Callback 1 */
 
 	if (htim->Instance == TIM11) {
-		allowOledUpdate = STATUS_SET;
-
+		interruptFlags |= INT_FLAG_OLED_UPDATE;
 	}
   /* USER CODE END Callback 1 */
 }

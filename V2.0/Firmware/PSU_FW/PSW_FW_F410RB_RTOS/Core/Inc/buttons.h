@@ -23,5 +23,4 @@ uint8_t btnsRead(void);
 
 uint8_t btnRead(uint8_t btn);
 
-
 #endif /* INC_BUTTONS_H_ */

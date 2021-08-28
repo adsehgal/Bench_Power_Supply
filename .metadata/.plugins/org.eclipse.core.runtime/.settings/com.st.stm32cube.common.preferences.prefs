@@ -1,3 +1,6 @@
+DeviceConfigurationTool..OffLineMode=true
+DeviceConfigurationTool.AskToSwitchToCdtPerspective=false
 DeviceConfigurationTool.AskToSwitchToCubeMxPerspective=false
+DeviceConfigurationTool.SwitchToCdtPerspective=true
 DeviceConfigurationTool.SwitchToCubeMxPerspective=true
 eclipse.preferences.version=1

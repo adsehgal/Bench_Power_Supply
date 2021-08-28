@@ -21,7 +21,7 @@
 #define INT_FLAG_UART_RX 0x01
 #define INT_FLAG_UART_TX 0x02
 #define INT_FLAG_BTN 0x04
-
+#define INT_FLAG_OLED_UPDATE 0x08
 
 typedef struct StatsStruct {
 	uint8_t vSet;  //voltage set in a byte for MCP4018
@@ -29,7 +29,7 @@ typedef struct StatsStruct {
 	uint8_t iLim;  //bit[0] ? limit reached : limit NOT reached
 	uint8_t OE;    //bit[0] ? enabled : disabled
 	uint8_t VI;    //bit[0] ? voltage : current
-}Stats;
+} Stats;
 
 enum enables {
 	OE_ENABLED = STATUS_SET,
@@ -47,7 +47,5 @@ enum defaults {
 	OE_DEFAULT = OE_DISABLED,
 	VI_DEFAULT = VI_V_SEL,
 };
-
-
 
 #endif /* INC_STATS_H_ */

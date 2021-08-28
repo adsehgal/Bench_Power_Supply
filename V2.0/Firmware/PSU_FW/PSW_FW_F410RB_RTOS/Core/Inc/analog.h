@@ -10,7 +10,6 @@
 
 #include <sys/_stdint.h>
 
-
 #define ANALOG_DMA_BUFF_SIZE 3
 
 //analogBuff*[0] = Isense
@@ -38,8 +37,5 @@ double analogReadVin(uint16_t Vin);
 double analogReadVout(uint16_t Vout);
 
 double analogReadIOut(uint16_t Iout);
-
-
-
 
 #endif /* INC_ANALOG_H_ */

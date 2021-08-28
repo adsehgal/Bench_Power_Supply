@@ -6,20 +6,24 @@
  */
 
 #include <stm32f4xx_hal.h>
-#include "cmsis_os2.h"
+#if osCMSIS >= 2
+#include <cmsis_os2.h>
+#else
+#include <cmsis_os.h>
+#endif
 #include "uart.h"
 #include "stats.h"
 #include "leds.h"
 
 extern uint8_t interruptFlags;
 
-void uartTxString(char *str) {
+void uartTxString(char str[]) {
 	osDelay(1);
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
 		osDelay(1);	//make sure nothing else is being transmitted
 	}
-	HAL_UART_Transmit(&huart2, (uint8_t*)str, strlen(str), HAL_MAX_DELAY);
-//	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
+//	HAL_UART_Transmit(&huart2, (uint8_t*) str, strlen(str), HAL_MAX_DELAY);
+	HAL_UART_Transmit_DMA(&huart2, (uint8_t*) str, strlen(str));
 	while (HAL_UART_GetState(&huart2) == HAL_UART_STATE_BUSY) {
 		osDelay(1);	//makes sure string is sent before clearing it
 	}
@@ -27,7 +31,7 @@ void uartTxString(char *str) {
 
 void uartRxIntHandler(uartRxData *uartRx) {
 	if (uartRx->uartRxChar == '\n' || uartRx->uartRxChar == '\r') {
-		interruptFlags |= INT_FLAG_UART_RX;
+		interruptFlags |= INT_FLAG_UART_RX;		//set UART interrupt flag at EOL
 	} else {
 		strncat(uartRx->uartRxBuff, &uartRx->uartRxChar, 1); //build user input char by char
 	}
@@ -35,8 +39,8 @@ void uartRxIntHandler(uartRxData *uartRx) {
 
 void uartRxStringParser(uartRxData *uartRx, Stats *psuStats) {
 	uint32_t valueToSet = 0;
-	if (interruptFlags & INT_FLAG_UART_RX) {
-		interruptFlags &= !INT_FLAG_UART_RX;
+	if (interruptFlags & INT_FLAG_UART_RX) {	//check interrupt flag
+		interruptFlags &= ~INT_FLAG_UART_RX;	//clear interrupt flag
 		uartRxMsg msgType = uartRxStringDecoder(uartRx->uartRxBuff, psuStats,
 				&valueToSet);
 		uartRxConfigSet(psuStats, msgType, valueToSet);
@@ -48,6 +52,7 @@ uartRxMsg uartRxStringDecoder(char *str, Stats *psuStats, uint32_t *valueToSet) 
 	char *token;
 	uartRxMsg ret = MSG_NO_CMD; //Clear command variable
 	token = strtok(str, " ");     //get first word
+//	uartTxString("first token\n");
 	if (token != NULL)              //check for empty string
 	{
 		if (!strcmp("V_SET", token)) {
@@ -102,7 +107,7 @@ void uartRxConfigSet(Stats *psuStats, uartRxMsg msgType, uint32_t valueToSet) {
 		return;
 	} else if (msgType == MSG_V_SET) {
 		char buff[UART_TX_BUFF_SIZE];
-		double voltage = potToVoltage((uint8_t)valueToSet);
+		double voltage = potToVoltage((uint8_t) valueToSet);
 		sprintf(buff, "Voltage Set to: %4.2fmV\n", (double) voltage);
 		uartTxString(buff);
 		psuStats->vSet = valueToSet;

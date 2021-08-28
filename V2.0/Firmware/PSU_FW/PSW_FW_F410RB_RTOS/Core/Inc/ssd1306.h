@@ -26,7 +26,6 @@ _BEGIN_STD_C
 #define SSD1306_WIDTH 128
 #define SSD1306_BUFFER_SIZE SSD1306_WIDTH *SSD1306_HEIGHT / 8
 
-
 //fonts start
 typedef struct {
 	const uint8_t FontWidth; /*!< Font width in pixels */
