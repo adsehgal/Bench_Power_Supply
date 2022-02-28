@@ -1,4 +1,5 @@
 DeviceConfigurationTool..OffLineMode=true
+DeviceConfigurationTool.AskToDoCodeGenerationOnIocSave=false
 DeviceConfigurationTool.AskToSwitchToCdtPerspective=false
 DeviceConfigurationTool.AskToSwitchToCubeMxPerspective=false
 DeviceConfigurationTool.SwitchToCdtPerspective=true

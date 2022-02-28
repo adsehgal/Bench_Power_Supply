@@ -1,3 +1,0 @@
-analog.c:23:8:readVin	48	static
-analog.c:45:8:readVout	48	static
-analog.c:66:8:readIOut	56	static

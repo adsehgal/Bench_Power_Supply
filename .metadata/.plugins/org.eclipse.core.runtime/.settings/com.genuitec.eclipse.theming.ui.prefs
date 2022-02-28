@@ -1,11 +1,12 @@
 applyBackground=false
-approved.defs.file.last.changed.time=1617837191000
+approved.defs.file.last.changed.time=1624986146000
 codemix.dont.show.upsell.until=1616989510737
-configurationInstallLocation=/Applications/STM32CubeIDE.app/Contents/Eclipse/
+configurationInstallLocation=/Applications/STMicroelectronics/STM32CubeIDE.app/Contents/Eclipse/
 eclipse.preferences.version=1
 iconcolormode=primary
-last.download.attempt.time=1619154430617
-lastConfiguration=1618895221551
+includeThemingInOomph=false
+last.download.attempt.time=1637968936678
+lastConfiguration=1646016395510
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray
