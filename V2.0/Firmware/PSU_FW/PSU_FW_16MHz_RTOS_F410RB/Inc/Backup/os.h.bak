@@ -18,9 +18,6 @@ typedef void (*timer_fn)(void *argument);
 #define MBOX_NULL (osMessageQId)0
 #define SEMAPHORE_NULL  (osSemaphoreId)0
 
-#define DEFAULT_THREAD_STACKSIZE	512	//bytes
-#define DEFAULT_THREAD_PRIO			1
-
 typedef osThreadId thread_t;
 typedef osSemaphoreId sem_t;
 typedef osSemaphoreId mut_t;

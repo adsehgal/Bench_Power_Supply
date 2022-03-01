@@ -4,7 +4,9 @@
 #include "config.h"
 
 #include "uart.h"
+#include "analog.h"
 #include "led.h"
+#include "pwr.h"
 
 tim_t timer = { .name = "TIMER" };
 sem_t sem;
@@ -37,6 +39,9 @@ int main(void) {
 
 	uart_init();
 	led_init();
+	analog_init();
+	pwr_init();
+
 
 	printf("Initialization complete\n  Built on %s at %s\n\n",
 	__DATE__, __TIME__);
