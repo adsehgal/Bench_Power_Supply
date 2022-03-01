@@ -6952,3 +6952,6 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/adity
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-02-28 19:56:21.698
 !MESSAGE Indexed 'PSU_FW_16MHz_RTOS_F410RB' (48 sources, 214 headers) in 3.76 sec: 19,638 declarations; 89,670 references; 2 unresolved inclusions; 179 syntax errors; 149 unresolved names (0.14%)
+
+!ENTRY org.eclipse.cdt.ui 2 0 2022-02-28 20:39:38.625
+!MESSAGE The 'org.eclipse.cdt.ui.InclusionProposalComputer' proposal computer from the 'org.eclipse.cdt.ui' plug-in did not complete normally. The extension violated the API contract of the 'computeContextInformation()' operation.
