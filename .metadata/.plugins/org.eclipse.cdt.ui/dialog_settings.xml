@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="../Core/User/Inc"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="../Support_Src"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">

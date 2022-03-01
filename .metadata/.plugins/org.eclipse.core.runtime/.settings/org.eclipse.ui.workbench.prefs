@@ -17,6 +17,7 @@ STICKY_CYCLE=true
 UIActivities.org.eclipse.cdt.debug.dsfgdbActivity=true
 WORKBENCH_SAVE_INTERVAL=2
 eclipse.preferences.version=1
+org.eclipse.cdt.ui.ColoredLabels.match_highlight=73,83,90
 org.eclipse.cdt.ui.ColoredLabels.writeaccess_highlight=52,46,35
 org.eclipse.egit.ui.DiffAddBackgroundColor=51,81,30
 org.eclipse.egit.ui.DiffAddForegroundColor=235,237,239
