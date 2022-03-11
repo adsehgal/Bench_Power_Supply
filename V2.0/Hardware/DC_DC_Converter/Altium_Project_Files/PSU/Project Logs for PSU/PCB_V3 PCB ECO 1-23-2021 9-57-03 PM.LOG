@@ -1,5 +1,0 @@
-Change Component Footprint: Designator=P1 Old Footprint=61300211121 New Footprint=SLIN-GRPB021VWVN-RC_V
-Change Component Comment : Designator=P1 Old Comment=61300211121 New Comment=GRPB021VWVN-RC
-Added Room: Name=MCU
-Added Room: Name=Power
-Added Room: Name=UI

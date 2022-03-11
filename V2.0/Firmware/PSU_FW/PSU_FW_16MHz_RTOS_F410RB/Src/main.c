@@ -20,7 +20,7 @@ void task(void *arg) {
 	sem_new(&sem, 0);
 
 	timer_new(&timer, callback, osTimerPeriodic, NULL);
-	timer_start(&timer, 100);
+	timer_start(&timer, 500);
 
 	led_off(LED_VI);
 	led_on(LED_OE);
@@ -30,6 +30,11 @@ void task(void *arg) {
 		led_toggle(LED_VI);
 		led_toggle(LED_OE);
 		led_toggle(LED_CC);
+		for (pwrIdx_t i = 0; i < ANA_COUNT; i++) {
+			printf("%s %d %s\n", pwr_getName(i), pwr_getVal(i),
+					pwr_getUnits(i));
+		}
+		printf("\n");
 	}
 }
 
@@ -41,7 +46,6 @@ int main(void) {
 	led_init();
 	analog_init();
 	pwr_init();
-
 
 	printf("Initialization complete\n  Built on %s at %s\n\n",
 	__DATE__, __TIME__);

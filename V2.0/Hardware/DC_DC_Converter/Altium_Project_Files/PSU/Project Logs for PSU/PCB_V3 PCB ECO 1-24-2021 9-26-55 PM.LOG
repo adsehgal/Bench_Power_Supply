@@ -1,8 +1,0 @@
-Change Component Footprint: Designator=U12 Old Footprint=DBV0005A_M New Footprint=SOT95P285X130-5N
-Change Component Footprint: Designator=U13 Old Footprint=DBV0005A_M New Footprint=SOT95P285X130-5N
-Change Component Comment : Designator=U12 Old Comment=TLV2711CDBVR New Comment=TLV271CW5-7
-Change Component Comment : Designator=U13 Old Comment=TLV2711CDBVR New Comment=TLV271CW5-7
-Change Managed Component Library Link : Designator=U12 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=BE4BE9BE-0F6C-43C5-B3C6-0C74CA12A7BB Old ItemGUID=497152C3-4C39-417C-B431-CC6DB2C5559C New ItemGUID=375e854e-47bd-4220-9468-82349141a1c9 Old RevisionGUID=A45BCFC6-DCE1-4CB2-98D8-A1A15CAD32E4 New RevisionGUID=f7f881e0-4a2d-4883-963e-33c62f373439
-Change Managed Component Library Link : Designator=U13 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=BE4BE9BE-0F6C-43C5-B3C6-0C74CA12A7BB Old ItemGUID=497152C3-4C39-417C-B431-CC6DB2C5559C New ItemGUID=375e854e-47bd-4220-9468-82349141a1c9 Old RevisionGUID=A45BCFC6-DCE1-4CB2-98D8-A1A15CAD32E4 New RevisionGUID=f7f881e0-4a2d-4883-963e-33c62f373439
-Change component parameters: Designator = "U12" ("U12"); Footprint = "DBV0005A_M"; UniqueID = "\RDJZCLJX\PAAJOPMF" ("\RDJZCLJX\PAAJOPMF")
-Change component parameters: Designator = "U13" ("U13"); Footprint = "DBV0005A_M"; UniqueID = "\RDJZCLJX\JJPZZPXI" ("\RDJZCLJX\JJPZZPXI")

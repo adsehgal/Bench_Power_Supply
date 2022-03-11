@@ -25,6 +25,7 @@
 
 typedef struct pwrData_s {
 	sem_t sem;
+	mut_t mut;
 	tim_t tim;
 	float volt[ANA_COUNT];
 	float val[ANA_COUNT];
@@ -64,24 +65,23 @@ static void updateVal(anaIdx_t idx, uint32_t volt) {
 	default:
 		break;
 	}
-
-	printf("%s: %d%s\n", pwr_getName(idx), pwr_getVal(idx), pwr_getUnits(idx));
 }
 
 static void thread(void *arg) {
 
 	sem_new(&pwr.sem, 0);
+	mutex_new(&pwr.mut);
 	timer_new(&pwr.tim, callback, osTimerPeriodic, NULL);
 	timer_start(&pwr.tim, 50);
 
 	for (;;) {
 		sem_wait(&pwr.sem, osWaitForever);
 		for (anaIdx_t i = 0; i < ANA_COUNT; i++) {
+			mutex_lock(&pwr.mut);
 			pwr.volt[i] = analog_getVolt(i);
-			//TODO: Add scaling here
 			updateVal(i, pwr.volt[i]);
+			mutex_unlock(&pwr.mut);
 		}
-		printf("\n");
 	}
 }
 

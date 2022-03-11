@@ -1,0 +1,21 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 8ade7975-64a0-440a-8545-11958836bf48)
+
+  (paper "B")
+
+  (title_block
+    (title "Template")
+    (date "2022-03-05")
+    (rev "1.0")
+    (comment 1 "Aditya Sehgal")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

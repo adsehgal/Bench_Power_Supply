@@ -24128,3 +24128,27 @@
 2022-02-28 21:07:55,452 [INFO] ProjectBuilder:3832 - Time for Generating toolchain IDE Files: 2039mS.
 2022-02-28 21:07:55,453 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
 2022-02-28 21:07:55,458 [INFO] ProjectBuilder:2461 - Time for Copy CMSIS : 0mS.
+2022-03-01 21:56:25,687 [INFO] Activator:177 - 
+
+
+2022-03-01 21:56:25,689 [INFO] Activator:178 - !SESSION log4j initialized
+2022-03-01 21:56:30,662 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-03-01 21:56:30,669 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-03-01 21:56:30,670 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-03-01 21:56:32,973 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-03-02 21:45:05,104 [INFO] Activator:177 - 
+
+
+2022-03-02 21:45:05,106 [INFO] Activator:178 - !SESSION log4j initialized
+2022-03-02 21:45:09,465 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-03-02 21:45:09,468 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-03-02 21:45:09,469 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-03-02 21:45:11,810 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-03-04 23:57:16,709 [INFO] Activator:177 - 
+
+
+2022-03-04 23:57:16,711 [INFO] Activator:178 - !SESSION log4j initialized
+2022-03-04 23:57:20,740 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-03-04 23:57:20,741 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-03-04 23:57:20,741 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-03-04 23:57:23,831 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
